@@ -1,0 +1,26 @@
+/.env.test
+/.pytest_cache
+/.venv
+/logs
+/pytest.ini
+/__pycache__
+__pycache__\*
+__pycache__/*
+*.py[cod]
+*$py.class
+*.pyc
+
+# env
+.env
+.venv
+venv/
+
+.local_pass.json
+.local_pass
+
+*result.json
+
+/results/*
+/test_logs/*
+/test_results/*
+/logs/*

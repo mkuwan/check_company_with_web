@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-07T23:44:15.496651", "level": "INFO", "logger": "test_logger", "message": "情報メッセージ", "module": "logger", "function": "_log", "line": 201}
+{"timestamp": "2025-06-07T23:44:15.496651", "level": "WARNING", "logger": "test_logger", "message": "警告メッセージ", "module": "logger", "function": "_log", "line": 201}
+{"timestamp": "2025-06-07T23:44:15.496651", "level": "ERROR", "logger": "test_logger", "message": "エラーメッセージ", "module": "logger", "function": "_log", "line": 201}
+{"timestamp": "2025-06-07T23:44:15.496651", "level": "INFO", "logger": "test_logger", "message": "extra_dataテスト", "module": "", "function": null, "line": 0, "extra": {"user_id": "test_user", "timestamp": "2025-06-07T23:44:15.496651"}}
+{"timestamp": "2025-06-07T23:44:15.496651", "level": "ERROR", "logger": "test_logger", "message": "ゼロ除算エラー発生", "module": "logger", "function": "_log", "line": 201, "exception": "Traceback (most recent call last):\n  File \"N:\\python_projects\\check_company_with_web\\tests\\test_logger.py\", line 19, in test_logger\n    1 / 0\n    ~~^~~\nZeroDivisionError: division by zero"}
+{"timestamp": "2025-06-07T23:44:15.503818", "level": "INFO", "logger": "test_logger", "message": "単体テスト test_logger: OK", "module": "logger", "function": "_log", "line": 201}

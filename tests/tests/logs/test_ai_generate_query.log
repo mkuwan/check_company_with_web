@@ -1,0 +1,2 @@
+{"timestamp": "2025-06-07T23:37:48.243283", "level": "INFO", "logger": "test_ai_generate_query", "message": "AI生成クエリリスト: ['以下の3つの検索クエリが考えられます。', '1. 株式会社サンプル', '2. 東京都千代田区1-1-1']", "module": "logger", "function": "_log", "line": 201}
+{"timestamp": "2025-06-07T23:37:48.243283", "level": "INFO", "logger": "test_ai_generate_query", "message": "単体テスト test_ai_generate_query: OK", "module": "logger", "function": "_log", "line": 201}
