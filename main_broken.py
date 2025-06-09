@@ -26,24 +26,18 @@ def parse_args():
     return parser.parse_args()
 
 def main(test_company_info=None):
-    # 環境変数を明示的にクリア（キャッシュ回避）
-    import os
-    if 'OLLAMA_API_URL' in os.environ:
-        del os.environ['OLLAMA_API_URL']
-    
     load_dotenv()
     config = load_config()
     
     # 新しいロガー設定を適用
     logger = setup_logger(
         log_level=config.get('LOG_LEVEL', 'INFO'),
-        log_file=config.get('LOG_FILE', 'app.log')    )
+        log_file=config.get('LOG_FILE', 'app.log')
+    )
     
     logger.info("=" * 60)
     logger.info("取引先申請情報確認システム 開始")
-    logger.info("=" * 60)
-    
-    # 設定値の取得（再帰的スクレイピング対応）
+    logger.info("=" * 60)    # 設定値の取得（再帰的スクレイピング対応）
     max_queries = int(config["MAX_GOOGLE_SEARCH"])
     num_results = int(config.get("GOOGLE_SEARCH_NUM_RESULTS", 8))
     max_scrape_depth = int(config.get("MAX_SCRAPE_DEPTH", 10))
@@ -56,7 +50,8 @@ def main(test_company_info=None):
     warning_level = check_api_usage_warning(current_usage, daily_limit, config)
     
     logger.info(f"本日のGoogle Search API使用状況: {current_usage}/{daily_limit}")
-      # 警告レベルに応じたメッセージ表示
+    
+    # 警告レベルに応じたメッセージ表示
     if warning_level == 2:
         print(f"⚠️  危険: API使用量が危険レベルです ({current_usage}/{daily_limit})")
         logger.warning(f"API使用量が危険レベル: {current_usage}/{daily_limit}")
@@ -70,9 +65,10 @@ def main(test_company_info=None):
         print(f"❌ API制限エラー: {error_msg}")
         logger.error(f"API制限により実行停止: {error_msg}")
         sys.exit(1)
-    
-    if wait_time > 0:
+      if wait_time > 0:
         print(f"⏱️  レート制限により{wait_time:.1f}秒待機します...")
+        import time
+        time.sleep(wait_time)
         import time
         time.sleep(wait_time)
     
@@ -104,11 +100,13 @@ def main(test_company_info=None):
     print(f"[DEBUG] PER_PROCESSING_TIME={per_processing_time}")
     print(f"[DEBUG] MAX_SCRAPE_DEPTH={max_scrape_depth}")
     logger.info(f"PER_PROCESSING_TIME: {per_processing_time}")
-    logger.info(f"MAX_SCRAPE_DEPTH: {max_scrape_depth}")    # 全結果を蓄積するためのグローバル変数
+    logger.info(f"MAX_SCRAPE_DEPTH: {max_scrape_depth}")
+
+    # 全結果を蓄積するためのグローバル変数
     all_query_results = []
     total_searched_urls = 0
     overall_found_match = False
-    
+
     # AIによる検索クエリ生成
     try:
         queries = ai_generate_query(
@@ -122,15 +120,12 @@ def main(test_company_info=None):
     except Exception as e:
         logger.error(f"AIによる検索クエリ生成に失敗: {e}", exc_info=True)
         print("AIによる検索クエリ生成に失敗しました")
-        return
-    
-    # 各クエリごとにGoogle検索とスクレイピング・AI解析
+        return    # 各クエリごとにGoogle検索とスクレイピング・AI解析
     for idx, query in enumerate(queries, 1):
         logger.info(f"[{idx}] 検索クエリ: {query}")
         print(f"[{idx}] 検索クエリ: {query}")
         
-        try:
-            # Google検索実行（強化されたAPI制限管理を使用）
+        try:            # Google検索実行（強化されたAPI制限管理を使用）
             search_results = google_search(
                 query,
                 config["GOOGLE_API_KEY"],
@@ -193,7 +188,8 @@ def main(test_company_info=None):
                                 config["OLLAMA_API_URL"],
                                 config["OLLAMA_MODEL"]
                             )
-                              # 解析結果を追加
+                            
+                            # 解析結果を追加
                             analysis_result.update({
                                 "search_rank": i,
                                 "page_rank": page_idx,

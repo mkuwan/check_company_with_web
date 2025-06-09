@@ -18,26 +18,18 @@ def ai_generate_query(application_info, ollama_url, ollama_model, max_queries=1)
 会社情報: {json.dumps(application_info, ensure_ascii=False)}
 出力はクエリ文字列のみ。各クエリは改行で区切ってください。
 """
+    
     payload = {
         "model": ollama_model,
-        "messages": [
-            {"role": "user", "content": prompt}
-        ],
+        "messages": [{"role": "user", "content": prompt}],
         "stream": False
     }
-    response = requests.post(ollama_url, json=payload, timeout=60, stream=True)
-    content = ""
-    for line in response.iter_lines():
-        if not line:
-            continue
-        try:
-            obj = json.loads(line.decode('utf-8'))
-            if "message" in obj and "content" in obj["message"]:
-                content += obj["message"]["content"]
-            elif "response" in obj:
-                content += obj["response"]
-        except Exception:
-            continue
+    
+    response = requests.post(ollama_url, json=payload, timeout=60)
+    response.raise_for_status()
+    
+    result = response.json()
+    content = result["message"]["content"]
     # クエリリストに分割し、空行・重複・空白・説明文・番号付き行を除去
     queries = [q.strip() for q in content.strip().split("\n") if q.strip() and not any(x in q for x in ["以下の", "検索クエリ", "考えられます", ".", "．", "1.", "2.", "3.", "1．", "2．", "3．"])]
     # 最大max_queries件に制限
