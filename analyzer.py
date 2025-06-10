@@ -2,102 +2,8 @@ import requests
 import json
 import re
 
-def is_relevant_content(title, url, company_name):
-    """
-    タイトルとURLから企業の実在性検証に関連するコンテンツかどうかを判定
-    
-    Args:
-        title: ページタイトル
-        url: ページURL
-        company_name: 申請された会社名
-    
-    Returns:
-        bool: 関連性がある場合True
-    """
-    # 会社名から株式会社などの法人格を除去して核心部分を抽出
-    company_core = company_name.replace('株式会社', '').replace('有限会社', '').replace('合同会社', '').replace('(株)', '').replace('（株）', '').strip()
-    
-    # 除外キーワード（これらが含まれる場合は関連性が低い）
-    exclude_keywords = [
-        'テスト', 'test', '例', 'example', 
-        '記載例', '作成例', 'フォーマット', 'format', 'template', 'テンプレート',
-        '消防計画', '防災', '税務', '申告書', '調書', 'PDF', 'pdf',
-        'マニュアル', 'manual', 'ガイド', 'guide', '手引き',
-        '研修', '講習', 'セミナー', 'seminar', 'training',
-        'TSR', 'tsr', 'TSRreport', 'TSRレポート'
-    ]
-    
-    # 実際の会社名に「サンプル」が含まれる場合は、「サンプル」を除外キーワードから除く
-    if 'サンプル' not in company_name.lower():
-        exclude_keywords.extend(['サンプル', 'sample'])
-    
-    # ドメイン除外リスト（政府機関、一般的なサービスサイト等）
-    exclude_domains = [
-        'nta.go.jp',  # 国税庁
-        'meti.go.jp',  # 経済産業省
-        'tfd.metro.tokyo.lg.jp',  # 東京消防庁
-        'koshonin.gr.jp',  # 日本公証人連合会
-        'wikipedia.org',  # Wikipedia
-        'indeed.com',  # 求人サイト
-        'recruit.co.jp',  # リクルート
-        'mynavi.jp',  # マイナビ
-        'tsr-net.co.jp'  # TSRレポート
-    ]
-    
-    # 除外ドメインチェック
-    for domain in exclude_domains:
-        if domain in url.lower():
-            return False
-    
-    # 無関係な企業名のチェック（大企業の名前が含まれている場合は除外）
-    unrelated_companies = [
-        'シティバンク', 'citibank', 'citigroup', 'citi',
-        'アイカ工業', 'aica', 
-        '田島ルーフィング', 'tajima',
-        'トーソー', 'toso'
-    ]
-    
-    # 申請会社名の核心部分が無関係企業リストに含まれていない場合のみチェック
-    if company_core.lower() not in [comp.lower() for comp in unrelated_companies]:
-        title_lower = title.lower()
-        url_lower = url.lower()
-        for unrelated in unrelated_companies:
-            if unrelated.lower() in title_lower or unrelated.lower() in url_lower:
-                return False
-    
-    # 除外キーワードチェック（タイトル）
-    title_lower = title.lower()
-    for keyword in exclude_keywords:
-        if keyword in title_lower:
-            return False
-    
-    # URLから除外キーワードチェック
-    url_lower = url.lower()
-    for keyword in ['test', 'example', 'demo', 'pdf']:
-        # 実際の会社名に含まれるキーワードは除外しない
-        if keyword in url_lower and keyword not in company_name.lower():
-            return False
-    
-    # 会社名の一部が含まれているかチェック
-    company_keywords = company_name.replace('株式会社', '').replace('有限会社', '').replace('合同会社', '').strip()
-    if company_keywords and company_keywords in title:
-        return True
-    
-    # 企業情報に関連するキーワードがあるかチェック
-    relevant_keywords = [
-        '会社概要', '企業情報', '会社案内', 'company', 'corporate',
-        '所在地', '住所', '連絡先', 'contact', 'address',
-        '事業所', '支店', '営業所', 'office', 'branch',
-        '代表者', '役員', 'profile', 'about'
-    ]
-    
-    for keyword in relevant_keywords:
-        if keyword in title_lower or keyword in url_lower:
-            return True
-    
-    return True  # デフォルトでは関連性ありとする
 
-def ai_generate_query(application_info, ollama_url, ollama_model, max_queries=1):
+def ai_generate_query(application_info, ollama_url, ollama_model, max_queries=1) -> list:
     """
     申請情報（リストやdict）をもとにAI（ollama）でGoogle検索クエリを最大max_queries件生成する
     企業の実在性検証に特化した検索クエリを生成
@@ -133,9 +39,9 @@ def ai_generate_query(application_info, ollama_url, ollama_model, max_queries=1)
 【生成すべきクエリの例】
 - "{company_name} {address} {tel} {other_info}"
 - "{company_name} {address.split()[0] if address else ''} {tel.split()[0] if tel else ''}"
-- "{company_name} 企業情報"
-- "{company_name} 会社概要"
-- "{company_name} 公式サイト"
+- "{company_name} {address}"
+- "{company_name} {tel}"
+- "{company_name} {other_info}"
 
 【出力形式】
 検索クエリのみを1行ずつ出力してください。説明文、番号、記号、余計な文字は不要です。
@@ -153,7 +59,11 @@ def ai_generate_query(application_info, ollama_url, ollama_model, max_queries=1)
     content = result["message"]["content"]
     
     # 会社名から核心部分を抽出（フィルタリング用）
-    company_core = company_name.replace('株式会社', '').replace('有限会社', '').replace('合同会社', '').replace('(株)', '').replace('（株）', '').strip()
+    company_core = company_name.replace('株式会社', ' 株式会社 ').replace('有限会社', ' 有限会社 ').replace('合同会社', ' 合同会社 ')\
+        .replace('株式会社', '').replace('有限会社', '').replace('合同会社', '')\
+        .replace('（株）', '').replace('（有）', '').replace('（合）', '')\
+        .replace('法人', '法人 ')\
+        .replace('(株) ', '').replace('(有)', '').strip()
     
     # クエリリストに分割し、不要な行を除去
     queries = []
@@ -177,7 +87,7 @@ def ai_generate_query(application_info, ollama_url, ollama_model, max_queries=1)
             
         # サンプルやテスト関連のクエリを除外（ただし実際の会社名に含まれる場合は例外）
         exclude_sample = False
-        sample_words = ["sample", "test", "例", "記載例", "作成例", "テンプレート", "フォーマット"]
+        sample_words = ["sample", "記載例", "作成例", "テンプレート", "フォーマット"]
         for word in sample_words:
             if word in line.lower() and company_name.lower() not in line.lower():
                 exclude_sample = True
@@ -197,30 +107,7 @@ def ai_generate_query(application_info, ollama_url, ollama_model, max_queries=1)
     
     return unique_queries[:max_queries]
 
-def pre_filter_search_results(search_results, company_name):
-    """
-    検索結果を事前フィルタリングして関連性の高いものだけを残す
-    
-    Args:
-        search_results: Google検索結果のリスト
-        company_name: 申請された会社名
-    
-    Returns:
-        list: フィルタリング後の検索結果
-    """
-    filtered_results = []
-    
-    for result in search_results:
-        title = result.get('title', '')
-        url = result.get('link', '')
-        
-        if is_relevant_content(title, url, company_name):
-            filtered_results.append(result)
-        else:
-            # 除外されたURLをログに記録（デバッグ用）
-            print(f"[フィルタ除外] {title[:50]}... - {url}")
-    
-    return filtered_results
+
 
 def ai_analyze_content(application_info, scraped_content, ollama_url, ollama_model, _stop_flag=None):
     """

@@ -8,6 +8,8 @@
 """
 
 import os
+from typing import Dict, List, Optional, Any
+from dataclasses import dataclass
 from dotenv import load_dotenv
 from config import load_config
 from utils import (
@@ -29,6 +31,19 @@ from scraper import scrape_page, scrape_recursive
 import sys
 import logging
 import time
+
+@dataclass
+class TestCompanyInfo:
+    """テスト用企業情報モデル"""
+    company: str  # 会社名
+    address: str  # 住所
+    tel: str      # 電話番号
+    other: Optional[List[str]] = None  # その他情報（旧社名、支店名など）
+    
+    def __post_init__(self):
+        """初期化後処理：otherがNoneの場合は空リストに設定"""
+        if self.other is None:
+            self.other = []
 
 def parse_args():
     parser = argparse.ArgumentParser(description="取引先申請情報の確認システム")
@@ -86,7 +101,7 @@ def process_single_page(application_info, scraped_result, config, search_rank, p
         logger.error(f"[{search_rank}-{page_rank}] AI解析エラー: {e}")
         return None
 
-def main_fixed(test_company_info=None):
+def main_fixed(test_company_info: Optional[TestCompanyInfo] = None) -> Dict[str, Any]:
     """効率化版メイン処理（早期終了問題を解決 + 事前フィルタリング機能）"""
     # 環境変数を明示的にクリア（キャッシュ回避）
     if 'OLLAMA_API_URL' in os.environ:
@@ -102,7 +117,7 @@ def main_fixed(test_company_info=None):
     )
     
     logger.info("=" * 60)
-    logger.info("取引先申請情報確認システム 開始 (効率化版)")
+    logger.info("取引先申請情報確認システム 開始")
     logger.info("=" * 60)
     
     # 早期終了フラグをリセット
@@ -139,13 +154,12 @@ def main_fixed(test_company_info=None):
     if wait_time > 0:
         print(f"⏱️  レート制限により{wait_time:.1f}秒待機します...")
         time.sleep(wait_time)
-    
-    # 企業情報の取得
+      # 企業情報の取得
     if test_company_info:
-        company = test_company_info['company']
-        address = test_company_info['address']
-        tel = test_company_info['tel']
-        other = test_company_info.get('other', [])
+        company = test_company_info.company
+        address = test_company_info.address
+        tel = test_company_info.tel
+        other = test_company_info.other or []
         logger.info("テストモードで実行中")
     else:
         args = parse_args()
@@ -195,29 +209,21 @@ def main_fixed(test_company_info=None):
         
         try:
             # Google検索実行
-            raw_search_results = google_search(
+            search_results = google_search(
                 query,
                 config["GOOGLE_API_KEY"],
                 config["GOOGLE_CSE_ID"],
                 num=num_results,
                 config=config
             )
-            
-            # 事前フィルタリングを実行
-            search_results = pre_filter_search_results(raw_search_results, company)
-            
-            logger.info(f"Google検索結果件数: {len(raw_search_results)}件 → フィルタ後: {len(search_results)}件")
-            if len(raw_search_results) != len(search_results):
-                print(f"Google検索結果: {len(raw_search_results)}件 → 関連性フィルタ後: {len(search_results)}件")
-                logger.info(f"フィルタ除外数: {len(raw_search_results) - len(search_results)}件")
-            else:
-                print(f"Google検索結果: {len(search_results)}件")
-            
+
+            print(f"Google検索結果: {len(search_results)}件")
+                        
             for i, item in enumerate(search_results, 1):
                 logger.info(f"[{i}] {item['title']} {item['link']}")
                 print(f"[{i}] {item['title']} {item['link']}")
             
-            # 再帰的スクレイピング・AI解析
+            # スクレイピング・AI解析
             all_analysis_results = []
             found_match = False
             
@@ -226,11 +232,11 @@ def main_fixed(test_company_info=None):
                     logger.info(f"早期終了フラグまたは高スコア検出により検索{i}以降をスキップ")
                     break
                 
-                print(f"\n[{i}] 再帰的スクレイピング+AI解析開始: {item['title']}")
-                logger.info(f"[{i}] 再帰的スクレイピング+AI解析開始: {item['link']}")
+                print(f"\n[{i}] スクレイピング+AI解析開始: {item['title']}")
+                logger.info(f"[{i}] スクレイピング+AI解析開始: {item['link']}")
                 
                 try:
-                    # 再帰的スクレイピング実行
+                    # スクレイピング実行
                     scraped_pages = scrape_recursive(
                         item['link'], 
                         depth=1, 
@@ -239,12 +245,12 @@ def main_fixed(test_company_info=None):
                     )
                     
                     if not scraped_pages:
-                        print(f"[{i}] 再帰的スクレイピング失敗: 内容を取得できませんでした")
-                        logger.warning(f"[{i}] 再帰的スクレイピング失敗: {item['link']}")
+                        print(f"[{i}] スクレイピング失敗: 内容を取得できませんでした")
+                        logger.warning(f"[{i}] スクレイピング失敗: {item['link']}")
                         continue
                     
-                    print(f"[{i}] 再帰的スクレイピング完了: {len(scraped_pages)}ページ")
-                    logger.info(f"[{i}] 再帰的スクレイピング完了: {len(scraped_pages)}ページ")
+                    print(f"[{i}] スクレイピング完了: {len(scraped_pages)}ページ")
+                    logger.info(f"[{i}] スクレイピング完了: {len(scraped_pages)}ページ")
                     
                     page_results = []
                       # 各ページごとにAI解析実行（早期終了チェック付き）
@@ -283,8 +289,8 @@ def main_fixed(test_company_info=None):
                         
                         # 最高スコアをチェック
                         max_score = max(r.get("score", 0.0) for r in page_results)
-                        print(f"[{i}] 再帰的解析完了: 最高スコア={max_score:.3f}")
-                        logger.info(f"[{i}] 再帰的解析結果: 最高スコア={max_score:.3f}")
+                        print(f"[{i}] 解析完了: 最高スコア={max_score:.3f}")
+                        logger.info(f"[{i}] 解析結果: 最高スコア={max_score:.3f}")
                         
                         if found_match:
                             break
@@ -346,8 +352,16 @@ def main_fixed(test_company_info=None):
     
     return standardized_result
 
-def main(test_company_info=None):
+def main(test_company_info: Optional[TestCompanyInfo] = None) -> Dict[str, Any]:
     return main_fixed(test_company_info)
 
 if __name__ == "__main__":
+    
+    testCompany: TestCompanyInfo = TestCompanyInfo(
+        company="トヨタ自動車株式会社",
+        address="愛知県豊田市トヨタ町1番地",
+        tel="0565-28-2121",
+        # other=["旧社名: テスト商事", "支店名: 新宿支店"]
+    )
+
     main()
