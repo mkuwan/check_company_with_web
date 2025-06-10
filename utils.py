@@ -12,29 +12,64 @@ class TimeoutException(Exception):
     """タイムアウト例外"""
     pass
 
+class EarlyTerminationException(Exception):
+    """早期終了例外"""
+    pass
+
+# グローバル早期終了フラグ
+_early_termination_flag = threading.Event()
+
+def set_early_termination():
+    """早期終了フラグを設定"""
+    _early_termination_flag.set()
+
+def reset_early_termination():
+    """早期終了フラグをリセット"""
+    _early_termination_flag.clear()
+
+def check_early_termination():
+    """早期終了フラグをチェック"""
+    return _early_termination_flag.is_set()
+
 def timeout_decorator(timeout_seconds: int):
     """
-    関数にタイムアウトを設定するデコレータ
+    関数にタイムアウトを設定するデコレータ（早期終了対応版）
     :param timeout_seconds: タイムアウト時間（秒）
     """
     def decorator(func: Callable) -> Callable:
         @wraps(func)
         def wrapper(*args, **kwargs):
+            # 早期終了フラグのチェック
+            if check_early_termination():
+                raise EarlyTerminationException("早期終了フラグが設定されています")
+            
             result = [TimeoutException("タイムアウトが発生しました")]
+            stop_flag = threading.Event()
             
             def target():
                 try:
-                    result[0] = func(*args, **kwargs)
+                    result[0] = func(*args, **kwargs, _stop_flag=stop_flag)
                 except Exception as e:
                     result[0] = e
             
             thread = threading.Thread(target=target)
             thread.daemon = True
             thread.start()
-            thread.join(timeout_seconds)
             
-            if thread.is_alive():
-                raise TimeoutException(f"処理がタイムアウトしました ({timeout_seconds}秒)")
+            # タイムアウト待機（100ms間隔で早期終了フラグもチェック）
+            start_time = time.time()
+            while thread.is_alive():
+                if time.time() - start_time >= timeout_seconds:
+                    stop_flag.set()  # 停止フラグを設定
+                    thread.join(timeout=1.0)  # 1秒待機してスレッド終了を試行
+                    raise TimeoutException(f"処理がタイムアウトしました ({timeout_seconds}秒)")
+                
+                if check_early_termination():
+                    stop_flag.set()  # 停止フラグを設定
+                    thread.join(timeout=1.0)  # 1秒待機してスレッド終了を試行
+                    raise EarlyTerminationException("早期終了フラグが設定されました")
+                
+                time.sleep(0.1)  # 100ms間隔でチェック
             
             if isinstance(result[0], Exception):
                 raise result[0]
@@ -53,45 +88,120 @@ def write_result_json(result: dict, file_path: str = "result.json"):
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
-def write_result_markdown(result: dict, file_path: str = "result.md"):
+def standardize_output_format(raw_result: dict) -> dict:
     """
-    判定結果をMarkdownファイルに出力する
-    :param result: 出力するdict
+    生の結果データを設計書で定義された標準フォーマットに変換
+    :param raw_result: 生の結果データ
+    :return: 標準化された結果データ
+    """
+    standardized = {
+        "company": raw_result.get("company", "N/A"),
+        "address": raw_result.get("address", "N/A"), 
+        "tel": raw_result.get("tel", "N/A"),
+        "results": [],
+        "searched_url_count": raw_result.get("searched_url_count", 0),
+        "found": raw_result.get("found", False),
+        "early_terminated": raw_result.get("early_terminated", False)
+    }
+    
+    # otherフィールドがある場合は追加
+    if "other" in raw_result and raw_result["other"]:
+        standardized["other"] = raw_result["other"]
+    
+    # URLが見つからなかった場合のメッセージ
+    if not standardized["found"]:
+        standardized["message"] = "申請情報に基づくURLが見つかりませんでした"
+    
+    # 結果をスコア順にソートして最大10件に制限
+    raw_results = raw_result.get("results", [])
+    sorted_results = sorted(raw_results, key=lambda x: x.get("score", 0), reverse=True)
+    
+    for result in sorted_results[:10]:  # 最大10件
+        standardized_result = {
+            "url": result.get("url", "N/A"),
+            "score": result.get("score", 0.0),
+            "is_real": result.get("score", 0.0) >= 0.7,  # スコア0.7以上をrealとする
+            "reason": result.get("reasoning", result.get("reason", "判定理由不明"))
+        }
+        standardized["results"].append(standardized_result)
+    
+    return standardized
+
+def write_result_markdown_table(result: dict, file_path: str = "result.md"):
+    """
+    判定結果を設計書で定義されたテーブル形式のMarkdownファイルに出力する
+    :param result: 標準化された結果dict
     :param file_path: 出力先ファイル名
     """
     with open(file_path, "w", encoding="utf-8") as f:
-        f.write("# 企業情報チェック結果\n\n")
+        f.write("# 判定結果\n\n")
         
         # 基本情報
-        f.write("## 申請情報\n\n")
-        f.write(f"- **会社名**: {result.get('company', 'N/A')}\n")
-        f.write(f"- **住所**: {result.get('address', 'N/A')}\n")
-        f.write(f"- **電話番号**: {result.get('tel', 'N/A')}\n")
-        f.write(f"- **その他情報**: {', '.join(result.get('other', []))}\n\n")
+        f.write(f"- 会社名: {result.get('company', 'N/A')}\n")
+        f.write(f"- 住所: {result.get('address', 'N/A')}\n")
+        f.write(f"- 電話番号: {result.get('tel', 'N/A')}\n")
+        f.write(f"- 検索URL数: {result.get('searched_url_count', 0)}\n")
         
-        # 判定結果
-        f.write("## 判定結果\n\n")
-        f.write(f"- **マッチング結果**: {'✅ 一致' if result.get('found', False) else '❌ 不一致'}\n")
-        f.write(f"- **検索URL数**: {result.get('searched_url_count', 0)}\n")
-        f.write(f"- **早期終了**: {'はい' if result.get('early_terminated', False) else 'いいえ'}\n\n")
+        # 見つかったかどうか
+        found_icon = "✅" if result.get('found', False) else "❌"
+        f.write(f"- 見つかった: {found_icon}\n\n")
         
-        # 詳細結果
-        f.write("## 詳細結果\n\n")
+        # その他情報がある場合
+        if "other" in result and result["other"]:
+            f.write(f"- その他情報: {', '.join(result['other'])}\n\n")
+        
+        # 早期終了の情報
+        if result.get('early_terminated', False):
+            f.write("- **注記**: スコア95%以上の結果が見つかったため早期終了しました\n\n")
+        
+        # URLが見つからなかった場合のメッセージ
+        if not result.get('found', False):
+            f.write(f"## メッセージ\n\n{result.get('message', 'URLが見つかりませんでした')}\n\n")
+        
+        # 結果テーブル
         results = result.get('results', [])
         if results:
-            for i, res in enumerate(results, 1):
-                f.write(f"### {i}. {res.get('title', 'タイトル不明')}\n\n")
-                f.write(f"- **URL**: {res.get('url', 'N/A')}\n")
-                f.write(f"- **スコア**: {res.get('score', 0.0):.3f}\n")
-                f.write(f"- **検索順位**: {res.get('search_rank', 'N/A')}\n")
-                f.write(f"- **コンテンツ長**: {res.get('scraped_content_length', 0)} 文字\n")
-                f.write(f"- **理由**: {res.get('reasoning', 'N/A')}\n")
-                f.write(f"- **マッチした情報**: {res.get('matched_info', 'N/A')}\n\n")
-        else:
-            f.write("結果がありません。\n\n")
+            f.write("## 上位10件（スコア順）\n\n")
+            f.write("| スコア | URL | 判定理由 |\n")
+            f.write("|-------|-----|----------|\n")
+            
+            for res in results:
+                score = res.get('score', 0.0)
+                url = res.get('url', 'N/A')
+                reason = res.get('reason', '判定理由不明')
+                
+                # URLが長い場合は短縮表示
+                if len(url) > 50:
+                    display_url = url[:47] + "..."
+                else:
+                    display_url = url
+                
+                # 理由が長い場合は短縮表示
+                if len(reason) > 60:
+                    display_reason = reason[:57] + "..."
+                else:
+                    display_reason = reason
+                
+                f.write(f"| {score:.2f} | {display_url} | {display_reason} |\n")
+            
+            f.write("\n")
         
         f.write("---\n")
         f.write("*この結果は自動生成されました*\n")
+
+# 既存のwrite_result_markdown関数を新しい関数で置き換え
+def write_result_markdown(result: dict, file_path: str = "result.md"):
+    """
+    判定結果をMarkdownファイルに出力する（標準化済みデータを期待）
+    :param result: 出力するdict（標準化済み）
+    :param file_path: 出力先ファイル名
+    """
+    # 標準化されていない場合は標準化を実行
+    if "is_real" not in str(result) and "results" in result and result["results"]:
+        # 生データの場合は標準化
+        result = standardize_output_format(result)
+    
+    write_result_markdown_table(result, file_path)
 
 def get_api_usage_file_path():
     """
@@ -99,7 +209,13 @@ def get_api_usage_file_path():
     :return: 日付付きのAPI使用件数ファイルパス
     """
     today = datetime.now().strftime("%Y%m%d")
-    return f"search_api_count_{today}.txt"
+    api_log_dir = "api_log"
+    
+    # api_logディレクトリが存在しない場合は作成
+    if not os.path.exists(api_log_dir):
+        os.makedirs(api_log_dir)
+    
+    return os.path.join(api_log_dir, f"search_api_count_{today}.txt")
 
 def get_current_api_usage():
     """
@@ -256,9 +372,10 @@ def check_rate_limits(config):
 
 def record_api_call(config):
     """
-    API呼び出しを記録
+    API呼び出しを記録（レート制限データ + 日別使用件数）
     :param config: 設定情報
     """
+    # レート制限データの更新
     data = get_rate_limit_data()
     current_time = time.time()
     
@@ -267,6 +384,9 @@ def record_api_call(config):
     data["calls_this_second"] += 1
     
     update_rate_limit_data(data)
+    
+    # 日別API使用件数の更新
+    update_api_usage(1)
 
 def check_api_usage_warning(current_usage, daily_limit, config):
     """
@@ -326,3 +446,45 @@ def enhanced_check_api_limit(required_calls: int = 1, config=None):
             return True, "", wait_time
     
     return True, "", 0
+
+def reset_api_limits():
+    """
+    API制限データをリセットする（テスト用・開発用）
+    """
+    logger = logging.getLogger()
+    
+    try:
+        # レート制限ファイルをリセット
+        rate_limit_file = get_api_rate_limit_file_path()
+        default_rate_data = {
+            "last_call_time": 0,
+            "calls_this_minute": 0,
+            "minute_start": 0,
+            "calls_this_second": 0,
+            "second_start": 0
+        }
+        
+        with open(rate_limit_file, "w", encoding="utf-8") as f:
+            json.dump(default_rate_data, f, indent=2)
+        
+        logger.info(f"レート制限データをリセット: {rate_limit_file}")
+        
+        # 日別API使用件数ファイルをリセット
+        today = datetime.now().strftime("%Y%m%d")
+        api_log_dir = "api_log"
+        
+        # api_logディレクトリが存在しない場合は作成
+        if not os.path.exists(api_log_dir):
+            os.makedirs(api_log_dir)
+        
+        api_count_file = os.path.join(api_log_dir, f"search_api_count_{today}.txt")
+        
+        with open(api_count_file, "w", encoding="utf-8") as f:
+            f.write("0")
+        
+        logger.info(f"API使用件数をリセット: {api_count_file}")
+        print("✅ API制限データをリセットしました")
+        
+    except Exception as e:
+        logger.error(f"API制限リセット失敗: {e}")
+        print(f"❌ API制限リセット失敗: {e}")

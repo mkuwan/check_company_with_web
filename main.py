@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+効率化版メイン処理
+
+高スコア検出後の並行処理継続問題を解決し、
+関連性の低いコンテンツの事前フィルタリング機能を追加
+"""
+
 import os
 from dotenv import load_dotenv
 from config import load_config
@@ -7,15 +16,19 @@ from utils import (
     write_result_markdown, 
     get_current_api_usage,
     enhanced_check_api_limit,
-    check_api_usage_warning
+    check_api_usage_warning,
+    reset_early_termination,
+    set_early_termination,
+    check_early_termination,
+    standardize_output_format
 )
 import argparse
-from analyzer import ai_generate_query
+from analyzer import ai_generate_query, pre_filter_search_results, is_relevant_content
 from search import google_search
 from scraper import scrape_page, scrape_recursive
-from utils import timeout_decorator, TimeoutException
 import sys
 import logging
+import time
 
 def parse_args():
     parser = argparse.ArgumentParser(description="取引先申請情報の確認システム")
@@ -25,9 +38,57 @@ def parse_args():
     parser.add_argument('--other', nargs='*', default=[], help='その他情報（旧社名、支店名など）')
     return parser.parse_args()
 
-def main(test_company_info=None):
+def process_single_page(application_info, scraped_result, config, search_rank, page_rank, logger):
+    """単一ページのAI解析処理（早期終了チェック付き）"""
+    # 早期終了フラグチェック
+    if check_early_termination():
+        logger.info(f"[{search_rank}-{page_rank}] 早期終了フラグにより処理スキップ")
+        return None
+    
+    # コンテンツの関連性事前チェック
+    title = scraped_result.get('title', '')
+    url = scraped_result.get('url', '')
+    company_name = application_info[0] if len(application_info) > 0 else ""
+    
+    if not is_relevant_content(title, url, company_name):
+        print(f"[{search_rank}-{page_rank}] 関連性が低いためスキップ: {title[:30]}...")
+        logger.info(f"[{search_rank}-{page_rank}] 関連性フィルタによりスキップ: {url}")
+        return None
+    
+    print(f"[{search_rank}-{page_rank}] AI解析開始: {title[:30]}...")
+    logger.info(f"[{search_rank}-{page_rank}] AI解析開始: {url}")
+    
+    try:
+        from analyzer import ai_analyze_content
+        analysis_result = ai_analyze_content(
+            application_info,
+            scraped_result,
+            config["OLLAMA_API_URL"],
+            config["OLLAMA_MODEL"]
+        )
+        
+        # 解析結果を追加
+        analysis_result.update({
+            "search_rank": search_rank,
+            "page_rank": page_rank,
+            "url": url,
+            "title": title,
+            "scraped_content_length": len(scraped_result.get('content', ''))
+        })
+        
+        score = analysis_result.get("score", 0.0)
+        print(f"[{search_rank}-{page_rank}] AI解析完了: スコア={score:.3f}")
+        logger.info(f"[{search_rank}-{page_rank}] AI解析結果: スコア={score:.3f}")
+        
+        return analysis_result
+        
+    except Exception as e:
+        logger.error(f"[{search_rank}-{page_rank}] AI解析エラー: {e}")
+        return None
+
+def main_fixed(test_company_info=None):
+    """効率化版メイン処理（早期終了問題を解決 + 事前フィルタリング機能）"""
     # 環境変数を明示的にクリア（キャッシュ回避）
-    import os
     if 'OLLAMA_API_URL' in os.environ:
         del os.environ['OLLAMA_API_URL']
     
@@ -37,26 +98,30 @@ def main(test_company_info=None):
     # 新しいロガー設定を適用
     logger = setup_logger(
         log_level=config.get('LOG_LEVEL', 'INFO'),
-        log_file=config.get('LOG_FILE', 'app.log')    )
+        log_file=config.get('LOG_FILE', 'app.log')
+    )
     
     logger.info("=" * 60)
-    logger.info("取引先申請情報確認システム 開始")
+    logger.info("取引先申請情報確認システム 開始 (効率化版)")
     logger.info("=" * 60)
     
-    # 設定値の取得（再帰的スクレイピング対応）
+    # 早期終了フラグをリセット
+    reset_early_termination()
+    
+    # 設定値の取得
     max_queries = int(config["MAX_GOOGLE_SEARCH"])
-    num_results = int(config.get("GOOGLE_SEARCH_NUM_RESULTS", 8))
-    max_scrape_depth = int(config.get("MAX_SCRAPE_DEPTH", 10))
-    per_processing_time = int(config.get("PER_PROCESSING_TIME", 60))
+    num_results = int(config.get("GOOGLE_SEARCH_NUM_RESULTS", 5))
+    max_scrape_depth = int(config.get("MAX_SCRAPE_DEPTH", 3))
     score_threshold = float(config.get("SCORE_THRESHOLD", 0.95))
 
-    # API使用状況を確認と警告レベルチェック
+    # API使用状況を確認
     current_usage = get_current_api_usage()
     daily_limit = int(config.get('GOOGLE_API_DAILY_LIMIT', '100'))
     warning_level = check_api_usage_warning(current_usage, daily_limit, config)
     
     logger.info(f"本日のGoogle Search API使用状況: {current_usage}/{daily_limit}")
-      # 警告レベルに応じたメッセージ表示
+    
+    # 警告レベルに応じたメッセージ表示
     if warning_level == 2:
         print(f"⚠️  危険: API使用量が危険レベルです ({current_usage}/{daily_limit})")
         logger.warning(f"API使用量が危険レベル: {current_usage}/{daily_limit}")
@@ -73,10 +138,9 @@ def main(test_company_info=None):
     
     if wait_time > 0:
         print(f"⏱️  レート制限により{wait_time:.1f}秒待機します...")
-        import time
         time.sleep(wait_time)
     
-    # テスト用の企業情報が提供された場合はそれを使用、そうでなければコマンドライン引数を解析
+    # 企業情報の取得
     if test_company_info:
         company = test_company_info['company']
         address = test_company_info['address']
@@ -101,10 +165,7 @@ def main(test_company_info=None):
     print(f"その他: {other}")
     print(f"本日のAPI使用状況: {current_usage}/{daily_limit}")
     
-    print(f"[DEBUG] PER_PROCESSING_TIME={per_processing_time}")
-    print(f"[DEBUG] MAX_SCRAPE_DEPTH={max_scrape_depth}")
-    logger.info(f"PER_PROCESSING_TIME: {per_processing_time}")
-    logger.info(f"MAX_SCRAPE_DEPTH: {max_scrape_depth}")    # 全結果を蓄積するためのグローバル変数
+    # 全結果を蓄積するためのグローバル変数
     all_query_results = []
     total_searched_urls = 0
     overall_found_match = False
@@ -126,12 +187,15 @@ def main(test_company_info=None):
     
     # 各クエリごとにGoogle検索とスクレイピング・AI解析
     for idx, query in enumerate(queries, 1):
+        if check_early_termination():
+            logger.info(f"早期終了フラグによりクエリ{idx}以降をスキップ")
+            break
         logger.info(f"[{idx}] 検索クエリ: {query}")
         print(f"[{idx}] 検索クエリ: {query}")
         
         try:
-            # Google検索実行（強化されたAPI制限管理を使用）
-            search_results = google_search(
+            # Google検索実行
+            raw_search_results = google_search(
                 query,
                 config["GOOGLE_API_KEY"],
                 config["GOOGLE_CSE_ID"],
@@ -139,12 +203,18 @@ def main(test_company_info=None):
                 config=config
             )
             
-            logger.info(f"Google検索結果件数: {len(search_results)}")
+            # 事前フィルタリングを実行
+            search_results = pre_filter_search_results(raw_search_results, company)
+            
+            logger.info(f"Google検索結果件数: {len(raw_search_results)}件 → フィルタ後: {len(search_results)}件")
+            if len(raw_search_results) != len(search_results):
+                print(f"Google検索結果: {len(raw_search_results)}件 → 関連性フィルタ後: {len(search_results)}件")
+                logger.info(f"フィルタ除外数: {len(raw_search_results) - len(search_results)}件")
+            else:
+                print(f"Google検索結果: {len(search_results)}件")
+            
             for i, item in enumerate(search_results, 1):
                 logger.info(f"[{i}] {item['title']} {item['link']}")
-            
-            print(f"Google検索結果: {len(search_results)}件")
-            for i, item in enumerate(search_results, 1):
                 print(f"[{i}] {item['title']} {item['link']}")
             
             # 再帰的スクレイピング・AI解析
@@ -152,97 +222,73 @@ def main(test_company_info=None):
             found_match = False
             
             for i, item in enumerate(search_results, 1):
-                if found_match:
+                if check_early_termination() or found_match:
+                    logger.info(f"早期終了フラグまたは高スコア検出により検索{i}以降をスキップ")
                     break
                 
                 print(f"\n[{i}] 再帰的スクレイピング+AI解析開始: {item['title']}")
                 logger.info(f"[{i}] 再帰的スクレイピング+AI解析開始: {item['link']}")
                 
                 try:
-                    # タイムアウト付きで再帰的スクレイピング+AI解析を実行
-                    @timeout_decorator(per_processing_time)
-                    def process_recursive_pages():
-                        # 再帰的スクレイピング実行
-                        scraped_pages = scrape_recursive(
-                            item['link'], 
-                            depth=1, 
-                            max_depth=max_scrape_depth,
-                            timeout=10
-                        )
-                        
-                        if not scraped_pages:
-                            return []
-                        
-                        print(f"[{i}] 再帰的スクレイピング完了: {len(scraped_pages)}ページ")
-                        logger.info(f"[{i}] 再帰的スクレイピング完了: {len(scraped_pages)}ページ")
-                        
-                        page_results = []
-                        
-                        # 各ページごとにAI解析実行
-                        for page_idx, scraped_result in enumerate(scraped_pages, 1):
-                            if 'error' in scraped_result:
-                                continue
-                                
-                            print(f"[{i}-{page_idx}] AI解析開始: {scraped_result.get('title', '')[:30]}...")
-                            logger.info(f"[{i}-{page_idx}] AI解析開始: {scraped_result.get('url', '')}")
-                            
-                            from analyzer import ai_analyze_content
-                            analysis_result = ai_analyze_content(
-                                application_info,
-                                scraped_result,
-                                config["OLLAMA_API_URL"],
-                                config["OLLAMA_MODEL"]
-                            )
-                              # 解析結果を追加
-                            analysis_result.update({
-                                "search_rank": i,
-                                "page_rank": page_idx,
-                                "url": scraped_result.get('url', ''),
-                                "title": scraped_result.get('title', ''),
-                                "scraped_content_length": len(scraped_result.get('content', ''))
-                            })
-                            
-                            page_results.append(analysis_result)
-                            
-                            score = analysis_result.get("score", 0.0)
-                            print(f"[{i}-{page_idx}] AI解析完了: スコア={score:.3f}")
-                            logger.info(f"[{i}-{page_idx}] AI解析結果: スコア={score:.3f}")
-                            
-                            # 閾値チェック - 95%以上なら即時終了
-                            if score >= score_threshold:
-                                print(f"\n★★★ 高スコア検出! (スコア={score:.3f} >= {score_threshold}) 再帰処理を終了します ★★★")
-                                logger.info(f"高スコア検出により再帰処理早期終了: スコア={score:.3f}")
-                                return page_results
-                        
-                        return page_results
+                    # 再帰的スクレイピング実行
+                    scraped_pages = scrape_recursive(
+                        item['link'], 
+                        depth=1, 
+                        max_depth=max_scrape_depth,
+                        timeout=10
+                    )
                     
-                    # タイムアウト付き実行
-                    page_analysis_results = process_recursive_pages()
-                    
-                    if page_analysis_results:
-                        all_analysis_results.extend(page_analysis_results)
-                        
-                        # 最高スコアをチェックして早期終了判定
-                        max_score = max(r.get("score", 0.0) for r in page_analysis_results)
-                        best_result = max(page_analysis_results, key=lambda x: x.get("score", 0.0))
-                        
-                        print(f"[{i}] 再帰的解析完了: 最高スコア={max_score:.3f}, 理由={best_result.get('reasoning', '')}")
-                        logger.info(f"[{i}] 再帰的解析結果: 最高スコア={max_score:.3f}")
-                        
-                        # 閾値チェック - 95%以上なら全体のクエリ処理も終了
-                        if max_score >= score_threshold:
-                            print(f"\n★★★ 高スコア検出! (スコア={max_score:.3f} >= {score_threshold}) 検索を終了します ★★★")
-                            logger.info(f"高スコア検出によりクエリ{idx}で早期終了: スコア={max_score:.3f}")
-                            found_match = True
-                            break
-                    else:
+                    if not scraped_pages:
                         print(f"[{i}] 再帰的スクレイピング失敗: 内容を取得できませんでした")
                         logger.warning(f"[{i}] 再帰的スクレイピング失敗: {item['link']}")
-                
-                except TimeoutException:
-                    print(f"[{i}] タイムアウト({per_processing_time}秒): {item['title']}")
-                    logger.warning(f"[{i}] タイムアウト({per_processing_time}秒): {item['link']}")
-                
+                        continue
+                    
+                    print(f"[{i}] 再帰的スクレイピング完了: {len(scraped_pages)}ページ")
+                    logger.info(f"[{i}] 再帰的スクレイピング完了: {len(scraped_pages)}ページ")
+                    
+                    page_results = []
+                      # 各ページごとにAI解析実行（早期終了チェック付き）
+                    for page_idx, scraped_result in enumerate(scraped_pages, 1):
+                        if check_early_termination():
+                            logger.info(f"[{i}-{page_idx}] 早期終了フラグにより残りのページ解析をスキップ")
+                            break
+                            
+                        if 'error' in scraped_result:
+                            # エラー内容をログに記録
+                            error_msg = scraped_result.get('error', '不明なエラー')
+                            print(f"[{i}-{page_idx}] スクレイピングエラーによりスキップ: {error_msg}")
+                            logger.warning(f"[{i}-{page_idx}] スクレイピングエラー: {scraped_result.get('url', '')} - {error_msg}")
+                            continue
+                          # 単一ページ処理（関連性チェック含む）
+                        analysis_result = process_single_page(
+                            application_info, scraped_result, config, i, page_idx, logger
+                        )
+                        
+                        if analysis_result is None:
+                            continue
+                        
+                        page_results.append(analysis_result)
+                        score = analysis_result.get("score", 0.0)
+                        
+                        # 閾値チェック - 95%以上なら即時終了
+                        if score >= score_threshold:
+                            print(f"\n★★★ 高スコア検出! (スコア={score:.3f} >= {score_threshold}) 処理を終了します ★★★")
+                            logger.info(f"高スコア検出により処理早期終了: スコア={score:.3f}")
+                            set_early_termination()  # グローバル早期終了フラグを設定
+                            found_match = True
+                            break
+                    
+                    if page_results:
+                        all_analysis_results.extend(page_results)
+                        
+                        # 最高スコアをチェック
+                        max_score = max(r.get("score", 0.0) for r in page_results)
+                        print(f"[{i}] 再帰的解析完了: 最高スコア={max_score:.3f}")
+                        logger.info(f"[{i}] 再帰的解析結果: 最高スコア={max_score:.3f}")
+                        
+                        if found_match:
+                            break
+                    
                 except Exception as e:
                     print(f"[{i}] スクレイピング/解析エラー: {str(e)}")
                     logger.error(f"[{i}] スクレイピング/解析エラー: {item['link']} {e}", exc_info=True)
@@ -274,23 +320,34 @@ def main(test_company_info=None):
     best_score = all_query_results[0].get("score", 0.0) if all_query_results else 0.0
     found = best_score >= score_threshold
     
-    # 判定結果のJSON/Markdown出力
-    from utils import write_result_json, write_result_markdown
-    result = {
+    # 判定結果のJSON/Markdown出力（標準化フォーマット適用）
+    raw_result = {
         "company": company,
         "address": address,
         "tel": tel,
         "other": other,
         "results": all_query_results,
-        "searched_urls": total_searched_urls,
+        "searched_url_count": total_searched_urls,
         "found": found,
-        "early_termination": overall_found_match
+        "early_terminated": overall_found_match
     }
     
-    write_result_json(result)
-    write_result_markdown(result)
+    # 設計書準拠の標準化フォーマットに変換
+    standardized_result = standardize_output_format(raw_result)
     
-    return result
+    # ファイル出力
+    write_result_json(standardized_result)
+    write_result_markdown(standardized_result)
+    
+    # ログ出力
+    logger.info(f"判定結果出力完了: found={standardized_result['found']}, searched_urls={standardized_result['searched_url_count']}, early_terminated={standardized_result['early_terminated']}")
+    print(f"✅ 判定結果をresult.jsonとresult.mdに出力しました")
+    print(f"📊 最終結果: found={standardized_result['found']}, URLs={standardized_result['searched_url_count']}, 早期終了={standardized_result['early_terminated']}")
+    
+    return standardized_result
+
+def main(test_company_info=None):
+    return main_fixed(test_company_info)
 
 if __name__ == "__main__":
     main()
