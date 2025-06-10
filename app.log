@@ -1662,3 +1662,295 @@
 2025-06-10 23:35:06,152 - root - INFO - [1] ページ解析結果: 解析件数=2, 最高スコア=1.000
 2025-06-10 23:35:06,152 - root - INFO - 高スコア検出により全クエリ処理を早期終了
 2025-06-10 23:35:06,153 - root - INFO - 判定結果出力完了: found=True, searched_urls=2, early_terminated=True
+2025-06-10 23:45:57,581 - root - INFO - ============================================================
+2025-06-10 23:45:57,581 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:45:57,581 - root - INFO - ============================================================
+2025-06-10 23:45:57,582 - root - INFO - 本日のGoogle Search API使用状況: 37/100
+2025-06-10 23:45:57,582 - root - INFO - テストモードで実行中
+2025-06-10 23:45:57,582 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:46:03,975 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:46:03,975 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:46:03,977 - root - INFO - API使用件数を更新: 37 → 38
+2025-06-10 23:46:03,977 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:46:04,387 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:46:04,387 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:46:04,388 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:46:04,388 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:46:04,389 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:46:04,389 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:46:04,389 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:46:04,390 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:46:04,390 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:46:04,664 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:46:04,830 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:46:04,830 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:46:08,713 - root - INFO - [1-0] AI解析結果: スコア=0.950
+2025-06-10 23:46:08,713 - root - INFO - メインページで高スコア検出により処理早期終了: スコア=0.950
+2025-06-10 23:46:08,714 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-10 23:46:08,715 - root - INFO - 判定結果出力完了: found=True, searched_urls=1, early_terminated=True
+2025-06-10 23:47:24,177 - root - INFO - ============================================================
+2025-06-10 23:47:24,177 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:47:24,177 - root - INFO - ============================================================
+2025-06-10 23:47:24,178 - root - INFO - 本日のGoogle Search API使用状況: 38/100
+2025-06-10 23:47:24,178 - root - INFO - テストモードで実行中
+2025-06-10 23:47:24,178 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:47:27,300 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:47:27,300 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:47:27,302 - root - INFO - API使用件数を更新: 38 → 39
+2025-06-10 23:47:27,302 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:47:27,714 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:47:27,715 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:47:27,715 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:47:27,715 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:47:27,715 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:47:27,716 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:47:27,716 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:47:27,717 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:47:27,717 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:47:28,041 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:47:28,200 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:47:28,200 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:47:32,442 - root - INFO - [1-0] AI解析結果: スコア=0.850
+2025-06-10 23:47:32,443 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:47:32,631 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:47:33,800 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-10 23:47:34,977 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/40538400.html (タイトル: トヨタは、2029年度東京・品川に、新東京本社を開業します | コーポレート | グローバルニュース...)
+2025-06-10 23:47:36,129 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-10 23:47:37,322 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:47:38,467 - root - INFO - スクレイピング成功: https://global.toyota/jp/album/images/42831939/ (タイトル: 品川・新東京本社の2029年度開業に向け着工 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:47:39,629 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-10 23:47:40,771 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:47:41,913 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 23:47:43,054 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:47:43,055 - root - INFO - [1] 関連ページスクレイピング完了: 10ページ
+2025-06-10 23:47:43,055 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:47:48,037 - root - INFO - [1-1] AI解析結果: スコア=1.000
+2025-06-10 23:47:48,037 - root - INFO - 関連ページで高スコア検出により処理早期終了: スコア=1.000
+2025-06-10 23:47:48,038 - root - INFO - [1] ページ解析結果: 解析件数=2, 最高スコア=1.000
+2025-06-10 23:47:48,038 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-10 23:47:48,039 - root - INFO - 判定結果出力完了: found=True, searched_urls=2, early_terminated=True
+2025-06-10 23:49:36,020 - root - INFO - ============================================================
+2025-06-10 23:49:36,020 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:49:36,020 - root - INFO - ============================================================
+2025-06-10 23:49:36,021 - root - INFO - 本日のGoogle Search API使用状況: 39/100
+2025-06-10 23:49:36,021 - root - INFO - テストモードで実行中
+2025-06-10 23:49:36,023 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:49:39,145 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:49:39,145 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:49:39,147 - root - INFO - API使用件数を更新: 39 → 40
+2025-06-10 23:49:39,147 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:49:39,476 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:49:39,477 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:49:39,478 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:49:39,478 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:49:39,478 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:49:39,479 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:49:39,479 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:49:39,479 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:49:39,480 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:49:39,911 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:49:40,094 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:49:40,094 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:49:43,931 - root - INFO - [1-0] AI解析結果: スコア=0.900
+2025-06-10 23:49:43,931 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:49:44,094 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:49:45,309 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-10 23:49:46,510 - root - INFO - スクレイピング成功: https://global.toyota/jp/album/images/42817470/ (タイトル: カローラ クロス GR SPORT | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:49:47,631 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:49:48,778 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-10 23:49:49,922 - root - INFO - スクレイピング成功: https://global.toyota/jp/mobility/beyond-zero/ (タイトル: BEYOND ZERO | モビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:49:51,093 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 23:49:52,306 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:49:53,470 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-10 23:49:54,597 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:49:54,598 - root - INFO - [1] 関連ページスクレイピング完了: 10ページ
+2025-06-10 23:49:54,598 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:49:58,569 - root - INFO - [1-1] AI解析結果: スコア=1.000
+2025-06-10 23:49:58,569 - root - INFO - 関連ページで高スコア検出により処理早期終了: スコア=1.000
+2025-06-10 23:49:58,570 - root - INFO - [1] ページ解析結果: 解析件数=2, 最高スコア=1.000
+2025-06-10 23:49:58,570 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-10 23:49:58,571 - root - INFO - 判定結果出力完了: found=True, searched_urls=2, early_terminated=True
+2025-06-10 23:51:04,456 - root - INFO - ============================================================
+2025-06-10 23:51:04,456 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:51:04,456 - root - INFO - ============================================================
+2025-06-10 23:51:04,457 - root - INFO - 本日のGoogle Search API使用状況: 40/100
+2025-06-10 23:51:04,457 - root - INFO - テストモードで実行中
+2025-06-10 23:51:04,457 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:51:07,546 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:51:07,546 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:51:07,549 - root - INFO - API使用件数を更新: 40 → 41
+2025-06-10 23:51:07,550 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:51:07,920 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:51:07,920 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:51:07,920 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:51:07,921 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:51:07,921 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:51:07,921 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:51:07,921 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:51:07,922 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:51:07,922 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:51:08,338 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:51:08,493 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:51:08,494 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:51:12,824 - root - INFO - [1-0] AI解析結果: スコア=0.900
+2025-06-10 23:51:12,825 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:51:12,976 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:51:14,083 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:51:15,258 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-10 23:51:16,503 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 23:51:17,639 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-10 23:51:18,776 - root - INFO - スクレイピング成功: https://global.toyota/jp/mobility/beyond-zero/ (タイトル: BEYOND ZERO | モビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:51:19,927 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:51:21,117 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-10 23:51:22,307 - root - INFO - スクレイピング成功: https://global.toyota/jp/album/images/42817470/ (タイトル: カローラ クロス GR SPORT | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:51:23,446 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:51:23,448 - root - INFO - [1] 関連ページスクレイピング完了: 10ページ
+2025-06-10 23:51:23,448 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:52:48,850 - root - INFO - ============================================================
+2025-06-10 23:52:48,851 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:52:48,851 - root - INFO - ============================================================
+2025-06-10 23:52:48,851 - root - INFO - 本日のGoogle Search API使用状況: 41/100
+2025-06-10 23:52:48,852 - root - INFO - テストモードで実行中
+2025-06-10 23:52:48,852 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:52:52,021 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:52:52,021 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:52:52,024 - root - INFO - API使用件数を更新: 41 → 42
+2025-06-10 23:52:52,025 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:52:52,697 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:52:52,698 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:52:52,698 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:52:52,698 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:52:52,698 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:52:52,699 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:52:52,699 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:52:52,699 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:52:52,700 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:52:52,970 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:52:53,129 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:52:53,130 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:52:57,418 - root - INFO - [1-0] AI解析結果: スコア=0.900
+2025-06-10 23:52:57,419 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:52:57,599 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:52:58,757 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 23:52:59,926 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/executives/ (タイトル: 役員 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:53:01,143 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-10 23:53:02,326 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:53:03,465 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:53:04,645 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-10 23:53:05,797 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-10 23:53:06,966 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:53:06,966 - root - INFO - [1] 関連ページスクレイピング完了: 9ページ
+2025-06-10 23:53:06,967 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:53:11,814 - root - INFO - [1-1] AI解析結果: スコア=1.000
+2025-06-10 23:53:11,814 - root - INFO - 関連ページで高スコア検出により処理早期終了: スコア=1.000
+2025-06-10 23:53:11,814 - root - INFO - [1] ページ解析結果: 解析件数=2, 最高スコア=1.000
+2025-06-10 23:53:11,815 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-10 23:53:11,816 - root - INFO - 判定結果出力完了: found=True, searched_urls=2, early_terminated=True
+2025-06-10 23:55:36,381 - root - INFO - ============================================================
+2025-06-10 23:55:36,382 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:55:36,382 - root - INFO - ============================================================
+2025-06-10 23:55:36,382 - root - INFO - 本日のGoogle Search API使用状況: 42/100
+2025-06-10 23:55:36,383 - root - INFO - テストモードで実行中
+2025-06-10 23:55:36,383 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:55:39,754 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:55:39,754 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:55:39,757 - root - INFO - API使用件数を更新: 42 → 43
+2025-06-10 23:55:39,758 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:55:40,110 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:55:40,111 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:55:40,111 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:55:40,111 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:55:40,111 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:55:40,111 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:55:40,113 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:55:40,113 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:55:40,113 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:55:40,442 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:55:40,602 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:55:40,603 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:55:44,491 - root - INFO - [1-0] AI解析結果: スコア=0.850
+2025-06-10 23:55:44,491 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:55:44,654 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:55:45,834 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 23:55:47,005 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/executives/ (タイトル: 役員 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:55:48,177 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-11 00:01:11,612 - root - INFO - ============================================================
+2025-06-11 00:01:11,613 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-11 00:01:11,613 - root - INFO - ============================================================
+2025-06-11 00:01:11,613 - root - INFO - 本日のGoogle Search API使用状況: 0/100
+2025-06-11 00:01:11,613 - root - INFO - テストモードで実行中
+2025-06-11 00:01:11,614 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-11 00:01:17,624 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-11 00:01:17,625 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-11 00:01:17,627 - root - INFO - API使用件数を更新: 0 → 1
+2025-06-11 00:01:17,627 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-11 00:01:17,969 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-11 00:01:17,969 - root - INFO - Google検索結果件数: 5件
+2025-06-11 00:01:17,969 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-11 00:01:17,970 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-11 00:01:17,970 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-11 00:01:17,970 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-11 00:01:17,970 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-11 00:01:17,971 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-11 00:01:17,971 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-11 00:01:18,270 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-11 00:01:18,456 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-11 00:01:18,456 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-11 00:01:22,323 - root - INFO - [1-0] AI解析結果: スコア=0.400
+2025-06-11 00:01:22,323 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-11 00:01:22,479 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-11 00:01:23,695 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-11 00:01:24,832 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-11 00:01:26,039 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-11 00:01:27,215 - root - INFO - スクレイピング成功: https://global.toyota/jp/album/images/42817470/ (タイトル: カローラ クロス GR SPORT | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-11 00:01:28,359 - root - INFO - スクレイピング成功: https://global.toyota/jp/mobility/beyond-zero/ (タイトル: BEYOND ZERO | モビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-11 00:01:29,522 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-11 00:01:30,644 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-11 00:01:31,843 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-11 00:01:32,986 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-11 00:01:32,987 - root - INFO - [1] 関連ページスクレイピング完了: 10ページ
+2025-06-11 00:01:32,987 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-11 00:01:37,474 - root - INFO - [1-1] AI解析結果: スコア=1.000
+2025-06-11 00:01:37,475 - root - INFO - 関連ページで高スコア検出により処理早期終了: スコア=1.000
+2025-06-11 00:01:37,475 - root - INFO - [1] ページ解析結果: 解析件数=2, 最高スコア=1.000
+2025-06-11 00:01:37,476 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-11 00:01:37,477 - root - INFO - 判定結果出力完了: found=True, searched_urls=2, early_terminated=True
+2025-06-11 00:02:52,924 - root - INFO - ============================================================
+2025-06-11 00:02:52,925 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-11 00:02:52,925 - root - INFO - ============================================================
+2025-06-11 00:02:52,925 - root - INFO - 本日のGoogle Search API使用状況: 1/100
+2025-06-11 00:02:52,926 - root - INFO - テストモードで実行中
+2025-06-11 00:02:52,926 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-11 00:03:00,824 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-11 00:03:00,825 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-11 00:03:00,827 - root - INFO - API使用件数を更新: 1 → 2
+2025-06-11 00:03:00,827 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=3
+2025-06-11 00:03:01,240 - root - INFO - Google検索完了: 3件の結果を取得
+2025-06-11 00:03:01,240 - root - INFO - Google検索結果件数: 3件
+2025-06-11 00:03:01,241 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-11 00:03:01,241 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-11 00:03:01,241 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-11 00:03:01,242 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-11 00:03:01,242 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-11 00:03:01,542 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-11 00:03:01,691 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-11 00:03:01,692 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-11 00:03:05,239 - root - INFO - [1-0] AI解析結果: スコア=0.800
+2025-06-11 00:03:05,239 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-11 00:03:05,393 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-11 00:03:06,602 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-11 00:03:07,722 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-11 00:03:08,903 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-11 00:03:10,022 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-11 00:03:11,190 - root - INFO - スクレイピング成功: https://global.toyota/jp/album/images/42817470/ (タイトル: カローラ クロス GR SPORT | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-11 00:03:12,366 - root - INFO - スクレイピング成功: https://global.toyota/jp/mobility/beyond-zero/ (タイトル: BEYOND ZERO | モビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-11 00:03:13,515 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-11 00:03:14,686 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-11 00:03:15,923 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-11 00:03:15,924 - root - INFO - [1] 関連ページスクレイピング完了: 10ページ
+2025-06-11 00:03:15,924 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-11 00:03:19,296 - root - INFO - [1-1] AI解析結果: スコア=1.000
+2025-06-11 00:03:19,297 - root - INFO - 関連ページで高スコア検出により処理早期終了: スコア=1.000
+2025-06-11 00:03:19,297 - root - INFO - [1] ページ解析結果: 解析件数=2, 最高スコア=1.000
+2025-06-11 00:03:19,298 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-11 00:03:19,299 - root - INFO - 判定結果出力完了: found=True, searched_urls=2, early_terminated=True

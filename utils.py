@@ -177,8 +177,8 @@ def write_result_markdown_table(result: dict, file_path: str = "result.md"):
                     display_url = url
                 
                 # 理由が長い場合は短縮表示
-                if len(reason) > 60:
-                    display_reason = reason[:57] + "..."
+                if len(reason) > 200:
+                    display_reason = reason[:200] + "..."
                 else:
                     display_reason = reason
                 

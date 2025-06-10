@@ -12,6 +12,7 @@ def load_config():
             return int(val)
         except Exception:
             return default
+        
     config = {
         "GOOGLE_API_KEY": os.getenv("GOOGLE_API_KEY"),
         "GOOGLE_CSE_ID": os.getenv("GOOGLE_CSE_ID"),

@@ -70,6 +70,7 @@ def process_single_page(application_info, scraped_result, config, search_rank, p
     logger.info(f"[{search_rank}-{page_rank}] AI解析開始: {url}")
     
     try:
+        print(f"ollama model: {config['OLLAMA_MODEL']}")
         from analyzer import ai_analyze_content
         analysis_result = ai_analyze_content(
             application_info,

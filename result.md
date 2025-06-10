@@ -12,8 +12,8 @@
 
 | スコア | URL | 判定理由 |
 |-------|-----|----------|
-| 1.00 | https://global.toyota/jp/company/profile/overview/ | STEP1:会社名判定=1.0, STEP2:住所判定=1.0, STEP3:電話番号判定=1.0 |
-| 0.85 | https://global.toyota/jp/company/profile/overview/ | STEP1:会社名判定=0.5点, STEP2:住所判定=0.25点, STEP3:電話番号判定=0.25点, S... |
+| 1.00 | https://global.toyota/jp/company/profile/overview/ | STEP1:会社名判定=0.5点, STEP2:住所判定=0.25点, STEP3:電話番号判定=0.25点, 合計=0.5+0.25+0.25=1.0点 |
+| 0.80 | https://global.toyota/jp/company/profile/overview/ | STEP1:会社名判定=完全一致(X=0.5), STEP2:住所判定=完全一致(Y=0.25), STEP3:電話番号判定=完全一致(Z=0.25), 合計=X+Y+Z点 |
 
 ---
 *この結果は自動生成されました*
