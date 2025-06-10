@@ -27,8 +27,7 @@ def google_search(query, api_key, cse_id, num=8, config=None):
             time.sleep(wait_time)
         else:
             logging.warning(f"レート制限検出: {wait_time:.1f}秒の待機が推奨されます")
-    
-    # API呼び出し記録（レート制限用）
+      # API呼び出し記録（レート制限用およびAPI使用件数更新）
     record_api_call(config)
     
     url = "https://www.googleapis.com/customsearch/v1"
@@ -43,9 +42,6 @@ def google_search(query, api_key, cse_id, num=8, config=None):
         logging.info(f"Google検索実行: クエリ='{query}', 最大件数={num}")
         response = requests.get(url, params=params, timeout=30)
         response.raise_for_status()
-        
-        # API使用件数を更新
-        update_api_usage(1)
         
         data = response.json()
         results = []

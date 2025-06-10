@@ -37,11 +37,11 @@ def ai_generate_query(application_info, ollama_url, ollama_model, max_queries=1)
 4. 政府機関、TSRレポート、消防計画などの無関係サイトが出ないよう注意
 
 【生成すべきクエリの例】
-- "{company_name} {address} {tel} {other_info}"
-- "{company_name} {address.split()[0] if address else ''} {tel.split()[0] if tel else ''}"
-- "{company_name} {address}"
-- "{company_name} {tel}"
-- "{company_name} {other_info}"
+- "{company_name} 概要"
+- "{company_name} 沿革"
+- "{company_name} 歴史"
+- "{company_name} history"
+- "{company_name} 公式"
 
 【出力形式】
 検索クエリのみを1行ずつ出力してください。説明文、番号、記号、余計な文字は不要です。
@@ -67,6 +67,11 @@ def ai_generate_query(application_info, ollama_url, ollama_model, max_queries=1)
     
     # クエリリストに分割し、不要な行を除去
     queries = []
+    queries.append(f"{company_name} {address.split()[0] if address else ''} {tel.split()[0] if tel else ''}")
+    queries.append(f"{company_name} {address}")
+    queries.append(f"{company_name} {tel}")
+    queries.append(f"{company_name} {other_info[0] if other_info else ''}")
+    queries.append(f"{company_name}")
     for line in content.strip().split("\n"):
         line = line.strip()
         if not line:
@@ -108,7 +113,6 @@ def ai_generate_query(application_info, ollama_url, ollama_model, max_queries=1)
     return unique_queries[:max_queries]
 
 
-
 def ai_analyze_content(application_info, scraped_content, ollama_url, ollama_model, _stop_flag=None):
     """
     申請情報とスクレイピング内容をAIで解析し、一致度をスコア化する
@@ -139,13 +143,14 @@ def ai_analyze_content(application_info, scraped_content, ollama_url, ollama_mod
     address = application_info[1] if len(application_info) > 1 else ""
     tel = application_info[2] if len(application_info) > 2 else ""
     other_info = application_info[3:] if len(application_info) > 3 else []
-    
-    # スクレイピング内容を要約（長すぎる場合はトランケート）
+      # スクレイピング内容を要約（長すぎる場合はトランケート）
     content = scraped_content.get("content", "")[:3000]  # 最大3000文字
     title = scraped_content.get("title", "")
     url = scraped_content.get("url", "")
+    
     prompt = f"""
-申請された企業情報と取得したウェブページを比較し、企業の基本情報として適切で同一会社である可能性をスコア化してください。
+申請された企業情報と取得したウェブページを比較し、企業の実在性と同一性を厳密に評価してスコア化してください。
+判定は必ずステップバイステップで行い、最終的なスコアを0.0から1.0の範囲で出力してください。
 
 【申請情報】
 会社名: {company_name}
@@ -158,32 +163,66 @@ def ai_analyze_content(application_info, scraped_content, ollama_url, ollama_mod
 URL: {url}
 内容: {content}
 
-【重要な判定ルール】
-1. コンテンツタイプの評価:
-   - 企業概要・会社案内・基本情報: 高評価
-   - 採用情報・IR情報・財務情報: 中評価
-   - 製品情報・サービス紹介: 中評価
-   - プレスリリース・ニュース: 低評価
-   - 製品リコール・問題対応・過去の障害情報: 大幅減点
-   - サンプル・例・テンプレート: 大幅減点
+【厳密な判定ルール - 必ず以下の基準に従ってください】
+【重要】郵便番号の〒や括弧()は無視して判定してください
 
-4. 企業情報の一致度:
-   - 会社名完全一致: +0.5 (但しコンテンツタイプが適切な場合のみ)
-   - 会社名部分一致: +0.2 (但しコンテンツタイプが適切な場合のみ)
-   - 住所完全一致: +0.25
-   - 住所部分一致: +0.15
-   - 電話番号一致: +0.25
+1. 会社名の判定:
+   - 完全一致（〒、括弧、英語表記は無視）: +0.5点
+   - 例: "トヨタ自動車株式会社" = "トヨタ自動車株式会社（TOYOTA MOTOR CORPORATION）" → 完全一致
+   - 部分一致（略称・旧称等）: +0.2点
+   - 不一致または無関係: 0点
+
+2. 住所の判定:
+   - 完全一致（〒郵便番号は無視、番地まで一致）: +0.25点
+   - 例1: "愛知県豊田市トヨタ町1番地" = "〒471-8571　愛知県豊田市トヨタ町1番地" → 完全一致 0.25点
+   - 例2: "東京都千代田区1-1-1" = "〒100-0001 東京都千代田区1-1-1" → 完全一致 0.25点
+   - 部分一致（市区町村レベル一致）: +0.15点
+   - 例: "愛知県豊田市" のみ一致 → 部分一致 0.15点
+   - 都道府県のみ一致: +0.05点
+   - 不一致: 0点
+
+3. 電話番号の判定:
+   - 完全一致（ハイフンの有無無視）: +0.25点
+   - 不一致: 0点
+
+【特別加点・減点ルール】
+- 公式サイトまたは信頼できる企業情報サイト: +0.1点
+- 政府機関・商工会議所等の公的情報: +0.1点
+- 古い情報・更新されていない情報: -0.1点
+- 個人ブログ・まとめサイト等の非公式情報: -0.2点
+
+【計算方法】
+1. 上記ルールに基づいて各項目の点数を算出
+2. 合計点数を計算（上限1.0、下限0.0）
+3. 最終スコアを0.0-1.0の範囲で出力
+
+【計算検証】必ず以下の手順で計算してください：
+STEP1: 会社名判定 → X点
+STEP2: 住所判定 → Y点  
+STEP3: 電話番号判定 → Z点
+STEP4: 特別加点・減点 → W点(加点は正、減点は負)
+STEP5: 合計 = X + Y + Z + W
+STEP6: 上限1.0で切り捨て
+
+【判定例】
+- 会社名完全一致(0.5) + 住所完全一致(0.25) + 電話番号一致(0.25) = 1.0
+- 会社名完全一致(0.5) + 住所部分一致(0.15) + 電話番号一致(0.25) = 0.9
+- 会社名部分一致(0.2) + 住所部分一致(0.15) + 電話番号不一致(0) = 0.35
 
 【出力形式】
-必ず以下のJSON形式のみで回答してください：
+以下のJSON形式で回答してください。計算過程や説明文は一切出力せず、JSONのみを出力してください：
+
 {{
-    "score": 0.85,
-    "reasoning": "企業概要ページで会社名が完全一致し、住所も部分一致している。企業の基本情報として適切。",
-    "matched_info": ["会社名完全一致", "住所部分一致", "企業基本情報"],
-    "confidence": 0.9
+    "score": 計算した正確な一致度スコア（小数点第3位まで）,
+    "reasoning": "STEP1:会社名判定=X点, STEP2:住所判定=Y点, STEP3:電話番号判定=Z点, STEP4:特別加点=W点, 合計=X+Y+Z+W点",
+    "matched_info": ["具体的に一致した項目のリスト"],
+    "confidence": 判定の確実性を示す信頼度スコア（0.0-1.0）
 }}
 
-重要: JSON以外の文字は一切出力しないでください。
+【絶対厳守】
+- JSON以外の文字（説明、計算過程、コメント等）は一切出力禁止
+- JSONの前後に空行や文字を含めない
+- 波括弧{{}}で始まり波括弧で終わる形式のみ
 """
 
     payload = {
@@ -201,9 +240,25 @@ URL: {url}
         # stream=Falseの場合、レスポンスは単一のJSONオブジェクト
         response_data = response.json()
         content = response_data.get("message", {}).get("content", "")
+          # JSONレスポンスをパース
+        # 生の情報をprintする
+        print(f"AI応答(raw): {content}")  # 完全な応答を表示
         
-        # JSONレスポンスをパース
-        result = json.loads(content.strip())
+        # JSONのみを抽出する処理
+        try:
+            # 最初の{から最後の}までを抽出
+            start_idx = content.find('{')
+            end_idx = content.rfind('}')
+            if start_idx != -1 and end_idx != -1:
+                json_content = content[start_idx:end_idx+1]
+                print(f"抽出したJSON: {json_content}")
+                result = json.loads(json_content)
+            else:
+                raise json.JSONDecodeError("JSON形式が見つかりません", content, 0)
+        except json.JSONDecodeError:
+            # JSONが見つからない場合の処理
+            print(f"JSON抽出失敗。元の応答: {content[:200]}...")
+            result = json.loads(content.strip())
         
         # スコアを0.0-1.0の範囲に制限
         result["score"] = max(0.0, min(1.0, float(result.get("score", 0.0))))

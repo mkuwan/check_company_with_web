@@ -1,0 +1,1664 @@
+2025-06-10 21:24:58,320 - root - INFO - ============================================================
+2025-06-10 21:24:58,320 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 21:24:58,320 - root - INFO - ============================================================
+2025-06-10 21:24:58,320 - root - INFO - 本日のGoogle Search API使用状況: 16/100
+2025-06-10 21:24:58,321 - root - INFO - テストモードで実行中
+2025-06-10 21:24:58,321 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 21:25:17,076 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', '"トヨタ自動車株式会社" + "愛知県豊田市トヨタ町1番地" + "0565-28-2121"', '"トヨタ自動車株式会社" + 愛知県豊田市トヨタ町1番地 + 0565-28-2121']
+2025-06-10 21:25:17,078 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 21:25:17,080 - root - INFO - API使用件数を更新: 16 → 17
+2025-06-10 21:25:17,081 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 21:25:17,677 - root - INFO - API使用件数を更新: 17 → 18
+2025-06-10 21:25:17,678 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 21:25:17,678 - root - INFO - Google検索結果件数: 5件
+2025-06-10 21:25:17,678 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:25:17,679 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 21:25:17,679 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 21:25:17,679 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 21:25:17,679 - root - INFO - [5] 国内生産工場 | 統括会社・生産拠点 | 事業所 | 企業情報 - トヨタ自動車 https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 21:25:17,680 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:25:17,680 - root - INFO - [1-0] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:25:17,926 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:25:21,662 - root - INFO - [1-0] AI解析結果: スコア=0.950
+2025-06-10 21:25:21,663 - root - INFO - メインページで高スコア検出により処理早期終了: スコア=0.950
+2025-06-10 21:25:21,663 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-10 21:25:21,664 - root - INFO - 判定結果出力完了: found=True, searched_urls=5, early_terminated=True
+2025-06-10 21:30:47,260 - root - INFO - ============================================================
+2025-06-10 21:30:47,261 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 21:30:47,261 - root - INFO - ============================================================
+2025-06-10 21:30:47,261 - root - INFO - 本日のGoogle Search API使用状況: 18/100
+2025-06-10 21:30:47,262 - root - INFO - テストモードで実行中
+2025-06-10 21:30:47,262 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 21:30:55,366 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社愛知県豊田市トヨタ町1番地0565-28-2121', 'トヨタ自動車株式会社愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社0565-28-2121']
+2025-06-10 21:30:55,366 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社愛知県豊田市トヨタ町1番地0565-28-2121
+2025-06-10 21:30:55,367 - root - INFO - API使用件数を更新: 18 → 19
+2025-06-10 21:30:55,368 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社愛知県豊田市トヨタ町1番地0565-28-2121', 最大件数=5
+2025-06-10 21:30:55,776 - root - INFO - API使用件数を更新: 19 → 20
+2025-06-10 21:30:55,776 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 21:30:55,776 - root - INFO - Google検索結果件数: 5件
+2025-06-10 21:30:55,777 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:30:55,777 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 21:30:55,777 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 21:30:55,777 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 21:30:55,777 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 21:30:55,778 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:30:55,778 - root - INFO - [1-0] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:30:56,163 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:30:59,836 - root - INFO - [1-0] AI解析結果: スコア=0.900
+2025-06-10 21:30:59,837 - root - INFO - [1] 再帰的スクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:31:02,061 - root - INFO - [1] 再帰的スクレイピング完了: 10ページ
+2025-06-10 21:31:02,061 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:31:05,870 - root - INFO - [1-1] AI解析結果: スコア=0.950
+2025-06-10 21:31:05,871 - root - INFO - 再帰ページで高スコア検出により処理早期終了: スコア=0.950
+2025-06-10 21:31:05,871 - root - INFO - [1] ページ解析結果: 解析件数=2, 最高スコア=0.950
+2025-06-10 21:31:05,871 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-10 21:31:05,872 - root - INFO - 判定結果出力完了: found=True, searched_urls=1, early_terminated=True
+2025-06-10 21:42:28,642 - root - INFO - ============================================================
+2025-06-10 21:42:28,643 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 21:42:28,643 - root - INFO - ============================================================
+2025-06-10 21:42:28,643 - root - INFO - 本日のGoogle Search API使用状況: 20/100
+2025-06-10 21:42:28,644 - root - INFO - テストモードで実行中
+2025-06-10 21:42:28,644 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 21:42:34,924 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社']
+2025-06-10 21:42:34,924 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 21:42:34,927 - root - INFO - API使用件数を更新: 20 → 21
+2025-06-10 21:42:34,927 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 21:42:35,626 - root - INFO - API使用件数を更新: 21 → 22
+2025-06-10 21:42:35,627 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 21:42:35,627 - root - INFO - Google検索結果件数: 5件
+2025-06-10 21:42:35,627 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:42:35,627 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 21:42:35,627 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 21:42:35,627 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 21:42:35,628 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 21:42:35,628 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:42:35,628 - root - INFO - [1-0] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:42:35,927 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:42:39,476 - root - INFO - [1-0] AI解析結果: スコア=0.850
+2025-06-10 21:42:39,476 - root - INFO - [1] 再帰的スクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:42:41,591 - root - INFO - [1] 再帰的スクレイピング完了: 9ページ
+2025-06-10 21:42:41,592 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:42:44,804 - root - INFO - [1-1] AI解析結果: スコア=0.850
+2025-06-10 21:42:44,805 - root - INFO - [1-2] AI解析開始: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular
+2025-06-10 21:42:48,215 - root - INFO - [1-2] AI解析結果: スコア=0.850
+2025-06-10 21:42:48,215 - root - INFO - [1-3] AI解析開始: https://global.toyota/jp/sustainability/sdgs/
+2025-06-10 21:42:51,506 - root - INFO - [1-3] AI解析結果: スコア=0.950
+2025-06-10 21:42:51,506 - root - INFO - 再帰ページで高スコア検出により処理早期終了: スコア=0.950
+2025-06-10 21:42:51,506 - root - INFO - [1] ページ解析結果: 解析件数=4, 最高スコア=0.950
+2025-06-10 21:42:51,507 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-10 21:42:51,508 - root - INFO - 判定結果出力完了: found=True, searched_urls=4, early_terminated=True
+2025-06-10 21:50:22,909 - root - INFO - ============================================================
+2025-06-10 21:50:22,910 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 21:50:22,911 - root - INFO - ============================================================
+2025-06-10 21:50:22,912 - root - INFO - 本日のGoogle Search API使用状況: 22/100
+2025-06-10 21:50:22,912 - root - INFO - テストモードで実行中
+2025-06-10 21:50:22,913 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 21:50:30,972 - root - INFO - AI生成検索クエリリスト: ['"トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地"', '"トヨタ自動車株式会社 0565-28-2121"', '"トヨタ自動車株式会社"']
+2025-06-10 21:50:30,973 - root - INFO - [1] 検索クエリ: "トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地"
+2025-06-10 21:50:30,981 - root - INFO - API使用件数を更新: 22 → 23
+2025-06-10 21:50:30,982 - root - INFO - Google検索実行: クエリ='"トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地"', 最大件数=5
+2025-06-10 21:50:31,435 - root - INFO - API使用件数を更新: 23 → 24
+2025-06-10 21:50:31,435 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 21:50:31,436 - root - INFO - Google検索結果件数: 5件
+2025-06-10 21:50:31,436 - root - INFO - [1] 1 2024 年８月 27 日 各 位 会 社 名 ト ヨ タ 自 動 車 株 式 会 社 代 表 ... https://global.toyota/pages/global_toyota/ir/stock/share/info-20240827.pdf
+2025-06-10 21:50:31,436 - root - INFO - [2] ウェルネスバレーの介護施設で実証したトヨタ自動車株式会社の ... https://www.city.obu.aichi.jp/shisei/koho/pressrelease/1003447/1032721/1033045.html
+2025-06-10 21:50:31,436 - root - INFO - [3] トヨタ自動車「ネットTAM」芸術文化応援プロジェクト開始 ｜ 公益 ... https://www.mecenat.or.jp/ja/news/pressrelease/8661
+2025-06-10 21:50:31,437 - root - INFO - [4] メタルアート[5644]：非上場の親会社等の決算情報に関するお知らせ ... https://www.nikkei.com/nkd/disclosure/tdnr/20220630593140/
+2025-06-10 21:50:31,437 - root - INFO - [5] （別添） 自動車製造業者等19社 １ いすゞ自動車株式会社（東京都 ... https://www.env.go.jp/press/files/jp/9868.pdf
+2025-06-10 21:50:31,437 - root - INFO - [1] ページ解析開始: https://global.toyota/pages/global_toyota/ir/stock/share/info-20240827.pdf
+2025-06-10 21:50:31,437 - root - INFO - [1-0] メインページスクレイピング開始: https://global.toyota/pages/global_toyota/ir/stock/share/info-20240827.pdf
+2025-06-10 21:50:32,305 - root - INFO - [1-0] AI解析開始: https://global.toyota/pages/global_toyota/ir/stock/share/info-20240827.pdf
+2025-06-10 21:50:35,671 - root - INFO - [1-0] AI解析結果: スコア=0.000
+2025-06-10 21:50:35,671 - root - INFO - [1] 再帰的スクレイピング開始: https://global.toyota/pages/global_toyota/ir/stock/share/info-20240827.pdf
+2025-06-10 21:50:36,182 - root - INFO - [1] 再帰的スクレイピング完了: 1ページ
+2025-06-10 21:50:36,182 - root - INFO - [1-1] AI解析開始: https://global.toyota/pages/global_toyota/ir/stock/share/info-20240827.pdf
+2025-06-10 21:50:40,122 - root - INFO - [1-1] AI解析結果: スコア=0.800
+2025-06-10 21:50:40,123 - root - INFO - [1] ページ解析結果: 解析件数=2, 最高スコア=0.800
+2025-06-10 21:50:40,124 - root - INFO - [2] ページ解析開始: https://www.city.obu.aichi.jp/shisei/koho/pressrelease/1003447/1032721/1033045.html
+2025-06-10 21:50:40,124 - root - INFO - [2-0] メインページスクレイピング開始: https://www.city.obu.aichi.jp/shisei/koho/pressrelease/1003447/1032721/1033045.html
+2025-06-10 21:50:40,415 - root - INFO - [2-0] AI解析開始: https://www.city.obu.aichi.jp/shisei/koho/pressrelease/1003447/1032721/1033045.html
+2025-06-10 21:50:44,369 - root - INFO - [2-0] AI解析結果: スコア=0.800
+2025-06-10 21:50:44,370 - root - INFO - [2] 再帰的スクレイピング開始: https://www.city.obu.aichi.jp/shisei/koho/pressrelease/1003447/1032721/1033045.html
+2025-06-10 21:50:59,473 - root - INFO - [2] 再帰的スクレイピング完了: 131ページ
+2025-06-10 21:50:59,473 - root - INFO - [2-1] AI解析開始: https://www.city.obu.aichi.jp/shisei/koho/pressrelease/1003447/1032721/1033045.html
+2025-06-10 21:51:03,293 - root - INFO - [2-1] AI解析結果: スコア=0.850
+2025-06-10 21:51:03,294 - root - INFO - [2-2] AI解析開始: https://www.city.obu.aichi.jp/kurashi/hojyokin/index.html
+2025-06-10 21:51:07,037 - root - INFO - [2-2] AI解析結果: スコア=0.900
+2025-06-10 21:51:07,037 - root - INFO - [2-3] AI解析開始: https://www.city.obu.aichi.jp/kurashi/hojyokin/1028346/index.html
+2025-06-10 21:51:11,050 - root - INFO - [2-3] AI解析結果: スコア=0.000
+2025-06-10 21:51:11,050 - root - INFO - [2-4] AI解析開始: https://www.city.obu.aichi.jp/kurashi/hojyokin/sonotafukushi/index.html
+2025-06-10 21:51:17,706 - root - INFO - [2-4] AI解析結果: スコア=0.000
+2025-06-10 21:51:17,707 - root - INFO - [2-5] AI解析開始: https://www.city.obu.aichi.jp/sodan/index.html
+2025-06-10 21:51:21,701 - root - INFO - [2-5] AI解析結果: スコア=0.800
+2025-06-10 21:51:21,701 - root - INFO - [2-6] AI解析開始: https://www.city.obu.aichi.jp/kurashi/shushoku/index.html
+2025-06-10 21:51:42,977 - root - INFO - [2-6] AI解析結果: スコア=0.850
+2025-06-10 21:51:42,978 - root - INFO - [2-7] AI解析開始: https://www.city.obu.aichi.jp/kurashi/hojyokin/iryo/index.html
+2025-06-10 21:51:46,160 - root - INFO - [2-7] AI解析結果: スコア=0.000
+2025-06-10 21:51:46,160 - root - INFO - [2-8] AI解析開始: https://www.city.obu.aichi.jp/kurashi/index.html
+2025-06-10 21:51:50,072 - root - INFO - [2-8] AI解析結果: スコア=0.500
+2025-06-10 21:51:50,073 - root - INFO - [2-9] AI解析開始: https://www.city.obu.aichi.jp/kurashi/hojyokin/index.html#wrap
+2025-06-10 21:51:53,938 - root - INFO - [2-9] AI解析結果: スコア=0.750
+2025-06-10 21:51:53,939 - root - INFO - [2-10] AI解析開始: https://www.city.obu.aichi.jp/kurashi/hojyokin/kankyo/index.html
+2025-06-10 21:51:57,884 - root - INFO - [2-10] AI解析結果: スコア=0.800
+2025-06-10 21:51:57,884 - root - INFO - [2-11] AI解析開始: https://www.city.obu.aichi.jp/kurashi/kyoudou/index.html
+2025-06-10 21:52:01,832 - root - INFO - [2-11] AI解析結果: スコア=0.850
+2025-06-10 21:52:01,832 - root - INFO - [2-12] AI解析開始: https://www.city.obu.aichi.jp/lifescene/1001003.html
+2025-06-10 21:52:05,672 - root - INFO - [2-12] AI解析結果: スコア=0.800
+2025-06-10 21:52:05,673 - root - INFO - [2-13] AI解析開始: https://www.city.obu.aichi.jp/kurashi/zeikin/index.html
+2025-06-10 21:52:09,493 - root - INFO - [2-13] AI解析結果: スコア=0.800
+2025-06-10 21:52:09,494 - root - INFO - [2-14] AI解析開始: https://www.city.obu.aichi.jp/event_calendar.html
+2025-06-10 21:52:14,734 - root - INFO - [2-14] AI解析結果: スコア=0.000
+2025-06-10 21:52:14,734 - root - INFO - [2-15] AI解析開始: https://www.city.obu.aichi.jp/kurashi/hojyokin/koureifukushi/index.html
+2025-06-10 21:53:28,655 - root - INFO - ============================================================
+2025-06-10 21:53:28,655 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 21:53:28,656 - root - INFO - ============================================================
+2025-06-10 21:53:28,656 - root - INFO - 本日のGoogle Search API使用状況: 24/100
+2025-06-10 21:53:28,656 - root - INFO - テストモードで実行中
+2025-06-10 21:53:28,657 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 21:53:31,962 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 企業情報', 'トヨタ自動車株式会社公式サイト']
+2025-06-10 21:53:31,962 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 21:53:31,965 - root - INFO - API使用件数を更新: 24 → 25
+2025-06-10 21:53:31,967 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 21:53:32,537 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 21:53:32,538 - root - INFO - Google検索結果件数: 5件
+2025-06-10 21:53:32,539 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:53:32,539 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 21:53:32,539 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 21:53:32,539 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 21:53:32,540 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 21:53:32,540 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:53:32,540 - root - INFO - [1-0] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:53:32,907 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:53:36,998 - root - INFO - [1-0] AI解析結果: スコア=0.850
+2025-06-10 21:53:36,999 - root - INFO - [1] 再帰的スクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:53:39,972 - root - INFO - [1] 再帰的スクレイピング完了: 10ページ
+2025-06-10 21:53:39,973 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 21:53:43,767 - root - INFO - [1-1] AI解析結果: スコア=0.000
+2025-06-10 21:53:43,767 - root - INFO - [1-2] AI解析開始: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular
+2025-06-10 21:53:47,918 - root - INFO - [1-2] AI解析結果: スコア=0.550
+2025-06-10 21:53:47,918 - root - INFO - [1-3] AI解析開始: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular
+2025-06-10 21:53:51,838 - root - INFO - [1-3] AI解析結果: スコア=0.200
+2025-06-10 21:53:51,838 - root - INFO - [1-4] AI解析開始: https://global.toyota/jp/album/images/42831939/
+2025-06-10 21:53:55,604 - root - INFO - [1-4] AI解析結果: スコア=0.400
+2025-06-10 21:53:55,605 - root - INFO - [1-5] AI解析開始: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular
+2025-06-10 21:53:59,270 - root - INFO - [1-5] AI解析結果: スコア=0.000
+2025-06-10 21:53:59,271 - root - INFO - [1-6] AI解析開始: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular
+2025-06-10 21:54:02,516 - root - INFO - [1-6] AI解析結果: スコア=0.000
+2025-06-10 21:54:02,517 - root - INFO - [1-7] AI解析開始: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular
+2025-06-10 21:54:06,390 - root - INFO - [1-7] AI解析結果: スコア=0.800
+2025-06-10 21:54:06,390 - root - INFO - [1-8] AI解析開始: https://global.toyota/jp/sustainability/sdgs/
+2025-06-10 21:54:10,152 - root - INFO - [1-8] AI解析結果: スコア=0.900
+2025-06-10 21:54:10,153 - root - INFO - [1-9] AI解析開始: https://global.toyota/jp/newsroom/corporate/40538400.html
+2025-06-10 21:54:14,336 - root - INFO - [1-9] AI解析結果: スコア=0.000
+2025-06-10 21:54:14,336 - root - INFO - [1-10] AI解析開始: https://global.toyota/jp/ir/stock/outline/
+2025-06-10 21:54:18,441 - root - INFO - [1-10] AI解析結果: スコア=0.650
+2025-06-10 21:54:18,441 - root - INFO - [1] ページ解析結果: 解析件数=11, 最高スコア=0.900
+2025-06-10 21:54:18,442 - root - INFO - [2] ページ解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 21:54:18,442 - root - INFO - [2-0] メインページスクレイピング開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 21:54:18,630 - root - INFO - [2-0] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 21:54:22,470 - root - INFO - [2-0] AI解析結果: スコア=0.800
+2025-06-10 21:54:22,470 - root - INFO - [2] 再帰的スクレイピング開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 21:54:30,749 - root - INFO - [2] 再帰的スクレイピング完了: 47ページ
+2025-06-10 21:54:30,750 - root - INFO - [2-1] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 21:54:35,048 - root - INFO - [2-1] AI解析結果: スコア=0.750
+2025-06-10 21:54:35,049 - root - INFO - [2-2] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/reference_guide/index.html
+2025-06-10 21:54:39,057 - root - INFO - [2-2] AI解析結果: スコア=0.000
+2025-06-10 21:54:39,057 - root - INFO - [2-3] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/automotive_business/index.html
+2025-06-10 21:54:43,362 - root - INFO - [2-3] AI解析結果: スコア=0.850
+2025-06-10 21:54:43,362 - root - INFO - [2-4] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/index.html
+2025-06-10 21:54:47,973 - root - INFO - [2-4] AI解析結果: スコア=0.000
+2025-06-10 21:54:47,975 - root - INFO - [2-5] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/company_information/index.html
+2025-06-10 21:54:51,989 - root - INFO - [2-5] AI解析結果: スコア=0.000
+2025-06-10 21:54:51,989 - root - INFO - [2-6] AI解析開始: http://www.toyota.co.jp/
+2025-06-10 21:54:55,548 - root - INFO - [2-6] AI解析結果: スコア=0.700
+2025-06-10 21:54:55,549 - root - INFO - [2-7] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/text/index.html
+2025-06-10 21:54:59,488 - root - INFO - [2-7] AI解析結果: スコア=0.750
+2025-06-10 21:54:59,488 - root - INFO - [2-8] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/overall_chronological_table/1867.html
+2025-06-10 21:55:03,338 - root - INFO - [2-8] AI解析結果: スコア=0.800
+2025-06-10 21:55:03,338 - root - INFO - [2-9] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/sources/index.html
+2025-06-10 21:55:07,264 - root - INFO - [2-9] AI解析結果: スコア=0.850
+2025-06-10 21:55:07,264 - root - INFO - [2-10] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/terms_of_use/index.html
+2025-06-10 21:55:17,343 - root - INFO - [2-10] AI解析結果: スコア=0.000
+2025-06-10 21:55:17,344 - root - INFO - [2-11] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/index.html
+2025-06-10 21:55:21,653 - root - INFO - [2-11] AI解析結果: スコア=0.600
+2025-06-10 21:55:21,653 - root - INFO - [2-12] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/index.html
+2025-06-10 21:55:25,423 - root - INFO - [2-12] AI解析結果: スコア=0.850
+2025-06-10 21:55:25,424 - root - INFO - [2-13] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/reference_guide/index.html#header
+2025-06-10 21:55:28,501 - root - INFO - [2-13] AI解析結果: スコア=0.000
+2025-06-10 21:55:28,502 - root - INFO - [2-14] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/vehicle_lineage/index.html
+2025-06-10 21:55:32,571 - root - INFO - [2-14] AI解析結果: スコア=0.000
+2025-06-10 21:55:32,572 - root - INFO - [2-15] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/business/index.html
+2025-06-10 21:55:36,923 - root - INFO - [2-15] AI解析結果: スコア=0.000
+2025-06-10 21:55:36,924 - root - INFO - [2-16] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/sitemap/index.html
+2025-06-10 21:55:40,486 - root - INFO - [2-16] AI解析結果: スコア=0.000
+2025-06-10 21:55:40,487 - root - INFO - [2-17] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/group/profiles.html
+2025-06-10 21:55:44,552 - root - INFO - [2-17] AI解析結果: スコア=0.800
+2025-06-10 21:55:44,552 - root - INFO - [2-18] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/philosophy/index.html
+2025-06-10 21:55:48,991 - root - INFO - [2-18] AI解析結果: スコア=0.800
+2025-06-10 21:55:48,992 - root - INFO - [2-19] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/automobile_data/production_volumes.html
+2025-06-10 21:55:55,031 - root - INFO - [2-19] AI解析結果: スコア=0.000
+2025-06-10 21:55:55,033 - root - INFO - [2-20] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/facilities/index.html
+2025-06-10 21:55:58,828 - root - INFO - [2-20] AI解析結果: スコア=0.000
+2025-06-10 21:55:58,828 - root - INFO - [2-21] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/automobile_data/vehicle_ownership.html
+2025-06-10 21:56:02,588 - root - INFO - [2-21] AI解析結果: スコア=0.800
+2025-06-10 21:56:02,589 - root - INFO - [2-22] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/group/organization.html
+2025-06-10 21:56:09,281 - root - INFO - [2-22] AI解析結果: スコア=0.000
+2025-06-10 21:56:09,282 - root - INFO - [2-23] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/index.html
+2025-06-10 21:56:13,494 - root - INFO - [2-23] AI解析結果: スコア=0.000
+2025-06-10 21:56:13,494 - root - INFO - [2-24] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/facilities/office/overseas.html
+2025-06-10 21:56:16,932 - root - INFO - [2-24] AI解析結果: スコア=0.250
+2025-06-10 21:56:16,932 - root - INFO - [2-25] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/product_lineup/vehicles.html
+2025-06-10 21:56:20,920 - root - INFO - [2-25] AI解析結果: スコア=0.800
+2025-06-10 21:56:20,921 - root - INFO - [2-26] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/volume_records/index.html
+2025-06-10 21:56:26,014 - root - INFO - [2-26] AI解析結果: スコア=0.000
+2025-06-10 21:56:26,015 - root - INFO - [2-27] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/philosophy/globalvision.html
+2025-06-10 21:56:29,783 - root - INFO - [2-27] AI解析結果: スコア=0.500
+2025-06-10 21:56:29,784 - root - INFO - [2-28] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/philosophy/code_of_conduct.html
+2025-06-10 21:56:33,903 - root - INFO - [2-28] AI解析結果: スコア=0.800
+2025-06-10 21:56:33,903 - root - INFO - [2-29] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/volume_records/sales_records.html
+2025-06-10 21:56:37,831 - root - INFO - [2-29] AI解析結果: スコア=0.800
+2025-06-10 21:56:37,831 - root - INFO - [2-30] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/philosophy/overview.html
+2025-06-10 21:56:41,033 - root - INFO - [2-30] AI解析結果: スコア=0.000
+2025-06-10 21:56:41,033 - root - INFO - [2-31] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/automobile_data/sales_volumes.html
+2025-06-10 21:56:44,856 - root - INFO - [2-31] AI解析結果: スコア=0.800
+2025-06-10 21:56:44,857 - root - INFO - [2-32] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/group/profiles.html#header
+2025-06-10 21:56:48,819 - root - INFO - [2-32] AI解析結果: スコア=0.800
+2025-06-10 21:56:48,819 - root - INFO - [2-33] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/facilities/companies/overseas_manufacturing_companies.html
+2025-06-10 21:56:52,460 - root - INFO - [2-33] AI解析結果: スコア=0.500
+2025-06-10 21:56:52,461 - root - INFO - [2-34] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/facilities/office/liaison.html
+2025-06-10 21:56:57,270 - root - INFO - [2-34] AI解析結果: スコア=0.000
+2025-06-10 21:56:57,271 - root - INFO - [2-35] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/philosophy/guiding_principles.html
+2025-06-10 21:57:05,054 - root - INFO - [2-35] AI解析結果: スコア=0.000
+2025-06-10 21:57:05,054 - root - INFO - [2-36] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/philosophy/toyotaway2001.html
+2025-06-10 21:57:09,307 - root - INFO - [2-36] AI解析結果: スコア=0.000
+2025-06-10 21:57:09,308 - root - INFO - [2-37] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/facilities/cultural.html
+2025-06-10 21:57:13,491 - root - INFO - [2-37] AI解析結果: スコア=0.850
+2025-06-10 21:57:13,492 - root - INFO - [2-38] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/product_lineup/index.html
+2025-06-10 21:57:17,592 - root - INFO - [2-38] AI解析結果: スコア=0.750
+2025-06-10 21:57:17,592 - root - INFO - [2-39] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/automobile_data/index.html
+2025-06-10 21:57:21,819 - root - INFO - [2-39] AI解析結果: スコア=0.600
+2025-06-10 21:57:21,820 - root - INFO - [2-40] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/group/index.html
+2025-06-10 21:57:25,831 - root - INFO - [2-40] AI解析結果: スコア=0.550
+2025-06-10 21:57:25,831 - root - INFO - [2-41] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/facilities/companies/overseas_coordinating_companies.html
+2025-06-10 21:57:30,093 - root - INFO - [2-41] AI解析結果: スコア=0.800
+2025-06-10 21:57:30,094 - root - INFO - [2-42] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/volume_records/sales_volumes.html
+2025-06-10 21:57:34,323 - root - INFO - [2-42] AI解析結果: スコア=0.720
+2025-06-10 21:57:34,324 - root - INFO - [2-43] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/automobile_data/export_volumes.html
+2025-06-10 21:57:42,139 - root - INFO - [2-43] AI解析結果: スコア=0.000
+2025-06-10 21:57:42,139 - root - INFO - [2-44] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/facilities/office/japanese.html
+2025-06-10 21:57:45,872 - root - INFO - [2-44] AI解析結果: スコア=0.200
+2025-06-10 21:57:45,873 - root - INFO - [2-45] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/product_lineup/spare_parts.html
+2025-06-10 21:57:50,923 - root - INFO - [2-45] AI解析結果: スコア=0.000
+2025-06-10 21:57:50,924 - root - INFO - [2-46] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/precepts/index.html
+2025-06-10 21:57:55,350 - root - INFO - [2-46] AI解析結果: スコア=0.800
+2025-06-10 21:57:55,351 - root - INFO - [2-47] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html#header
+2025-06-10 21:57:59,275 - root - INFO - [2-47] AI解析結果: スコア=0.850
+2025-06-10 21:57:59,275 - root - INFO - [2] ページ解析結果: 解析件数=48, 最高スコア=0.850
+2025-06-10 21:57:59,276 - root - INFO - [3] ページ解析開始: https://global.toyota/jp/detail/4055845
+2025-06-10 21:57:59,276 - root - INFO - [3-0] メインページスクレイピング開始: https://global.toyota/jp/detail/4055845
+2025-06-10 21:57:59,438 - root - INFO - [3-0] AI解析開始: https://global.toyota/jp/detail/4055845
+2025-06-10 21:58:03,416 - root - INFO - [3-0] AI解析結果: スコア=0.950
+2025-06-10 21:58:03,417 - root - INFO - メインページで高スコア検出により処理早期終了: スコア=0.950
+2025-06-10 21:58:03,424 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-10 21:58:03,426 - root - INFO - 判定結果出力完了: found=True, searched_urls=60, early_terminated=True
+2025-06-10 22:02:44,415 - root - INFO - ============================================================
+2025-06-10 22:02:44,415 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 22:02:44,415 - root - INFO - ============================================================
+2025-06-10 22:02:44,416 - root - INFO - 本日のGoogle Search API使用状況: 25/100
+2025-06-10 22:02:44,417 - root - INFO - テストモードで実行中
+2025-06-10 22:02:44,417 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 22:02:55,104 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社愛知県豊田市トヨタ町1番地']
+2025-06-10 22:02:55,104 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社
+2025-06-10 22:02:55,107 - root - INFO - API使用件数を更新: 25 → 26
+2025-06-10 22:02:55,107 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社', 最大件数=5
+2025-06-10 22:02:55,841 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 22:02:55,843 - root - INFO - Google検索結果件数: 5件
+2025-06-10 22:02:55,843 - root - INFO - [1] トヨタ自動車WEBサイト https://toyota.jp/index.html
+2025-06-10 22:02:55,843 - root - INFO - [2] Toyota Motor Corporation Official Global Website https://global.toyota/
+2025-06-10 22:02:55,844 - root - INFO - [3] キャリア採用情報 | 採用情報 | トヨタ自動車株式会社 https://www.toyota-recruit.com/career/
+2025-06-10 22:02:55,844 - root - INFO - [4] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:02:55,844 - root - INFO - [5] 新卒採用情報 | 採用情報 | トヨタ自動車株式会社 https://www.toyota-recruit.com/saiyo/
+2025-06-10 22:02:55,845 - root - INFO - [1] ページ解析開始: https://toyota.jp/index.html
+2025-06-10 22:02:55,845 - root - INFO - [1] メインページスクレイピング開始: https://toyota.jp/index.html
+2025-06-10 22:02:56,030 - root - INFO - [1-0] AI解析開始: https://toyota.jp/index.html
+2025-06-10 22:02:59,846 - root - INFO - [1-0] AI解析結果: スコア=0.850
+2025-06-10 22:02:59,847 - root - INFO - [1] 関連ページスクレイピング開始: https://toyota.jp/index.html
+2025-06-10 22:03:40,034 - root - INFO - [1] 関連ページスクレイピング完了: 122ページ
+2025-06-10 22:03:40,035 - root - INFO - [1-1] AI解析開始: https://toyota.jp/index.html
+2025-06-10 22:03:43,742 - root - INFO - [1-1] AI解析結果: スコア=0.850
+2025-06-10 22:03:43,743 - root - INFO - [1-2] AI解析開始: https://toyota.jp/service/estimate/?car_name_en=LAND+CRUISER+70&padid=from_tjptop_pr_landcruiser70_sim
+2025-06-10 22:03:47,457 - root - INFO - [1-2] AI解析結果: スコア=0.850
+2025-06-10 22:03:47,458 - root - INFO - [1-3] AI解析開始: https://toyota.jp/grcorolla/?padid=from_tjptop_pr_grcorolla
+2025-06-10 22:03:51,465 - root - INFO - [1-3] AI解析結果: スコア=0.800
+2025-06-10 22:03:51,466 - root - INFO - [1-4] AI解析開始: https://toyota.jp/grcorolla/design/
+2025-06-10 22:03:55,351 - root - INFO - [1-4] AI解析結果: スコア=0.700
+2025-06-10 22:03:55,352 - root - INFO - [1-5] AI解析開始: https://toyota.jp/corollasport/
+2025-06-10 22:03:59,292 - root - INFO - [1-5] AI解析結果: スコア=0.800
+2025-06-10 22:03:59,293 - root - INFO - [1-6] AI解析開始: https://toyota.jp/corollacross/
+2025-06-10 22:04:03,535 - root - INFO - [1-6] AI解析結果: スコア=0.800
+2025-06-10 22:04:03,536 - root - INFO - [1-7] AI解析開始: https://toyota.jp/grcorolla/connected/
+2025-06-10 22:04:07,479 - root - INFO - [1-7] AI解析結果: スコア=0.600
+2025-06-10 22:04:07,479 - root - INFO - [1-8] AI解析開始: https://toyota.jp/grcorolla/performance/
+2025-06-10 22:04:11,272 - root - INFO - [1-8] AI解析結果: スコア=0.300
+2025-06-10 22:04:11,274 - root - INFO - [1-9] AI解析開始: https://toyota.jp/request/webcatalog/grcorolla/
+2025-06-10 22:04:14,655 - root - INFO - [1-9] AI解析結果: スコア=0.700
+2025-06-10 22:04:14,655 - root - INFO - [1-10] AI解析開始: https://toyota.jp/news/delivery/
+2025-06-10 22:04:18,168 - root - INFO - [1-10] AI解析結果: スコア=0.000
+2025-06-10 22:04:18,168 - root - INFO - [1-11] AI解析開始: https://toyota.jp/grcorolla/grade/
+2025-06-10 22:04:21,446 - root - INFO - [1-11] AI解析結果: スコア=0.000
+2025-06-10 22:04:21,448 - root - INFO - [1-12] AI解析開始: https://toyota.jp/grcorolla/safety/
+2025-06-10 22:04:25,062 - root - INFO - [1-12] AI解析結果: スコア=0.800
+2025-06-10 22:04:25,063 - root - INFO - [1-13] AI解析開始: https://toyota.jp/faq/search/?car=GRカローラ
+2025-06-10 22:04:28,746 - root - INFO - [1-13] AI解析結果: スコア=0.000
+2025-06-10 22:04:28,746 - root - INFO - [1-14] AI解析開始: https://toyota.jp/info/corolla_brand/
+2025-06-10 22:04:32,389 - root - INFO - [1-14] AI解析結果: スコア=0.800
+2025-06-10 22:04:32,389 - root - INFO - [1-15] AI解析開始: https://toyota.jp/grcorolla/accessory/
+2025-06-10 22:04:35,975 - root - INFO - [1-15] AI解析結果: スコア=0.900
+2025-06-10 22:04:35,976 - root - INFO - [1-16] AI解析開始: https://toyota.jp/grcorolla/usability/
+2025-06-10 22:04:39,403 - root - INFO - [1-16] AI解析結果: スコア=0.800
+2025-06-10 22:04:39,403 - root - INFO - [1-17] AI解析開始: https://toyota.jp/info/toyotagram/
+2025-06-10 22:04:43,097 - root - INFO - [1-17] AI解析結果: スコア=0.800
+2025-06-10 22:04:43,097 - root - INFO - [1-18] AI解析開始: http://toyota.jp/grcorolla/index.html
+2025-06-10 22:04:46,811 - root - INFO - [1-18] AI解析結果: スコア=0.800
+2025-06-10 22:04:46,812 - root - INFO - [1-19] AI解析開始: https://toyota.jp/grcorolla/specification/
+2025-06-10 22:04:50,585 - root - INFO - [1-19] AI解析結果: スコア=0.000
+2025-06-10 22:04:50,585 - root - INFO - [1-20] AI解析開始: https://toyota.jp/corolla/
+2025-06-10 22:04:54,200 - root - INFO - [1-20] AI解析結果: スコア=0.800
+2025-06-10 22:04:54,200 - root - INFO - [1-21] AI解析開始: https://toyota.jp/grcorolla/
+2025-06-10 22:04:58,080 - root - INFO - [1-21] AI解析結果: スコア=0.800
+2025-06-10 22:04:58,080 - root - INFO - [1-22] AI解析開始: https://toyota.jp/grcorolla/customizecar/
+2025-06-10 22:05:01,887 - root - INFO - [1-22] AI解析結果: スコア=0.000
+2025-06-10 22:05:01,888 - root - INFO - [1-23] AI解析開始: https://toyota.jp/corollatouring/
+2025-06-10 22:05:05,507 - root - INFO - [1-23] AI解析結果: スコア=0.800
+2025-06-10 22:05:05,507 - root - INFO - [1-24] AI解析開始: https://toyota.jp/service/estimate/?car_name_en=GR+YARIS&padid=from_tjptop_pr_gryaris_sim
+2025-06-10 22:05:08,744 - root - INFO - [1-24] AI解析結果: スコア=0.700
+2025-06-10 22:05:08,744 - root - INFO - [1-25] AI解析開始: https://toyota.jp/topics/?padid=from_tjptop_topics_all
+2025-06-10 22:05:12,118 - root - INFO - [1-25] AI解析結果: スコア=0.850
+2025-06-10 22:05:12,118 - root - INFO - [1-26] AI解析開始: http://toyota.jp/topics/index.html
+2025-06-10 22:05:15,430 - root - INFO - [1-26] AI解析結果: スコア=0.700
+2025-06-10 22:05:15,430 - root - INFO - [1-27] AI解析開始: https://toyota.jp/news/delivery/?padid=from_tjptop_delivery_all
+2025-06-10 22:05:18,721 - root - INFO - [1-27] AI解析結果: スコア=0.850
+2025-06-10 22:05:18,721 - root - INFO - [1-28] AI解析開始: http://toyota.jp/news/delivery/index.html
+2025-06-10 22:05:22,016 - root - INFO - [1-28] AI解析結果: スコア=0.450
+2025-06-10 22:05:22,016 - root - INFO - [1-29] AI解析開始: https://toyota.jp/madoguchi/?padid=from_delivery_bnr_madoguchi
+2025-06-10 22:05:28,299 - root - INFO - [1-29] AI解析結果: スコア=0.000
+2025-06-10 22:05:28,299 - root - INFO - [1-30] AI解析開始: https://toyota.jp/service/estimate/?car_name_en=CROWN+ESTATE&padid=from_tjptop_pr_crownestate_sim
+2025-06-10 22:05:31,580 - root - INFO - [1-30] AI解析結果: スコア=0.500
+2025-06-10 22:05:31,581 - root - INFO - [1-31] AI解析開始: https://toyota.jp/crownestate/?padid=from_tjptop_pr_crownestate
+2025-06-10 22:05:35,054 - root - INFO - [1-31] AI解析結果: スコア=0.800
+2025-06-10 22:05:35,054 - root - INFO - [1-32] AI解析開始: https://toyota.jp/crownestate/grade/
+2025-06-10 22:05:38,762 - root - INFO - [1-32] AI解析結果: スコア=0.850
+2025-06-10 22:05:38,762 - root - INFO - [1-33] AI解析開始: https://toyota.jp/crownestate/design/
+2025-06-10 22:05:42,242 - root - INFO - [1-33] AI解析結果: スコア=0.500
+2025-06-10 22:05:42,242 - root - INFO - [1-34] AI解析開始: https://toyota.jp/service/estimate/?car_name_en=CROWN+ESTATE
+2025-06-10 22:05:45,577 - root - INFO - [1-34] AI解析結果: スコア=0.450
+2025-06-10 22:05:45,577 - root - INFO - [1-35] AI解析開始: https://toyota.jp/info/crown_brand/70th_47roads/
+2025-06-10 22:05:52,985 - root - INFO - [1-35] AI解析結果: スコア=0.000
+2025-06-10 22:05:52,986 - root - INFO - [1-36] AI解析開始: https://toyota.jp/crown/
+2025-06-10 22:05:56,565 - root - INFO - [1-36] AI解析結果: スコア=0.800
+2025-06-10 22:05:56,566 - root - INFO - [1-37] AI解析開始: https://toyota.jp/info/crown_brand/compare/
+2025-06-10 22:06:05,611 - root - INFO - [1-37] AI解析結果: スコア=0.000
+2025-06-10 22:06:05,611 - root - INFO - [1-38] AI解析開始: https://toyota.jp/info/crown_brand/
+2025-06-10 22:06:09,131 - root - INFO - [1-38] AI解析結果: スコア=0.400
+2025-06-10 22:06:09,131 - root - INFO - [1-39] AI解析開始: https://toyota.jp/crownestate/accessory/
+2025-06-10 22:06:12,768 - root - INFO - [1-39] AI解析結果: スコア=0.750
+2025-06-10 22:06:12,768 - root - INFO - [1-40] AI解析開始: https://toyota.jp/crownsport/
+2025-06-10 22:06:16,445 - root - INFO - [1-40] AI解析結果: スコア=0.800
+2025-06-10 22:06:16,445 - root - INFO - [1-41] AI解析開始: https://toyota.jp/crownestate/performance/
+2025-06-10 22:06:20,063 - root - INFO - [1-41] AI解析結果: スコア=0.800
+2025-06-10 22:06:20,064 - root - INFO - [1-42] AI解析開始: https://toyota.jp/request/webcatalog/crownestate/
+2025-06-10 22:06:23,298 - root - INFO - [1-42] AI解析結果: スコア=0.750
+2025-06-10 22:06:23,298 - root - INFO - [1-43] AI解析開始: https://toyota.jp/info/crown_brand/flagshipstore/
+2025-06-10 22:06:26,903 - root - INFO - [1-43] AI解析結果: スコア=0.200
+2025-06-10 22:06:26,903 - root - INFO - [1-44] AI解析開始: https://toyota.jp/crownestate/
+2025-06-10 22:06:30,539 - root - INFO - [1-44] AI解析結果: スコア=0.800
+2025-06-10 22:06:30,539 - root - INFO - [1-45] AI解析開始: https://toyota.jp/crownestate/connected/
+2025-06-10 22:06:34,362 - root - INFO - [1-45] AI解析結果: スコア=0.700
+2025-06-10 22:06:34,362 - root - INFO - [1-46] AI解析開始: https://toyota.jp/crownestate/performance/#pu
+2025-06-10 22:06:37,967 - root - INFO - [1-46] AI解析結果: スコア=0.600
+2025-06-10 22:06:37,967 - root - INFO - [1-47] AI解析開始: https://toyota.jp/crownestate/customizecar/
+2025-06-10 22:06:41,588 - root - INFO - [1-47] AI解析結果: スコア=0.000
+2025-06-10 22:06:41,588 - root - INFO - [1-48] AI解析開始: https://toyota.jp/info/e-toyota/
+2025-06-10 22:06:44,417 - root - INFO - [1-48] AI解析結果: スコア=0.000
+2025-06-10 22:06:44,418 - root - INFO - [1-49] AI解析開始: https://toyota.jp/crownestate/usability/
+2025-06-10 22:06:48,137 - root - INFO - [1-49] AI解析結果: スコア=0.700
+2025-06-10 22:06:48,139 - root - INFO - [1-50] AI解析開始: https://toyota.jp/crownestate/safety/
+2025-06-10 22:06:51,721 - root - INFO - [1-50] AI解析結果: スコア=0.900
+2025-06-10 22:06:51,721 - root - INFO - [1-51] AI解析開始: https://toyota.jp/technology/safety/jncap/
+2025-06-10 22:06:55,650 - root - INFO - [1-51] AI解析結果: スコア=0.800
+2025-06-10 22:06:55,650 - root - INFO - [1-52] AI解析開始: https://toyota.jp/info/crown_brand/70th/
+2025-06-10 22:07:02,596 - root - INFO - [1-52] AI解析結果: スコア=0.000
+2025-06-10 22:07:02,596 - root - INFO - [1-53] AI解析開始: https://toyota.jp/news/suv/
+2025-06-10 22:07:06,176 - root - INFO - [1-53] AI解析結果: スコア=0.800
+2025-06-10 22:07:06,177 - root - INFO - [1-54] AI解析開始: https://toyota.jp/faq/search/?car=クラウン（エステート）
+2025-06-10 22:07:09,699 - root - INFO - [1-54] AI解析結果: スコア=0.000
+2025-06-10 22:07:09,700 - root - INFO - [1-55] AI解析開始: https://toyota.jp/crowncrossover/
+2025-06-10 22:07:13,453 - root - INFO - [1-55] AI解析結果: スコア=0.800
+2025-06-10 22:07:13,455 - root - INFO - [1-56] AI解析開始: https://toyota.jp/function-guide/crownestate/
+2025-06-10 22:07:16,922 - root - INFO - [1-56] AI解析結果: スコア=0.000
+2025-06-10 22:07:16,923 - root - INFO - [1-57] AI解析開始: https://toyota.jp/crownestate/specification/
+2025-06-10 22:07:20,595 - root - INFO - [1-57] AI解析結果: スコア=0.000
+2025-06-10 22:07:20,597 - root - INFO - [1-58] AI解析開始: https://toyota.jp/info/e-toyota/ev_charge/?padid=from_crownestate_topics_evcharge
+2025-06-10 22:07:27,283 - root - INFO - [1-58] AI解析結果: スコア=0.000
+2025-06-10 22:07:27,284 - root - INFO - [1-59] AI解析開始: https://toyota.jp/info/premium/
+2025-06-10 22:07:30,907 - root - INFO - [1-59] AI解析結果: スコア=0.750
+2025-06-10 22:07:30,907 - root - INFO - [1-60] AI解析開始: http://toyota.jp/crownestate/index.html
+2025-06-10 22:07:34,531 - root - INFO - [1-60] AI解析結果: スコア=0.800
+2025-06-10 22:07:34,531 - root - INFO - [1-61] AI解析開始: https://toyota.jp/landcruiser70/?padid=from_tjptop_pr_landcruiser70
+2025-06-10 22:07:38,141 - root - INFO - [1-61] AI解析結果: スコア=0.800
+2025-06-10 22:07:38,142 - root - INFO - [1-62] AI解析開始: https://toyota.jp/info/landcruiser-journal/
+2025-06-10 22:07:43,891 - root - INFO - [1-62] AI解析結果: スコア=0.000
+2025-06-10 22:07:43,891 - root - INFO - [1-63] AI解析開始: https://toyota.jp/function-guide/landcruiser70/
+2025-06-10 22:07:47,204 - root - INFO - [1-63] AI解析結果: スコア=0.750
+2025-06-10 22:07:47,204 - root - INFO - [1-64] AI解析開始: https://toyota.jp/landcruiser70/
+2025-06-10 22:07:50,930 - root - INFO - [1-64] AI解析結果: スコア=0.900
+2025-06-10 22:07:50,932 - root - INFO - [1-65] AI解析開始: https://toyota.jp/info/landcruiserbase/
+2025-06-10 22:07:54,499 - root - INFO - [1-65] AI解析結果: スコア=0.800
+2025-06-10 22:07:54,499 - root - INFO - [1-66] AI解析開始: https://toyota.jp/landcruiser70/usability/
+2025-06-10 22:07:58,260 - root - INFO - [1-66] AI解析結果: スコア=0.750
+2025-06-10 22:07:58,260 - root - INFO - [1-67] AI解析開始: https://toyota.jp/dop/navi/
+2025-06-10 22:08:01,875 - root - INFO - [1-67] AI解析結果: スコア=0.000
+2025-06-10 22:08:01,876 - root - INFO - [1-68] AI解析開始: https://toyota.jp/faq/search/?car=ランドクルーザー%2070
+2025-06-10 22:08:05,449 - root - INFO - [1-68] AI解析結果: スコア=0.000
+2025-06-10 22:08:05,449 - root - INFO - [1-69] AI解析開始: https://toyota.jp/info/landcruiser70_40th/
+2025-06-10 22:08:09,142 - root - INFO - [1-69] AI解析結果: スコア=0.800
+2025-06-10 22:08:09,142 - root - INFO - [1-70] AI解析開始: https://toyota.jp/landcruiser70/customizecar/
+2025-06-10 22:08:12,930 - root - INFO - [1-70] AI解析結果: スコア=0.000
+2025-06-10 22:08:12,930 - root - INFO - [1-71] AI解析開始: https://toyota.jp/landcruiser70/safety/
+2025-06-10 22:08:16,452 - root - INFO - [1-71] AI解析結果: スコア=0.900
+2025-06-10 22:08:16,452 - root - INFO - [1-72] AI解析開始: https://toyota.jp/landcruiser70/design/
+2025-06-10 22:08:20,192 - root - INFO - [1-72] AI解析結果: スコア=0.800
+2025-06-10 22:08:20,192 - root - INFO - [1-73] AI解析開始: https://toyota.jp/landcruiser70/performance/#platform
+2025-06-10 22:08:23,768 - root - INFO - [1-73] AI解析結果: スコア=0.800
+2025-06-10 22:08:23,768 - root - INFO - [1-74] AI解析開始: https://toyota.jp/landcruiser300/
+2025-06-10 22:08:27,738 - root - INFO - [1-74] AI解析結果: スコア=0.800
+2025-06-10 22:08:27,738 - root - INFO - [1-75] AI解析開始: https://toyota.jp/landcruiser70/performance/
+2025-06-10 22:08:31,602 - root - INFO - [1-75] AI解析結果: スコア=0.800
+2025-06-10 22:08:31,602 - root - INFO - [1-76] AI解析開始: https://toyota.jp/landcruiser70/accessory/
+2025-06-10 22:08:35,479 - root - INFO - [1-76] AI解析結果: スコア=0.800
+2025-06-10 22:08:35,479 - root - INFO - [1-77] AI解析開始: https://toyota.jp/landcruiser70/grade/
+2025-06-10 22:08:39,044 - root - INFO - [1-77] AI解析結果: スコア=0.800
+2025-06-10 22:08:39,044 - root - INFO - [1-78] AI解析開始: https://toyota.jp/landcruiser70/performance/#offroad
+2025-06-10 22:08:42,555 - root - INFO - [1-78] AI解析結果: スコア=0.500
+2025-06-10 22:08:42,557 - root - INFO - [1-79] AI解析開始: https://toyota.jp/request/webcatalog/landcruiser70/
+2025-06-10 22:08:45,912 - root - INFO - [1-79] AI解析結果: スコア=0.600
+2025-06-10 22:08:45,912 - root - INFO - [1-80] AI解析開始: https://toyota.jp/landcruiser70/specification/
+2025-06-10 22:08:51,449 - root - INFO - [1-80] AI解析結果: スコア=0.000
+2025-06-10 22:08:51,450 - root - INFO - [1-81] AI解析開始: https://toyota.jp/info/landcruiserbrand/
+2025-06-10 22:08:58,943 - root - INFO - [1-81] AI解析結果: スコア=0.000
+2025-06-10 22:08:58,943 - root - INFO - [1-82] AI解析開始: https://toyota.jp/landcruiser250/
+2025-06-10 22:09:02,541 - root - INFO - [1-82] AI解析結果: スコア=0.500
+2025-06-10 22:09:02,541 - root - INFO - [1-83] AI解析開始: http://toyota.jp/landcruiser70/index.html
+2025-06-10 22:09:06,071 - root - INFO - [1-83] AI解析結果: スコア=0.800
+2025-06-10 22:09:06,072 - root - INFO - [1-84] AI解析開始: https://toyota.jp/gryaris/?padid=from_tjptop_pr_gryaris
+2025-06-10 22:09:09,625 - root - INFO - [1-84] AI解析結果: スコア=0.300
+2025-06-10 22:09:09,625 - root - INFO - [1-85] AI解析開始: https://toyota.jp/function-guide/gryaris/
+2025-06-10 22:09:13,257 - root - INFO - [1-85] AI解析結果: スコア=0.650
+2025-06-10 22:09:13,257 - root - INFO - [1-86] AI解析開始: https://toyota.jp/gryaris/accessory/
+2025-06-10 22:09:16,884 - root - INFO - [1-86] AI解析結果: スコア=0.500
+2025-06-10 22:09:16,884 - root - INFO - [1-87] AI解析開始: https://toyota.jp/lecture/
+2025-06-10 22:09:20,478 - root - INFO - [1-87] AI解析結果: スコア=0.500
+2025-06-10 22:09:20,479 - root - INFO - [1-88] AI解析開始: https://toyota.jp/info/yaris-series/
+2025-06-10 22:09:23,845 - root - INFO - [1-88] AI解析結果: スコア=0.800
+2025-06-10 22:09:23,845 - root - INFO - [1-89] AI解析開始: https://toyota.jp/yaris/
+2025-06-10 22:09:27,377 - root - INFO - [1-89] AI解析結果: スコア=0.700
+2025-06-10 22:09:27,378 - root - INFO - [1-90] AI解析開始: https://toyota.jp/info/yaris-danceawards/
+2025-06-10 22:09:30,877 - root - INFO - [1-90] AI解析結果: スコア=0.800
+2025-06-10 22:09:30,877 - root - INFO - [1-91] AI解析開始: https://toyota.jp/gryaris/connected/
+2025-06-10 22:09:34,563 - root - INFO - [1-91] AI解析結果: スコア=0.600
+2025-06-10 22:09:34,563 - root - INFO - [1-92] AI解析開始: https://toyota.jp/gryaris/design/
+2025-06-10 22:09:38,288 - root - INFO - [1-92] AI解析結果: スコア=0.800
+2025-06-10 22:09:38,289 - root - INFO - [1-93] AI解析開始: https://toyota.jp/gryaris/customizecar/
+2025-06-10 22:09:42,045 - root - INFO - [1-93] AI解析結果: スコア=0.000
+2025-06-10 22:09:42,045 - root - INFO - [1-94] AI解析開始: https://toyota.jp/gryaris/
+2025-06-10 22:09:45,265 - root - INFO - [1-94] AI解析結果: スコア=0.250
+2025-06-10 22:09:45,265 - root - INFO - [1-95] AI解析開始: https://toyota.jp/service/estimate/?car_name_en=GR%20YARIS
+2025-06-10 22:09:48,659 - root - INFO - [1-95] AI解析結果: スコア=0.850
+2025-06-10 22:09:48,660 - root - INFO - [1-96] AI解析開始: https://toyota.jp/toyotadirectorscut/
+2025-06-10 22:09:52,466 - root - INFO - [1-96] AI解析結果: スコア=0.850
+2025-06-10 22:09:52,466 - root - INFO - [1-97] AI解析開始: https://toyota.jp/gryaris/performance/
+2025-06-10 22:09:56,457 - root - INFO - [1-97] AI解析結果: スコア=0.800
+2025-06-10 22:09:56,457 - root - INFO - [1-98] AI解析開始: https://toyota.jp/gryaris/usability/
+2025-06-10 22:10:00,272 - root - INFO - [1-98] AI解析結果: スコア=0.800
+2025-06-10 22:10:00,272 - root - INFO - [1-99] AI解析開始: https://toyota.jp/request/webcatalog/gryaris/
+2025-06-10 22:10:03,531 - root - INFO - [1-99] AI解析結果: スコア=0.500
+2025-06-10 22:10:03,531 - root - INFO - [1-100] AI解析開始: https://toyota.jp/faq/search/?car=GRヤリス
+2025-06-10 22:10:06,587 - root - INFO - [1-100] AI解析結果: スコア=0.000
+2025-06-10 22:10:06,587 - root - INFO - [1-101] AI解析開始: https://toyota.jp/gryaris/grade/
+2025-06-10 22:10:10,138 - root - INFO - [1-101] AI解析結果: スコア=0.800
+2025-06-10 22:10:10,138 - root - INFO - [1-102] AI解析開始: https://toyota.jp/yariscross/
+2025-06-10 22:10:13,731 - root - INFO - [1-102] AI解析結果: スコア=0.800
+2025-06-10 22:10:13,731 - root - INFO - [1-103] AI解析開始: http://toyota.jp/gryaris/index.html
+2025-06-10 22:10:17,187 - root - INFO - [1-103] AI解析結果: スコア=0.250
+2025-06-10 22:10:17,187 - root - INFO - [1-104] AI解析開始: https://toyota.jp/gryaris/specification/
+2025-06-10 22:10:24,971 - root - INFO - [1-104] AI解析結果: スコア=0.000
+2025-06-10 22:10:24,972 - root - INFO - [1-105] AI解析開始: https://toyota.jp/gryaris/safety/
+2025-06-10 22:10:29,410 - root - INFO - [1-105] AI解析結果: スコア=0.800
+2025-06-10 22:10:29,410 - root - INFO - [1-106] AI解析開始: https://toyota.jp/service/estimate/?car_name_en=LAND+CRUISER+250&padid=from_tjptop_pr_landcruiser250_sim
+2025-06-10 22:10:32,816 - root - INFO - [1-106] AI解析結果: スコア=0.850
+2025-06-10 22:10:32,817 - root - INFO - [1-107] AI解析開始: https://toyota.jp/landcruiser250/?padid=from_tjptop_pr_landcruiser250
+2025-06-10 22:10:36,344 - root - INFO - [1-107] AI解析結果: スコア=0.800
+2025-06-10 22:10:36,344 - root - INFO - [1-108] AI解析開始: https://toyota.jp/landcruiser250/specification/
+2025-06-10 22:10:42,914 - root - INFO - [1-108] AI解析結果: スコア=0.000
+2025-06-10 22:10:42,914 - root - INFO - [1-109] AI解析開始: https://toyota.jp/faq/search/?car=ランドクルーザー%20250
+2025-06-10 22:10:46,567 - root - INFO - [1-109] AI解析結果: スコア=0.000
+2025-06-10 22:10:46,568 - root - INFO - [1-110] AI解析開始: https://toyota.jp/landcruiser250/performance/#pu
+2025-06-10 22:10:50,478 - root - INFO - [1-110] AI解析結果: スコア=0.800
+2025-06-10 22:10:50,478 - root - INFO - [1-111] AI解析開始: https://toyota.jp/landcruiser250/grade/
+2025-06-10 22:10:54,049 - root - INFO - [1-111] AI解析結果: スコア=0.700
+2025-06-10 22:10:54,049 - root - INFO - [1-112] AI解析開始: https://toyota.jp/landcruiser250/performance/
+2025-06-10 22:10:57,515 - root - INFO - [1-112] AI解析結果: スコア=0.500
+2025-06-10 22:10:57,515 - root - INFO - [1-113] AI解析開始: https://toyota.jp/request/webcatalog/landcruiser250/
+2025-06-10 22:11:01,025 - root - INFO - [1-113] AI解析結果: スコア=0.700
+2025-06-10 22:11:01,025 - root - INFO - [1-114] AI解析開始: https://toyota.jp/landcruiser250/connected/
+2025-06-10 22:11:04,645 - root - INFO - [1-114] AI解析結果: スコア=0.800
+2025-06-10 22:11:04,645 - root - INFO - [1-115] AI解析開始: https://toyota.jp/landcruiser250/accessory/
+2025-06-10 22:11:08,353 - root - INFO - [1-115] AI解析結果: スコア=0.500
+2025-06-10 22:11:08,354 - root - INFO - [1-116] AI解析開始: https://toyota.jp/function-guide/landcruiser250/
+2025-06-10 22:11:11,931 - root - INFO - [1-116] AI解析結果: スコア=0.900
+2025-06-10 22:11:11,931 - root - INFO - [1-117] AI解析開始: https://toyota.jp/landcruiser250/design/
+2025-06-10 22:11:15,533 - root - INFO - [1-117] AI解析結果: スコア=0.800
+2025-06-10 22:11:15,533 - root - INFO - [1-118] AI解析開始: https://toyota.jp/landcruiser250/usability/
+2025-06-10 22:11:19,083 - root - INFO - [1-118] AI解析結果: スコア=0.800
+2025-06-10 22:11:19,083 - root - INFO - [1-119] AI解析開始: http://toyota.jp/landcruiser250/index.html
+2025-06-10 22:11:22,688 - root - INFO - [1-119] AI解析結果: スコア=0.800
+2025-06-10 22:11:22,688 - root - INFO - [1-120] AI解析開始: https://toyota.jp/info/landcruiser250/250customstyle/
+2025-06-10 22:11:26,180 - root - INFO - [1-120] AI解析結果: スコア=0.600
+2025-06-10 22:11:26,181 - root - INFO - [1-121] AI解析開始: https://toyota.jp/landcruiser250/customizecar/
+2025-06-10 22:11:29,998 - root - INFO - [1-121] AI解析結果: スコア=0.000
+2025-06-10 22:11:29,998 - root - WARNING - [1-122] スクレイピングエラー: https://toyota.jp/landcruiser250/safety/ - HTTPSConnectionPool(host='toyota.jp', port=443): Read timed out.
+2025-06-10 22:11:29,999 - root - INFO - [1] ページ解析結果: 解析件数=122, 最高スコア=0.900
+2025-06-10 22:11:29,999 - root - INFO - [2] ページ解析開始: https://global.toyota/
+2025-06-10 22:11:29,999 - root - INFO - [2] メインページスクレイピング開始: https://global.toyota/
+2025-06-10 22:11:30,151 - root - INFO - [2-0] AI解析開始: https://global.toyota/
+2025-06-10 22:11:34,002 - root - INFO - [2-0] AI解析結果: スコア=0.000
+2025-06-10 22:11:34,002 - root - INFO - [2] 関連ページスクレイピング開始: https://global.toyota/
+2025-06-10 22:12:11,006 - root - INFO - [2] 関連ページスクレイピング完了: 118ページ
+2025-06-10 22:12:11,007 - root - INFO - [2-1] AI解析開始: https://global.toyota/
+2025-06-10 22:12:14,482 - root - INFO - [2-1] AI解析結果: スコア=0.900
+2025-06-10 22:12:14,483 - root - INFO - [2-2] AI解析開始: https://global.toyota/jp/mobility/technology/toyota-technical-review/?padid=ag478_from_updates
+2025-06-10 22:12:17,909 - root - INFO - [2-2] AI解析結果: スコア=0.300
+2025-06-10 22:12:17,909 - root - INFO - [2-3] AI解析開始: https://global.toyota/pages/global_toyota/mobility/technology/toyota-technical-review/TTR_Vol70-2_J.pdf#page=27
+2025-06-10 22:12:21,397 - root - INFO - [2-3] AI解析結果: スコア=0.800
+2025-06-10 22:12:21,398 - root - INFO - [2-4] AI解析開始: https://global.toyota/pages/global_toyota/mobility/technology/toyota-technical-review/TTR_Vol70-2_J.pdf#page=30
+2025-06-10 22:12:24,987 - root - INFO - [2-4] AI解析結果: スコア=0.800
+2025-06-10 22:12:24,987 - root - INFO - [2-5] AI解析開始: https://global.toyota/pages/global_toyota/mobility/technology/toyota-technical-review/TTR_Vol70-2_J.pdf#page=10
+2025-06-10 22:12:28,643 - root - INFO - [2-5] AI解析結果: スコア=0.800
+2025-06-10 22:12:28,644 - root - INFO - [2-6] AI解析開始: https://global.toyota/jp/mobility/technology/toyota-technical-review/?padid=ag478_from_updates#recent
+2025-06-10 22:12:32,089 - root - INFO - [2-6] AI解析結果: スコア=0.750
+2025-06-10 22:12:32,089 - root - INFO - [2-7] AI解析開始: https://global.toyota/pages/global_toyota/mobility/technology/toyota-technical-review/TTR_Vol70-2_J.pdf#page=15
+2025-06-10 22:12:35,690 - root - INFO - [2-7] AI解析結果: スコア=0.800
+2025-06-10 22:12:35,690 - root - INFO - [2-8] AI解析開始: https://global.toyota/pages/global_toyota/mobility/technology/toyota-technical-review/TTR_Vol70-2_J.pdf#page=4
+2025-06-10 22:12:39,305 - root - INFO - [2-8] AI解析結果: スコア=0.500
+2025-06-10 22:12:39,307 - root - INFO - [2-9] AI解析開始: https://global.toyota/jp/mobility/technology/toyota-technical-review/archives/
+2025-06-10 22:12:42,539 - root - INFO - [2-9] AI解析結果: スコア=0.750
+2025-06-10 22:12:42,539 - root - INFO - [2-10] AI解析開始: https://global.toyota/pages/global_toyota/mobility/technology/toyota-technical-review/TTR_Vol70-2_J.pdf
+2025-06-10 22:12:45,928 - root - INFO - [2-10] AI解析結果: スコア=0.800
+2025-06-10 22:12:45,929 - root - INFO - [2-11] AI解析開始: https://global.toyota/pages/global_toyota/mobility/technology/toyota-technical-review/TTR_Vol70-2_J.pdf#page=32
+2025-06-10 22:12:49,267 - root - INFO - [2-11] AI解析結果: スコア=0.600
+2025-06-10 22:12:49,267 - root - INFO - [2-12] AI解析開始: https://global.toyota/pages/global_toyota/mobility/technology/toyota-technical-review/TTR_Vol70-2_J.pdf#page=24
+2025-06-10 22:12:52,102 - root - INFO - [2-12] AI解析結果: スコア=0.000
+2025-06-10 22:12:52,103 - root - INFO - [2-13] AI解析開始: https://global.toyota/pages/global_toyota/mobility/technology/toyota-technical-review/TTR_Vol70-2_J.pdf#page=20
+2025-06-10 22:12:55,721 - root - INFO - [2-13] AI解析結果: スコア=0.800
+2025-06-10 22:12:55,722 - root - INFO - [2-14] AI解析開始: https://global.toyota/jp/newsroom/
+2025-06-10 22:12:59,323 - root - INFO - [2-14] AI解析結果: スコア=0.800
+2025-06-10 22:12:59,324 - root - INFO - [2-15] AI解析開始: https://global.toyota/jp/company/profile/executives/?padid=ag478_from_news_pickup2
+2025-06-10 22:13:02,826 - root - INFO - [2-15] AI解析結果: スコア=0.875
+2025-06-10 22:13:02,827 - root - INFO - [2-16] AI解析開始: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular
+2025-06-10 22:13:06,331 - root - INFO - [2-16] AI解析結果: スコア=0.800
+2025-06-10 22:13:06,332 - root - INFO - [2-17] AI解析開始: https://global.toyota/jp/mobility/toyota-brand/gallery/?padid=ag478_from_news_pickup2
+2025-06-10 22:13:09,907 - root - INFO - [2-17] AI解析結果: スコア=0.750
+2025-06-10 22:13:09,907 - root - INFO - [2-18] AI解析開始: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular
+2025-06-10 22:13:13,441 - root - INFO - [2-18] AI解析結果: スコア=0.350
+2025-06-10 22:13:13,441 - root - INFO - [2-19] AI解析開始: https://global.toyota/jp/company/profile/production-sales-figures/?padid=ag478_from_news_pickup2
+2025-06-10 22:13:16,653 - root - INFO - [2-19] AI解析結果: スコア=0.500
+2025-06-10 22:13:16,653 - root - INFO - [2-20] AI解析開始: https://global.toyota/jp/downloadable-assets/?padid=ag478_from_news_pickup2
+2025-06-10 22:13:20,362 - root - INFO - [2-20] AI解析結果: スコア=0.700
+2025-06-10 22:13:20,362 - root - INFO - [2-21] AI解析開始: https://global.toyota/jp/newsroom/corporate/42662211.html?padid=ag478_from_news_pickup
+2025-06-10 22:13:23,767 - root - INFO - [2-21] AI解析結果: スコア=0.850
+2025-06-10 22:13:23,767 - root - INFO - [2-22] AI解析開始: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular
+2025-06-10 22:13:27,485 - root - INFO - [2-22] AI解析結果: スコア=0.000
+2025-06-10 22:13:27,485 - root - INFO - [2-23] AI解析開始: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular
+2025-06-10 22:13:31,219 - root - INFO - [2-23] AI解析結果: スコア=0.500
+2025-06-10 22:13:31,220 - root - INFO - [2-24] AI解析開始: https://global.toyota/jp/newsroom/fact-data/?padid=ag478_from_news_pickup
+2025-06-10 22:13:34,263 - root - INFO - [2-24] AI解析結果: スコア=0.000
+2025-06-10 22:13:34,263 - root - INFO - [2-25] AI解析開始: https://global.toyota/jp/regional-newsrooms/?padid=ag478_from_news_pickup2
+2025-06-10 22:13:37,702 - root - INFO - [2-25] AI解析結果: スコア=0.750
+2025-06-10 22:13:37,703 - root - INFO - [2-26] AI解析開始: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_news_pickup
+2025-06-10 22:13:41,370 - root - INFO - [2-26] AI解析結果: スコア=0.500
+2025-06-10 22:13:41,370 - root - INFO - [2-27] AI解析開始: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular
+2025-06-10 22:13:44,702 - root - INFO - [2-27] AI解析結果: スコア=0.000
+2025-06-10 22:13:44,702 - root - INFO - [2-28] AI解析開始: https://global.toyota/newbiz/becre/driverecorder119/?padid=ag478_from_updates
+2025-06-10 22:13:48,126 - root - INFO - [2-28] AI解析結果: スコア=0.550
+2025-06-10 22:13:48,126 - root - INFO - [2-29] AI解析開始: https://global.toyota/jp/newsroom/fact-data/?padid=ag478_from_pickup3
+2025-06-10 22:13:51,835 - root - INFO - [2-29] AI解析結果: スコア=0.700
+2025-06-10 22:13:51,835 - root - INFO - [2-30] AI解析開始: https://global.toyota/pages/fact-data/fact-data_003_03_jp.pdf
+2025-06-10 22:13:55,407 - root - INFO - [2-30] AI解析結果: スコア=0.800
+2025-06-10 22:13:55,407 - root - INFO - [2-31] AI解析開始: https://global.toyota/pages/fact-data/fact-data_001_02_jp.pdf
+2025-06-10 22:13:59,050 - root - INFO - [2-31] AI解析結果: スコア=0.600
+2025-06-10 22:13:59,051 - root - INFO - [2-32] AI解析開始: https://global.toyota/pages/fact-data/fact-data_003_01_jp.pdf
+2025-06-10 22:14:02,730 - root - INFO - [2-32] AI解析結果: スコア=0.800
+2025-06-10 22:14:02,730 - root - INFO - [2-33] AI解析開始: https://global.toyota/pages/fact-data/fact-data_001_01_jp.pdf
+2025-06-10 22:14:06,507 - root - INFO - [2-33] AI解析結果: スコア=0.800
+2025-06-10 22:14:06,507 - root - INFO - [2-34] AI解析開始: https://global.toyota/pages/fact-data/fact-data_001_03_jp.pdf
+2025-06-10 22:14:10,053 - root - INFO - [2-34] AI解析結果: スコア=0.500
+2025-06-10 22:14:10,054 - root - INFO - [2-35] AI解析開始: https://global.toyota/pages/fact-data/fact-data_002_03_jp.pdf
+2025-06-10 22:14:13,566 - root - INFO - [2-35] AI解析結果: スコア=0.500
+2025-06-10 22:14:13,566 - root - INFO - [2-36] AI解析開始: https://global.toyota/pages/fact-data/fact-data_001_04_jp.pdf
+2025-06-10 22:14:17,139 - root - INFO - [2-36] AI解析結果: スコア=0.800
+2025-06-10 22:14:17,140 - root - INFO - [2-37] AI解析開始: https://global.toyota/pages/fact-data/fact-data_001_05_jp.pdf
+2025-06-10 22:14:26,170 - root - INFO - [2-37] AI解析結果: スコア=0.000
+2025-06-10 22:14:26,171 - root - INFO - [2-38] AI解析開始: https://global.toyota/pages/fact-data/fact-data_002_02_jp.pdf
+2025-06-10 22:14:29,866 - root - INFO - [2-38] AI解析結果: スコア=0.600
+2025-06-10 22:14:29,866 - root - INFO - [2-39] AI解析開始: https://global.toyota/jp/newsroom/fact-data/?padid=ag478_from_pickup3#fact-004
+2025-06-10 22:14:33,105 - root - INFO - [2-39] AI解析結果: スコア=0.000
+2025-06-10 22:14:33,106 - root - INFO - [2-40] AI解析開始: https://global.toyota/pages/fact-data/fact-data_005_01_jp.pdf
+2025-06-10 22:14:37,977 - root - INFO - [2-40] AI解析結果: スコア=0.000
+2025-06-10 22:14:37,978 - root - INFO - [2-41] AI解析開始: https://global.toyota/jp/newsroom/fact-data/?padid=ag478_from_pickup3#fact-005
+2025-06-10 22:14:41,639 - root - INFO - [2-41] AI解析結果: スコア=0.000
+2025-06-10 22:14:41,640 - root - INFO - [2-42] AI解析開始: https://global.toyota/jp/newsroom/fact-data/?padid=ag478_from_pickup3#fact-001
+2025-06-10 22:14:44,916 - root - INFO - [2-42] AI解析結果: スコア=0.750
+2025-06-10 22:14:44,916 - root - INFO - [2-43] AI解析開始: https://global.toyota/pages/fact-data/fact-data_002_01_jp.pdf
+2025-06-10 22:14:48,542 - root - INFO - [2-43] AI解析結果: スコア=0.800
+2025-06-10 22:14:48,542 - root - INFO - [2-44] AI解析開始: https://global.toyota/pages/fact-data/fact-data_002_04_jp.pdf
+2025-06-10 22:14:52,096 - root - INFO - [2-44] AI解析結果: スコア=0.000
+2025-06-10 22:14:52,096 - root - INFO - [2-45] AI解析開始: https://global.toyota/pages/fact-data/fact-data_003_02_jp.pdf
+2025-06-10 22:14:54,993 - root - INFO - [2-45] AI解析結果: スコア=0.000
+2025-06-10 22:14:54,993 - root - INFO - [2-46] AI解析開始: https://global.toyota/pages/fact-data/fact-data_004_02_jp.pdf
+2025-06-10 22:14:58,511 - root - INFO - [2-46] AI解析結果: スコア=0.600
+2025-06-10 22:14:58,512 - root - INFO - [2-47] AI解析開始: https://global.toyota/pages/fact-data/fact-data_004_01_jp.pdf
+2025-06-10 22:15:01,435 - root - INFO - [2-47] AI解析結果: スコア=0.000
+2025-06-10 22:15:01,435 - root - INFO - [2-48] AI解析開始: https://global.toyota/jp/newsroom/fact-data/?padid=ag478_from_pickup3#fact-003
+2025-06-10 22:15:04,527 - root - INFO - [2-48] AI解析結果: スコア=0.500
+2025-06-10 22:15:04,528 - root - INFO - [2-49] AI解析開始: https://global.toyota/pages/fact-data/fact-data_001_07_jp.pdf
+2025-06-10 22:15:07,626 - root - INFO - [2-49] AI解析結果: スコア=0.000
+2025-06-10 22:15:07,626 - root - INFO - [2-50] AI解析開始: https://global.toyota/pages/fact-data/fact-data_005_02_jp.pdf
+2025-06-10 22:15:10,667 - root - INFO - [2-50] AI解析結果: スコア=0.000
+2025-06-10 22:15:10,667 - root - INFO - [2-51] AI解析開始: https://global.toyota/pages/fact-data/fact-data_001_06_jp.pdf
+2025-06-10 22:15:13,510 - root - INFO - [2-51] AI解析結果: スコア=0.000
+2025-06-10 22:15:13,510 - root - INFO - [2-52] AI解析開始: https://global.toyota/jp/newsroom/fact-data/?padid=ag478_from_pickup3#fact-002
+2025-06-10 22:15:16,802 - root - INFO - [2-52] AI解析結果: スコア=0.650
+2025-06-10 22:15:16,803 - root - INFO - [2-53] AI解析開始: https://global.toyota/jp/mobility/disability-support/?padid=ag478_from_pickup3
+2025-06-10 22:15:20,404 - root - INFO - [2-53] AI解析結果: スコア=0.650
+2025-06-10 22:15:20,405 - root - INFO - [2-54] AI解析開始: https://global.toyota/jp/mobility/disability-support/
+2025-06-10 22:15:23,883 - root - INFO - [2-54] AI解析結果: スコア=0.800
+2025-06-10 22:15:23,884 - root - INFO - [2-55] AI解析開始: https://global.toyota/jp/mobility/disability-support/article/
+2025-06-10 22:15:27,173 - root - INFO - [2-55] AI解析結果: スコア=0.350
+2025-06-10 22:15:27,173 - root - INFO - [2-56] AI解析開始: https://global.toyota/jp/mobility/disability-support/article/42231746.html
+2025-06-10 22:15:30,484 - root - INFO - [2-56] AI解析結果: スコア=0.000
+2025-06-10 22:15:30,484 - root - INFO - [2-57] AI解析開始: https://global.toyota/jp/mobility/disability-support/welfare/product/#wellness_valley
+2025-06-10 22:15:34,395 - root - INFO - [2-57] AI解析結果: スコア=0.800
+2025-06-10 22:15:34,397 - root - INFO - [2-58] AI解析開始: https://global.toyota/jp/mobility/disability-support/article/42602264.html
+2025-06-10 22:15:37,990 - root - INFO - [2-58] AI解析結果: スコア=0.500
+2025-06-10 22:15:37,991 - root - INFO - [2-59] AI解析開始: https://global.toyota/jp/mobility/disability-support/article/41907406.html
+2025-06-10 22:15:41,549 - root - INFO - [2-59] AI解析結果: スコア=0.600
+2025-06-10 22:15:41,549 - root - INFO - [2-60] AI解析開始: https://global.toyota/jp/mobility/disability-support/welfare/product/#kinetic
+2025-06-10 22:15:45,061 - root - INFO - [2-60] AI解析結果: スコア=0.800
+2025-06-10 22:15:45,062 - root - INFO - [2-61] AI解析開始: https://global.toyota/jp/mobility/disability-support/driver-information/
+2025-06-10 22:15:48,493 - root - INFO - [2-61] AI解析結果: スコア=0.600
+2025-06-10 22:15:48,493 - root - INFO - [2-62] AI解析開始: https://global.toyota/jp/mobility/disability-support/welfare/
+2025-06-10 22:15:51,962 - root - INFO - [2-62] AI解析結果: スコア=0.700
+2025-06-10 22:15:51,962 - root - INFO - [2-63] AI解析開始: https://global.toyota/jp/sustainability/esg/employees/diversity-and-inclusion/?padid=ag478_from_updates
+2025-06-10 22:15:55,373 - root - INFO - [2-63] AI解析結果: スコア=0.850
+2025-06-10 22:15:55,373 - root - INFO - [2-64] AI解析開始: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_pickup2
+2025-06-10 22:15:58,583 - root - INFO - [2-64] AI解析結果: スコア=0.000
+2025-06-10 22:15:58,583 - root - INFO - [2-65] AI解析開始: https://global.toyota/jp/mobility/toyota-brand/gallery/rav4.html
+2025-06-10 22:16:01,871 - root - INFO - [2-65] AI解析結果: スコア=0.800
+2025-06-10 22:16:01,872 - root - INFO - [2-66] AI解析開始: https://global.toyota/jp/newsroom/toyota/42762028.html
+2025-06-10 22:16:05,403 - root - INFO - [2-66] AI解析結果: スコア=0.600
+2025-06-10 22:16:05,403 - root - INFO - [2-67] AI解析開始: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_pickup2#intelligent
+2025-06-10 22:16:08,930 - root - INFO - [2-67] AI解析結果: スコア=0.500
+2025-06-10 22:16:08,930 - root - INFO - [2-68] AI解析開始: https://global.toyota/jp/mobility/beyond-zero/
+2025-06-10 22:16:12,520 - root - INFO - [2-68] AI解析結果: スコア=0.000
+2025-06-10 22:16:12,521 - root - INFO - [2-69] AI解析開始: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_pickup2#style
+2025-06-10 22:16:15,857 - root - INFO - [2-69] AI解析結果: スコア=0.000
+2025-06-10 22:16:15,857 - root - INFO - [2-70] AI解析開始: https://global.toyota/jp/album/images/42758102/
+2025-06-10 22:16:19,244 - root - INFO - [2-70] AI解析結果: スコア=0.500
+2025-06-10 22:16:19,245 - root - INFO - [2-71] AI解析開始: https://global.toyota/jp/mobility/toyota-brand/toyota-design/rav4/
+2025-06-10 22:16:22,656 - root - INFO - [2-71] AI解析結果: スコア=0.500
+2025-06-10 22:16:22,656 - root - INFO - [2-72] AI解析開始: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_pickup2#design
+2025-06-10 22:16:26,063 - root - INFO - [2-72] AI解析結果: スコア=0.000
+2025-06-10 22:16:26,063 - root - INFO - [2-73] AI解析開始: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_pickup2#powertrain
+2025-06-10 22:16:29,579 - root - INFO - [2-73] AI解析結果: スコア=0.500
+2025-06-10 22:16:29,579 - root - INFO - [2-74] AI解析開始: https://global.toyota/jp/sustainability/sdgs/
+2025-06-10 22:16:32,850 - root - INFO - [2-74] AI解析結果: スコア=0.700
+2025-06-10 22:16:32,850 - root - INFO - [2-75] AI解析開始: https://global.toyota/jp/company/plant-tours/?padid=ag478_from_pickup3
+2025-06-10 22:16:39,254 - root - INFO - [2-75] AI解析結果: スコア=0.000
+2025-06-10 22:16:39,254 - root - INFO - [2-76] AI解析開始: https://global.toyota/en/company/plant-tours/#top
+2025-06-10 22:16:42,918 - root - INFO - [2-76] AI解析結果: スコア=0.000
+2025-06-10 22:16:42,918 - root - INFO - [2-77] AI解析開始: https://global.toyota/jp/company/plant-tours/
+2025-06-10 22:16:46,459 - root - INFO - [2-77] AI解析結果: スコア=0.000
+2025-06-10 22:16:46,459 - root - INFO - [2-78] AI解析開始: https://global.toyota/jp/company/plant-tours/welding/
+2025-06-10 22:16:54,295 - root - INFO - [2-78] AI解析結果: スコア=0.000
+2025-06-10 22:16:54,295 - root - INFO - [2-79] AI解析開始: https://global.toyota/jp/company/plant-tours/assembly/
+2025-06-10 22:16:58,090 - root - INFO - [2-79] AI解析結果: スコア=0.000
+2025-06-10 22:16:58,090 - root - INFO - [2-80] AI解析開始: https://global.toyota/jp/company/plant-tours?id=digestVideo
+2025-06-10 22:17:01,612 - root - INFO - [2-80] AI解析結果: スコア=0.000
+2025-06-10 22:17:01,612 - root - INFO - [2-81] AI解析開始: https://global.toyota/jp/company/plant-tours/stamping/
+2025-06-10 22:17:05,007 - root - INFO - [2-81] AI解析結果: スコア=0.500
+2025-06-10 22:17:05,008 - root - INFO - [2-82] AI解析開始: https://global.toyota/jp/company/plant-tours/production-system/
+2025-06-10 22:17:08,743 - root - INFO - [2-82] AI解析結果: スコア=0.000
+2025-06-10 22:17:08,743 - root - INFO - [2-83] AI解析開始: https://global.toyota/jp/company/plant-tours/#top
+2025-06-10 22:17:12,734 - root - INFO - [2-83] AI解析結果: スコア=0.000
+2025-06-10 22:17:12,734 - root - INFO - [2-84] AI解析開始: https://global.toyota/jp/company/plant-tours/powerunit/
+2025-06-10 22:17:16,103 - root - INFO - [2-84] AI解析結果: スコア=0.350
+2025-06-10 22:17:16,103 - root - INFO - [2-85] AI解析開始: https://global.toyota/jp/company/plant-tours/inspection-shipping/
+2025-06-10 22:17:25,072 - root - INFO - [2-85] AI解析結果: スコア=0.000
+2025-06-10 22:17:25,072 - root - INFO - [2-86] AI解析開始: https://global.toyota/jp/company/plant-tours/painting/
+2025-06-10 22:17:28,630 - root - INFO - [2-86] AI解析結果: スコア=0.800
+2025-06-10 22:17:28,631 - root - INFO - [2-87] AI解析開始: https://global.toyota/newbiz/becre/?utm_source=hp&utm_medium=referral&utm_campaign=toyotag_hp_contents&padid=ag478_from_pickup3
+2025-06-10 22:17:31,716 - root - INFO - [2-87] AI解析結果: スコア=0.750
+2025-06-10 22:17:31,716 - root - INFO - [2-88] AI解析開始: https://global.toyota/jp/newsroom/corporate/42912520.html?padid=ag478_from_notice
+2025-06-10 22:17:37,558 - root - INFO - [2-88] AI解析結果: スコア=0.000
+2025-06-10 22:17:37,558 - root - INFO - [2-89] AI解析開始: https://global.toyota/jp/company/profile/executives/koji_sato.html
+2025-06-10 22:17:40,968 - root - INFO - [2-89] AI解析結果: スコア=0.850
+2025-06-10 22:17:40,968 - root - INFO - [2-90] AI解析開始: https://global.toyota/jp/newsroom/corporate/42912330.html
+2025-06-10 22:17:44,484 - root - INFO - [2-90] AI解析結果: スコア=0.800
+2025-06-10 22:17:44,484 - root - INFO - [2-91] AI解析開始: https://global.toyota/jp/sustainability/?padid=ag478_from_updates#health-productivity
+2025-06-10 22:17:48,120 - root - INFO - [2-91] AI解析結果: スコア=0.400
+2025-06-10 22:17:48,121 - root - INFO - [2-92] AI解析開始: https://global.toyota/jp/privacy-notice/
+2025-06-10 22:17:51,766 - root - INFO - [2-92] AI解析結果: スコア=0.750
+2025-06-10 22:17:51,767 - root - INFO - [2-93] AI解析開始: https://global.toyota/jp/sustainability/esg/nature/
+2025-06-10 22:17:55,256 - root - INFO - [2-93] AI解析結果: スコア=0.700
+2025-06-10 22:17:55,257 - root - INFO - [2-94] AI解析開始: https://global.toyota/pages/global_toyota/sustainability/017_jp.jpg
+2025-06-10 22:17:58,773 - root - INFO - [2-94] AI解析結果: スコア=0.800
+2025-06-10 22:17:58,773 - root - INFO - [2-95] AI解析開始: https://global.toyota/jp/sustainability/?padid=ag478_from_updates#philosophy
+2025-06-10 22:18:02,603 - root - INFO - [2-95] AI解析結果: スコア=0.500
+2025-06-10 22:18:02,603 - root - INFO - [2-96] AI解析開始: https://global.toyota/pages/global_toyota/sustainability/csr/policy/earth_charter_jp.pdf
+2025-06-10 22:18:06,162 - root - INFO - [2-96] AI解析結果: スコア=0.800
+2025-06-10 22:18:06,162 - root - INFO - [2-97] AI解析開始: https://global.toyota/pages/global_toyota/sustainability/esg/social/human_rights_policy_jp.pdf
+2025-06-10 22:18:09,635 - root - INFO - [2-97] AI解析結果: スコア=0.800
+2025-06-10 22:18:09,635 - root - INFO - [2-98] AI解析開始: https://global.toyota/jp/sustainability/report/policies_guidelines/
+2025-06-10 22:18:13,251 - root - INFO - [2-98] AI解析結果: スコア=0.000
+2025-06-10 22:18:13,251 - root - INFO - [2-99] AI解析開始: https://global.toyota/pages/global_toyota/sustainability/esg/partners/anti-bribery_jp_2.pdf
+2025-06-10 22:18:16,877 - root - INFO - [2-99] AI解析結果: スコア=0.800
+2025-06-10 22:18:16,877 - root - INFO - [2-100] AI解析開始: https://global.toyota/jp/sustainability/message/
+2025-06-10 22:18:20,446 - root - INFO - [2-100] AI解析結果: スコア=0.000
+2025-06-10 22:18:20,447 - root - INFO - [2-101] AI解析開始: https://global.toyota/pages/global_toyota/sustainability/esg/supplier_csr_jp.pdf
+2025-06-10 22:18:24,100 - root - INFO - [2-101] AI解析結果: スコア=0.800
+2025-06-10 22:18:24,100 - root - INFO - [2-102] AI解析開始: https://global.toyota/jp/sustainability/?padid=ag478_from_updates
+2025-06-10 22:18:27,810 - root - INFO - [2-102] AI解析結果: スコア=0.500
+2025-06-10 22:18:27,810 - root - INFO - [2-103] AI解析開始: https://global.toyota/jp/sustainability/esg/employees/diversity-and-inclusion/
+2025-06-10 22:18:31,396 - root - INFO - [2-103] AI解析結果: スコア=0.850
+2025-06-10 22:18:31,396 - root - INFO - [2-104] AI解析開始: https://global.toyota/jp/sustainability/?padid=ag478_from_updates#topics
+2025-06-10 22:18:34,863 - root - INFO - [2-104] AI解析結果: スコア=0.500
+2025-06-10 22:18:34,863 - root - INFO - [2-105] AI解析開始: https://global.toyota/jp/sustainability/?padid=ag478_from_updates#policy
+2025-06-10 22:18:38,574 - root - INFO - [2-105] AI解析結果: スコア=0.800
+2025-06-10 22:18:38,575 - root - INFO - [2-106] AI解析開始: https://global.toyota/jp/sustainability/esg/health-safety/
+2025-06-10 22:18:41,676 - root - INFO - [2-106] AI解析結果: スコア=0.250
+2025-06-10 22:18:41,678 - root - INFO - [2-107] AI解析開始: https://global.toyota/jp/sustainability/#health-productivity
+2025-06-10 22:18:45,587 - root - INFO - [2-107] AI解析結果: スコア=0.400
+2025-06-10 22:18:45,588 - root - INFO - [2-108] AI解析開始: https://global.toyota/pages/global_toyota/company/vision-and-philosophy/jp_Global_ABAC_Policy.pdf
+2025-06-10 22:18:48,551 - root - INFO - [2-108] AI解析結果: スコア=0.000
+2025-06-10 22:18:48,551 - root - INFO - [2-109] AI解析開始: https://global.toyota/jp/company/vision-and-philosophy/philosophy/
+2025-06-10 22:18:51,968 - root - INFO - [2-109] AI解析結果: スコア=0.800
+2025-06-10 22:18:51,968 - root - INFO - [2-110] AI解析開始: https://global.toyota/pages/global_toyota/company/vision-and-philosophy/code_of_conduct_001_jp_2.pdf
+2025-06-10 22:18:55,561 - root - INFO - [2-110] AI解析結果: スコア=0.700
+2025-06-10 22:18:55,561 - root - INFO - [2-111] AI解析開始: https://global.toyota/jp/sustainability/report/sdb/
+2025-06-10 22:18:58,725 - root - INFO - [2-111] AI解析結果: スコア=0.000
+2025-06-10 22:18:58,725 - root - INFO - [2-112] AI解析開始: https://global.toyota/pages/global_toyota/sustainability/esg/tax-policy_jp.pdf
+2025-06-10 22:19:02,536 - root - INFO - [2-112] AI解析結果: スコア=0.800
+2025-06-10 22:19:02,536 - root - INFO - [2-113] AI解析開始: https://global.toyota/jp/newsroom/fact-data/?padid=ag478_from_updates
+2025-06-10 22:19:05,961 - root - INFO - [2-113] AI解析結果: スコア=0.800
+2025-06-10 22:19:05,961 - root - INFO - [2-114] AI解析開始: https://global.toyota/jp/newsroom/fact-data/?padid=ag478_from_updates#fact-003
+2025-06-10 22:19:09,167 - root - INFO - [2-114] AI解析結果: スコア=0.625
+2025-06-10 22:19:09,167 - root - INFO - [2-115] AI解析開始: https://global.toyota/jp/newsroom/fact-data/?padid=ag478_from_updates#fact-002
+2025-06-10 22:19:12,486 - root - INFO - [2-115] AI解析結果: スコア=0.550
+2025-06-10 22:19:12,486 - root - INFO - [2-116] AI解析開始: https://global.toyota/jp/newsroom/fact-data/?padid=ag478_from_updates#fact-001
+2025-06-10 22:19:15,768 - root - INFO - [2-116] AI解析結果: スコア=0.700
+2025-06-10 22:19:15,768 - root - INFO - [2-117] AI解析開始: https://global.toyota/jp/newsroom/fact-data/?padid=ag478_from_updates#fact-004
+2025-06-10 22:19:19,321 - root - INFO - [2-117] AI解析結果: スコア=0.850
+2025-06-10 22:19:19,322 - root - INFO - [2-118] AI解析開始: https://global.toyota/jp/newsroom/fact-data/?padid=ag478_from_updates#fact-005
+2025-06-10 22:19:22,582 - root - INFO - [2-118] AI解析結果: スコア=0.450
+2025-06-10 22:19:22,583 - root - INFO - [2] ページ解析結果: 解析件数=119, 最高スコア=0.900
+2025-06-10 22:19:22,583 - root - INFO - [3] ページ解析開始: https://www.toyota-recruit.com/career/
+2025-06-10 22:19:22,583 - root - INFO - [3] メインページスクレイピング開始: https://www.toyota-recruit.com/career/
+2025-06-10 22:19:22,867 - root - INFO - [3-0] AI解析開始: https://www.toyota-recruit.com/career/
+2025-06-10 22:19:37,813 - root - INFO - [3-0] AI解析結果: スコア=0.000
+2025-06-10 22:19:37,815 - root - INFO - [3] 関連ページスクレイピング開始: https://www.toyota-recruit.com/career/
+2025-06-10 22:20:01,972 - root - INFO - [3] 関連ページスクレイピング完了: 163ページ
+2025-06-10 22:20:01,972 - root - INFO - [3-1] AI解析開始: https://www.toyota-recruit.com/career/
+2025-06-10 22:20:05,652 - root - INFO - [3-1] AI解析結果: スコア=0.850
+2025-06-10 22:20:05,652 - root - INFO - [3-2] AI解析開始: https://www.toyota-recruit.com/about/history/
+2025-06-10 22:20:11,401 - root - INFO - [3-2] AI解析結果: スコア=0.000
+2025-06-10 22:20:11,401 - root - INFO - [3-3] AI解析開始: https://www.toyota-recruit.com/environment/
+2025-06-10 22:20:16,563 - root - INFO - [3-3] AI解析結果: スコア=0.000
+2025-06-10 22:20:16,563 - root - INFO - [3-4] AI解析開始: https://www.toyota-recruit.com/environment/train/
+2025-06-10 22:20:26,152 - root - INFO - [3-4] AI解析結果: スコア=0.000
+2025-06-10 22:20:26,153 - root - INFO - [3-5] AI解析開始: https://www.toyota-recruit.com/environment/diversity/
+2025-06-10 22:20:29,748 - root - INFO - [3-5] AI解析結果: スコア=0.000
+2025-06-10 22:20:29,748 - root - INFO - [3-6] AI解析開始: https://www.toyota-recruit.com/saiyo/schedule/
+2025-06-10 22:20:35,827 - root - INFO - [3-6] AI解析結果: スコア=0.000
+2025-06-10 22:20:35,828 - root - INFO - [3-7] AI解析開始: https://www.toyota-recruit.com/saiyo/faq/
+2025-06-10 22:20:43,803 - root - INFO - [3-7] AI解析結果: スコア=0.000
+2025-06-10 22:20:43,803 - root - INFO - [3-8] AI解析開始: https://www.toyota-recruit.com/career/project/course/
+2025-06-10 22:20:49,646 - root - INFO - [3-8] AI解析結果: スコア=0.000
+2025-06-10 22:20:49,646 - root - INFO - [3-9] AI解析開始: https://www.toyota-recruit.com/project/movie/
+2025-06-10 22:20:53,064 - root - INFO - [3-9] AI解析結果: スコア=0.000
+2025-06-10 22:20:53,064 - root - INFO - [3-10] AI解析開始: https://www.toyota-recruit.com/career/info/
+2025-06-10 22:20:58,891 - root - INFO - [3-10] AI解析結果: スコア=0.000
+2025-06-10 22:20:58,891 - root - INFO - [3-11] AI解析開始: https://www.toyota-recruit.com/figure/
+2025-06-10 22:21:02,458 - root - INFO - [3-11] AI解析結果: スコア=0.800
+2025-06-10 22:21:02,458 - root - INFO - [3-12] AI解析開始: https://www.toyota-recruit.com/saiyo/project/course_2026/
+2025-06-10 22:21:05,425 - root - INFO - [3-12] AI解析結果: スコア=0.000
+2025-06-10 22:21:05,425 - root - INFO - [3-13] AI解析開始: https://www.toyota-recruit.com/career/referral/
+2025-06-10 22:21:12,900 - root - INFO - [3-13] AI解析結果: スコア=0.000
+2025-06-10 22:21:12,900 - root - INFO - [3-14] AI解析開始: https://www.toyota-recruit.com/about/
+2025-06-10 22:21:19,965 - root - INFO - [3-14] AI解析結果: スコア=0.000
+2025-06-10 22:21:19,965 - root - INFO - [3-15] AI解析開始: https://www.toyota-recruit.com/environment/benefits_career/
+2025-06-10 22:21:26,955 - root - INFO - [3-15] AI解析結果: スコア=0.000
+2025-06-10 22:21:26,955 - root - INFO - [3-16] AI解析開始: https://www.toyota-recruit.com/career/alumni/
+2025-06-10 22:21:30,205 - root - INFO - [3-16] AI解析結果: スコア=0.000
+2025-06-10 22:21:30,205 - root - INFO - [3-17] AI解析開始: https://www.toyota-recruit.com/about/feature/
+2025-06-10 22:21:33,919 - root - INFO - [3-17] AI解析結果: スコア=0.800
+2025-06-10 22:21:33,920 - root - INFO - [3-18] AI解析開始: https://www.toyota-recruit.com/career/faq/
+2025-06-10 22:21:40,485 - root - INFO - [3-18] AI解析結果: スコア=0.000
+2025-06-10 22:21:40,485 - root - INFO - [3-19] AI解析開始: https://www.toyota-recruit.com/project/
+2025-06-10 22:21:44,084 - root - INFO - [3-19] AI解析結果: スコア=0.750
+2025-06-10 22:21:44,084 - root - INFO - [3-20] AI解析開始: https://www.toyota-recruit.com/environment/benefits_saiyo/
+2025-06-10 22:21:47,201 - root - INFO - [3-20] AI解析結果: スコア=0.000
+2025-06-10 22:21:47,202 - root - INFO - [3-21] AI解析開始: https://www.toyota-recruit.com/project/developersnight/
+2025-06-10 22:21:50,847 - root - INFO - [3-21] AI解析結果: スコア=0.800
+2025-06-10 22:21:50,848 - root - INFO - [3-22] AI解析開始: https://www.toyota-recruit.com/
+2025-06-10 22:21:56,947 - root - INFO - [3-22] AI解析結果: スコア=0.000
+2025-06-10 22:21:56,947 - root - INFO - [3-23] AI解析開始: https://www.toyota-recruit.com/environment/office/
+2025-06-10 22:22:00,543 - root - INFO - [3-23] AI解析結果: スコア=0.750
+2025-06-10 22:22:00,544 - root - INFO - [3-24] AI解析開始: https://www.toyota-recruit.com/saiyo/
+2025-06-10 22:22:07,701 - root - INFO - [3-24] AI解析結果: スコア=0.000
+2025-06-10 22:22:07,701 - root - INFO - [3-25] AI解析開始: https://www.toyota-recruit.com/information/
+2025-06-10 22:22:11,178 - root - INFO - [3-25] AI解析結果: スコア=0.500
+2025-06-10 22:22:11,178 - root - INFO - [3-26] AI解析開始: https://www.toyota-recruit.com/saiyo/event/
+2025-06-10 22:22:16,683 - root - INFO - [3-26] AI解析結果: スコア=0.000
+2025-06-10 22:22:16,683 - root - INFO - [3-27] AI解析開始: https://www.toyota-recruit.com/environment/liveability/
+2025-06-10 22:22:22,674 - root - INFO - [3-27] AI解析結果: スコア=0.000
+2025-06-10 22:22:22,675 - root - INFO - [3-28] AI解析開始: https://www.toyota-recruit.com/interview/
+2025-06-10 22:22:25,782 - root - INFO - [3-28] AI解析結果: スコア=0.000
+2025-06-10 22:22:25,782 - root - INFO - [3-29] AI解析開始: https://www.toyota-recruit.com/career/process/
+2025-06-10 22:22:30,929 - root - INFO - [3-29] AI解析結果: スコア=0.000
+2025-06-10 22:22:30,929 - root - INFO - [3-30] AI解析開始: https://www.toyota-recruit.com/saiyo/info/
+2025-06-10 22:22:37,775 - root - INFO - [3-30] AI解析結果: スコア=0.000
+2025-06-10 22:22:37,775 - root - INFO - [3-31] AI解析開始: https://www.toyota-recruit.com/environment/diversity
+2025-06-10 22:22:43,124 - root - INFO - [3-31] AI解析結果: スコア=0.000
+2025-06-10 22:22:43,124 - root - INFO - [3-32] AI解析開始: https://www.toyota-recruit.com/environment/office
+2025-06-10 22:22:46,076 - root - INFO - [3-32] AI解析結果: スコア=0.000
+2025-06-10 22:22:46,076 - root - INFO - [3-33] AI解析開始: https://www.toyota-recruit.com/environment/train
+2025-06-10 22:22:54,420 - root - INFO - [3-33] AI解析結果: スコア=0.000
+2025-06-10 22:22:54,420 - root - INFO - [3-34] AI解析開始: https://www.toyota-recruit.com/career/environment/office/
+2025-06-10 22:22:57,549 - root - INFO - [3-34] AI解析結果: スコア=0.000
+2025-06-10 22:22:57,549 - root - INFO - [3-35] AI解析開始: https://www.toyota-recruit.com/interview/079
+2025-06-10 22:23:03,595 - root - INFO - [3-35] AI解析結果: スコア=0.000
+2025-06-10 22:23:03,596 - root - INFO - [3-36] AI解析開始: https://www.toyota-recruit.com/saiyo/project/course_2026/connected/
+2025-06-10 22:23:07,282 - root - INFO - [3-36] AI解析結果: スコア=0.000
+2025-06-10 22:23:07,283 - root - INFO - [3-37] AI解析開始: https://www.toyota-recruit.com/interview/082
+2025-06-10 22:23:16,347 - root - INFO - [3-37] AI解析結果: スコア=0.000
+2025-06-10 22:23:16,347 - root - INFO - [3-38] AI解析開始: https://www.toyota-recruit.com/interview/072
+2025-06-10 22:23:19,496 - root - INFO - [3-38] AI解析結果: スコア=0.000
+2025-06-10 22:23:19,496 - root - INFO - [3-39] AI解析開始: https://www.toyota-recruit.com/interview/075
+2025-06-10 22:23:27,550 - root - INFO - [3-39] AI解析結果: スコア=0.000
+2025-06-10 22:23:27,551 - root - INFO - [3-40] AI解析開始: https://www.toyota-recruit.com/environment/benefits_career
+2025-06-10 22:23:34,439 - root - INFO - [3-40] AI解析結果: スコア=0.000
+2025-06-10 22:23:34,439 - root - INFO - [3-41] AI解析開始: https://www.toyota-recruit.com/information/detail_20250415_01/
+2025-06-10 22:23:40,946 - root - INFO - [3-41] AI解析結果: スコア=0.000
+2025-06-10 22:23:40,946 - root - INFO - [3-42] AI解析開始: https://www.toyota-recruit.com/information/detail_20250228_02/
+2025-06-10 22:23:45,255 - root - INFO - [3-42] AI解析結果: スコア=0.000
+2025-06-10 22:23:45,256 - root - INFO - [3-43] AI解析開始: https://www.toyota-recruit.com/information/detail_20250430_01/
+2025-06-10 22:23:53,036 - root - INFO - [3-43] AI解析結果: スコア=0.000
+2025-06-10 22:23:53,036 - root - INFO - [3-44] AI解析開始: https://www.toyota-recruit.com/interview/110
+2025-06-10 22:23:56,675 - root - INFO - [3-44] AI解析結果: スコア=0.000
+2025-06-10 22:23:56,676 - root - INFO - [3-45] AI解析開始: https://www.toyota-recruit.com/saiyo/project/course_2026/battery/
+2025-06-10 22:24:00,167 - root - INFO - [3-45] AI解析結果: スコア=0.800
+2025-06-10 22:24:00,169 - root - INFO - [3-46] AI解析開始: https://www.toyota-recruit.com/interview/030
+2025-06-10 22:24:03,829 - root - INFO - [3-46] AI解析結果: スコア=0.850
+2025-06-10 22:24:03,830 - root - INFO - [3-47] AI解析開始: https://www.toyota-recruit.com/interview/022
+2025-06-10 22:24:06,855 - root - INFO - [3-47] AI解析結果: スコア=0.000
+2025-06-10 22:24:06,855 - root - INFO - [3-48] AI解析開始: https://www.toyota-recruit.com/interview/083
+2025-06-10 22:24:10,400 - root - INFO - [3-48] AI解析結果: スコア=0.600
+2025-06-10 22:24:10,400 - root - INFO - [3-49] AI解析開始: https://www.toyota-recruit.com/interview/092
+2025-06-10 22:24:23,067 - root - INFO - [3-49] AI解析結果: スコア=0.000
+2025-06-10 22:24:23,067 - root - INFO - [3-50] AI解析開始: https://www.toyota-recruit.com/saiyo/project/course_2026/purchasing/
+2025-06-10 22:24:28,877 - root - INFO - [3-50] AI解析結果: スコア=0.000
+2025-06-10 22:24:28,877 - root - INFO - [3-51] AI解析開始: https://www.toyota-recruit.com/interview/067
+2025-06-10 22:24:31,964 - root - INFO - [3-51] AI解析結果: スコア=0.000
+2025-06-10 22:24:31,965 - root - INFO - [3-52] AI解析開始: https://www.toyota-recruit.com/interview/085
+2025-06-10 22:24:43,530 - root - INFO - [3-52] AI解析結果: スコア=0.000
+2025-06-10 22:24:43,530 - root - INFO - [3-53] AI解析開始: https://www.toyota-recruit.com/interview/054
+2025-06-10 22:24:50,088 - root - INFO - [3-53] AI解析結果: スコア=0.000
+2025-06-10 22:24:50,089 - root - INFO - [3-54] AI解析開始: https://www.toyota-recruit.com/interview/?selects=%5B%22career%22%5D
+2025-06-10 22:24:52,875 - root - INFO - [3-54] AI解析結果: スコア=0.000
+2025-06-10 22:24:52,875 - root - INFO - [3-55] AI解析開始: https://www.toyota-recruit.com/interview/018/
+2025-06-10 22:25:02,702 - root - INFO - [3-55] AI解析結果: スコア=0.000
+2025-06-10 22:25:02,702 - root - INFO - [3-56] AI解析開始: https://www.toyota-recruit.com/interview/081/
+2025-06-10 22:25:12,430 - root - INFO - [3-56] AI解析結果: スコア=0.000
+2025-06-10 22:25:12,431 - root - INFO - [3-57] AI解析開始: https://www.toyota-recruit.com/interview/078/
+2025-06-10 22:25:18,366 - root - INFO - [3-57] AI解析結果: スコア=0.000
+2025-06-10 22:25:18,366 - root - INFO - [3-58] AI解析開始: https://www.toyota-recruit.com/interview/108/
+2025-06-10 22:25:21,399 - root - INFO - [3-58] AI解析結果: スコア=0.000
+2025-06-10 22:25:21,399 - root - INFO - [3-59] AI解析開始: https://www.toyota-recruit.com/interview/062/
+2025-06-10 22:25:32,999 - root - INFO - [3-59] AI解析結果: スコア=0.000
+2025-06-10 22:25:32,999 - root - INFO - [3-60] AI解析開始: https://www.toyota-recruit.com/interview/063/
+2025-06-10 22:25:38,685 - root - INFO - [3-60] AI解析結果: スコア=0.000
+2025-06-10 22:25:38,686 - root - INFO - [3-61] AI解析開始: https://www.toyota-recruit.com/interview/001/
+2025-06-10 22:25:47,320 - root - INFO - [3-61] AI解析結果: スコア=0.000
+2025-06-10 22:25:47,320 - root - INFO - [3-62] AI解析開始: https://www.toyota-recruit.com/interview/069/
+2025-06-10 22:25:52,939 - root - INFO - [3-62] AI解析結果: スコア=0.000
+2025-06-10 22:25:52,939 - root - INFO - [3-63] AI解析開始: https://www.toyota-recruit.com/interview/100/
+2025-06-10 22:25:59,027 - root - INFO - [3-63] AI解析結果: スコア=0.000
+2025-06-10 22:25:59,027 - root - INFO - [3-64] AI解析開始: https://www.toyota-recruit.com/interview/014/
+2025-06-10 22:26:05,669 - root - INFO - [3-64] AI解析結果: スコア=0.000
+2025-06-10 22:26:05,669 - root - INFO - [3-65] AI解析開始: https://www.toyota-recruit.com/interview/031/
+2025-06-10 22:26:08,918 - root - INFO - [3-65] AI解析結果: スコア=0.000
+2025-06-10 22:26:08,918 - root - INFO - [3-66] AI解析開始: https://www.toyota-recruit.com/interview/092/
+2025-06-10 22:26:12,559 - root - INFO - [3-66] AI解析結果: スコア=0.000
+2025-06-10 22:26:12,559 - root - INFO - [3-67] AI解析開始: https://www.toyota-recruit.com/interview/093/
+2025-06-10 22:26:15,662 - root - INFO - [3-67] AI解析結果: スコア=0.000
+2025-06-10 22:26:15,662 - root - INFO - [3-68] AI解析開始: https://www.toyota-recruit.com/interview/010/
+2025-06-10 22:26:18,757 - root - INFO - [3-68] AI解析結果: スコア=0.000
+2025-06-10 22:26:18,757 - root - INFO - [3-69] AI解析開始: https://www.toyota-recruit.com/interview/039/
+2025-06-10 22:26:24,866 - root - INFO - [3-69] AI解析結果: スコア=0.000
+2025-06-10 22:26:24,866 - root - INFO - [3-70] AI解析開始: https://www.toyota-recruit.com/interview/095/
+2025-06-10 22:26:35,248 - root - INFO - [3-70] AI解析結果: スコア=0.000
+2025-06-10 22:26:35,248 - root - INFO - [3-71] AI解析開始: https://www.toyota-recruit.com/interview/058/
+2025-06-10 22:26:42,868 - root - INFO - [3-71] AI解析結果: スコア=0.000
+2025-06-10 22:26:42,868 - root - INFO - [3-72] AI解析開始: https://www.toyota-recruit.com/interview/079/
+2025-06-10 22:26:46,163 - root - INFO - [3-72] AI解析結果: スコア=0.000
+2025-06-10 22:26:46,163 - root - INFO - [3-73] AI解析開始: https://www.toyota-recruit.com/interview/067/
+2025-06-10 22:26:53,738 - root - INFO - [3-73] AI解析結果: スコア=0.000
+2025-06-10 22:26:53,738 - root - INFO - [3-74] AI解析開始: https://www.toyota-recruit.com/interview/060/
+2025-06-10 22:27:13,067 - root - INFO - [3-74] AI解析結果: スコア=0.000
+2025-06-10 22:27:13,067 - root - INFO - [3-75] AI解析開始: https://www.toyota-recruit.com/interview/045/
+2025-06-10 22:27:16,029 - root - INFO - [3-75] AI解析結果: スコア=0.000
+2025-06-10 22:27:16,029 - root - INFO - [3-76] AI解析開始: https://www.toyota-recruit.com/interview/038/
+2025-06-10 22:27:27,049 - root - INFO - [3-76] AI解析結果: スコア=0.000
+2025-06-10 22:27:27,050 - root - INFO - [3-77] AI解析開始: https://www.toyota-recruit.com/interview/077/
+2025-06-10 22:27:29,862 - root - INFO - [3-77] AI解析結果: スコア=0.000
+2025-06-10 22:27:29,863 - root - INFO - [3-78] AI解析開始: https://www.toyota-recruit.com/interview/027/
+2025-06-10 22:27:33,149 - root - INFO - [3-78] AI解析結果: スコア=0.000
+2025-06-10 22:27:33,149 - root - INFO - [3-79] AI解析開始: https://www.toyota-recruit.com/interview/044/
+2025-06-10 22:27:38,209 - root - INFO - [3-79] AI解析結果: スコア=0.000
+2025-06-10 22:27:38,209 - root - INFO - [3-80] AI解析開始: https://www.toyota-recruit.com/interview/090/
+2025-06-10 22:27:44,311 - root - INFO - [3-80] AI解析結果: スコア=0.000
+2025-06-10 22:27:44,311 - root - INFO - [3-81] AI解析開始: https://www.toyota-recruit.com/interview/023/
+2025-06-10 22:27:47,423 - root - INFO - [3-81] AI解析結果: スコア=0.000
+2025-06-10 22:27:47,423 - root - INFO - [3-82] AI解析開始: https://www.toyota-recruit.com/interview/041/
+2025-06-10 22:27:54,185 - root - INFO - [3-82] AI解析結果: スコア=0.000
+2025-06-10 22:27:54,186 - root - INFO - [3-83] AI解析開始: https://www.toyota-recruit.com/interview/064/
+2025-06-10 22:28:01,120 - root - INFO - [3-83] AI解析結果: スコア=0.000
+2025-06-10 22:28:01,121 - root - INFO - [3-84] AI解析開始: https://www.toyota-recruit.com/interview/070/
+2025-06-10 22:28:07,418 - root - INFO - [3-84] AI解析結果: スコア=0.000
+2025-06-10 22:28:07,418 - root - INFO - [3-85] AI解析開始: https://www.toyota-recruit.com/interview/110/
+2025-06-10 22:28:10,240 - root - INFO - [3-85] AI解析結果: スコア=0.000
+2025-06-10 22:28:10,240 - root - INFO - [3-86] AI解析開始: https://www.toyota-recruit.com/interview/017/
+2025-06-10 22:28:13,544 - root - INFO - [3-86] AI解析結果: スコア=0.000
+2025-06-10 22:28:13,545 - root - INFO - [3-87] AI解析開始: https://www.toyota-recruit.com/interview/003/
+2025-06-10 22:28:22,397 - root - INFO - [3-87] AI解析結果: スコア=0.000
+2025-06-10 22:28:22,397 - root - INFO - [3-88] AI解析開始: https://www.toyota-recruit.com/interview/101/
+2025-06-10 22:28:27,895 - root - INFO - [3-88] AI解析結果: スコア=0.000
+2025-06-10 22:28:27,896 - root - INFO - [3-89] AI解析開始: https://www.toyota-recruit.com/interview/073/
+2025-06-10 22:28:30,924 - root - INFO - [3-89] AI解析結果: スコア=0.000
+2025-06-10 22:28:30,924 - root - INFO - [3-90] AI解析開始: https://www.toyota-recruit.com/interview/022/
+2025-06-10 22:28:41,108 - root - INFO - [3-90] AI解析結果: スコア=0.000
+2025-06-10 22:28:41,108 - root - INFO - [3-91] AI解析開始: https://www.toyota-recruit.com/interview/057/
+2025-06-10 22:28:46,934 - root - INFO - [3-91] AI解析結果: スコア=0.000
+2025-06-10 22:28:46,934 - root - INFO - [3-92] AI解析開始: https://www.toyota-recruit.com/interview/026/
+2025-06-10 22:28:50,737 - root - INFO - [3-92] AI解析結果: スコア=0.800
+2025-06-10 22:28:50,738 - root - INFO - [3-93] AI解析開始: https://www.toyota-recruit.com/interview/105/
+2025-06-10 22:28:56,122 - root - INFO - [3-93] AI解析結果: スコア=0.000
+2025-06-10 22:28:56,122 - root - INFO - [3-94] AI解析開始: https://www.toyota-recruit.com/interview/050/
+2025-06-10 22:29:06,424 - root - INFO - [3-94] AI解析結果: スコア=0.000
+2025-06-10 22:29:06,424 - root - INFO - [3-95] AI解析開始: https://www.toyota-recruit.com/interview/072/
+2025-06-10 22:29:11,900 - root - INFO - [3-95] AI解析結果: スコア=0.000
+2025-06-10 22:29:11,900 - root - INFO - [3-96] AI解析開始: https://www.toyota-recruit.com/interview/061/
+2025-06-10 22:29:17,819 - root - INFO - [3-96] AI解析結果: スコア=0.000
+2025-06-10 22:29:17,819 - root - INFO - [3-97] AI解析開始: https://www.toyota-recruit.com/interview/083/
+2025-06-10 22:29:23,501 - root - INFO - [3-97] AI解析結果: スコア=0.000
+2025-06-10 22:29:23,502 - root - INFO - [3-98] AI解析開始: https://www.toyota-recruit.com/interview/075/
+2025-06-10 22:29:29,803 - root - INFO - [3-98] AI解析結果: スコア=0.000
+2025-06-10 22:29:29,803 - root - INFO - [3-99] AI解析開始: https://www.toyota-recruit.com/interview/056/
+2025-06-10 22:29:33,028 - root - INFO - [3-99] AI解析結果: スコア=0.000
+2025-06-10 22:29:33,029 - root - INFO - [3-100] AI解析開始: https://www.toyota-recruit.com/interview/015/
+2025-06-10 22:29:36,066 - root - INFO - [3-100] AI解析結果: スコア=0.000
+2025-06-10 22:29:36,066 - root - INFO - [3-101] AI解析開始: https://www.toyota-recruit.com/interview/034/
+2025-06-10 22:29:45,599 - root - INFO - [3-101] AI解析結果: スコア=0.000
+2025-06-10 22:29:45,599 - root - INFO - [3-102] AI解析開始: https://www.toyota-recruit.com/interview/097/
+2025-06-10 22:31:47,634 - root - INFO - [3-102] AI解析結果: スコア=0.000
+2025-06-10 22:31:47,634 - root - INFO - [3-103] AI解析開始: https://www.toyota-recruit.com/interview/085/
+2025-06-10 22:31:54,444 - root - INFO - [3-103] AI解析結果: スコア=0.000
+2025-06-10 22:31:54,445 - root - INFO - [3-104] AI解析開始: https://www.toyota-recruit.com/interview/053/
+2025-06-10 22:32:01,775 - root - INFO - [3-104] AI解析結果: スコア=0.000
+2025-06-10 22:32:01,775 - root - INFO - [3-105] AI解析開始: https://www.toyota-recruit.com/interview/051/
+2025-06-10 22:32:04,782 - root - INFO - [3-105] AI解析結果: スコア=0.000
+2025-06-10 22:32:04,782 - root - INFO - [3-106] AI解析開始: https://www.toyota-recruit.com/interview/013/
+2025-06-10 22:32:08,323 - root - INFO - [3-106] AI解析結果: スコア=0.500
+2025-06-10 22:32:08,323 - root - INFO - [3-107] AI解析開始: https://www.toyota-recruit.com/interview/037/
+2025-06-10 22:32:20,304 - root - INFO - [3-107] AI解析結果: スコア=0.000
+2025-06-10 22:32:20,304 - root - INFO - [3-108] AI解析開始: https://www.toyota-recruit.com/interview/011/
+2025-06-10 22:32:24,059 - root - INFO - [3-108] AI解析結果: スコア=0.000
+2025-06-10 22:32:24,059 - root - INFO - [3-109] AI解析開始: https://www.toyota-recruit.com/interview/089/
+2025-06-10 22:32:31,253 - root - INFO - [3-109] AI解析結果: スコア=0.000
+2025-06-10 22:32:31,253 - root - INFO - [3-110] AI解析開始: https://www.toyota-recruit.com/interview/059/
+2025-06-10 22:32:35,539 - root - INFO - [3-110] AI解析結果: スコア=0.000
+2025-06-10 22:32:35,539 - root - INFO - [3-111] AI解析開始: https://www.toyota-recruit.com/interview/107/
+2025-06-10 22:32:42,391 - root - INFO - [3-111] AI解析結果: スコア=0.000
+2025-06-10 22:32:42,392 - root - INFO - [3-112] AI解析開始: https://www.toyota-recruit.com/interview/098/
+2025-06-10 22:32:56,142 - root - INFO - [3-112] AI解析結果: スコア=0.000
+2025-06-10 22:32:56,143 - root - INFO - [3-113] AI解析開始: https://www.toyota-recruit.com/interview/009/
+2025-06-10 22:33:05,238 - root - INFO - [3-113] AI解析結果: スコア=0.000
+2025-06-10 22:33:05,238 - root - INFO - [3-114] AI解析開始: https://www.toyota-recruit.com/interview/029/
+2025-06-10 22:33:12,452 - root - INFO - [3-114] AI解析結果: スコア=0.000
+2025-06-10 22:33:12,452 - root - INFO - [3-115] AI解析開始: https://www.toyota-recruit.com/interview/043/
+2025-06-10 22:33:23,843 - root - INFO - [3-115] AI解析結果: スコア=0.000
+2025-06-10 22:33:23,843 - root - INFO - [3-116] AI解析開始: https://www.toyota-recruit.com/interview/076/
+2025-06-10 22:33:28,396 - root - INFO - [3-116] AI解析結果: スコア=0.000
+2025-06-10 22:33:28,396 - root - INFO - [3-117] AI解析開始: https://www.toyota-recruit.com/interview/028/
+2025-06-10 22:33:37,892 - root - INFO - [3-117] AI解析結果: スコア=0.000
+2025-06-10 22:33:37,892 - root - INFO - [3-118] AI解析開始: https://www.toyota-recruit.com/interview/091/
+2025-06-10 22:33:46,177 - root - INFO - [3-118] AI解析結果: スコア=0.000
+2025-06-10 22:33:46,177 - root - INFO - [3-119] AI解析開始: https://www.toyota-recruit.com/interview/047/
+2025-06-10 22:33:49,974 - root - INFO - [3-119] AI解析結果: スコア=0.000
+2025-06-10 22:33:49,974 - root - INFO - [3-120] AI解析開始: https://www.toyota-recruit.com/interview/048/
+2025-06-10 22:33:58,289 - root - INFO - [3-120] AI解析結果: スコア=0.000
+2025-06-10 22:33:58,289 - root - INFO - [3-121] AI解析開始: https://www.toyota-recruit.com/interview/068/
+2025-06-10 22:34:01,521 - root - INFO - [3-121] AI解析結果: スコア=0.000
+2025-06-10 22:34:01,521 - root - INFO - [3-122] AI解析開始: https://www.toyota-recruit.com/interview/106/
+2025-06-10 22:34:08,299 - root - INFO - [3-122] AI解析結果: スコア=0.000
+2025-06-10 22:34:08,300 - root - INFO - [3-123] AI解析開始: https://www.toyota-recruit.com/interview/020/
+2025-06-10 22:34:11,056 - root - INFO - [3-123] AI解析結果: スコア=0.000
+2025-06-10 22:34:11,056 - root - INFO - [3-124] AI解析開始: https://www.toyota-recruit.com/interview/012/
+2025-06-10 22:34:14,450 - root - INFO - [3-124] AI解析結果: スコア=0.000
+2025-06-10 22:34:14,451 - root - INFO - [3-125] AI解析開始: https://www.toyota-recruit.com/interview/006/
+2025-06-10 22:34:21,089 - root - INFO - [3-125] AI解析結果: スコア=0.000
+2025-06-10 22:34:21,089 - root - INFO - [3-126] AI解析開始: https://www.toyota-recruit.com/interview/008/
+2025-06-10 22:34:26,251 - root - INFO - [3-126] AI解析結果: スコア=0.000
+2025-06-10 22:34:26,251 - root - INFO - [3-127] AI解析開始: https://www.toyota-recruit.com/interview/019/
+2025-06-10 22:34:31,923 - root - INFO - [3-127] AI解析結果: スコア=0.000
+2025-06-10 22:34:31,923 - root - INFO - [3-128] AI解析開始: https://www.toyota-recruit.com/interview/065/
+2025-06-10 22:34:36,526 - root - INFO - [3-128] AI解析結果: スコア=0.000
+2025-06-10 22:34:36,526 - root - INFO - [3-129] AI解析開始: https://www.toyota-recruit.com/interview/030/
+2025-06-10 22:34:40,110 - root - INFO - [3-129] AI解析結果: スコア=0.500
+2025-06-10 22:34:40,110 - root - INFO - [3-130] AI解析開始: https://www.toyota-recruit.com/interview/104/
+2025-06-10 22:34:43,106 - root - INFO - [3-130] AI解析結果: スコア=0.000
+2025-06-10 22:34:43,107 - root - INFO - [3-131] AI解析開始: https://www.toyota-recruit.com/interview/049/
+2025-06-10 22:34:46,334 - root - INFO - [3-131] AI解析結果: スコア=0.000
+2025-06-10 22:34:46,334 - root - INFO - [3-132] AI解析開始: https://www.toyota-recruit.com/interview/054/
+2025-06-10 22:34:55,786 - root - INFO - [3-132] AI解析結果: スコア=0.000
+2025-06-10 22:34:55,787 - root - INFO - [3-133] AI解析開始: https://www.toyota-recruit.com/interview/099/
+2025-06-10 22:34:59,595 - root - INFO - [3-133] AI解析結果: スコア=0.900
+2025-06-10 22:34:59,595 - root - INFO - [3-134] AI解析開始: https://www.toyota-recruit.com/interview/088/
+2025-06-10 22:35:02,623 - root - INFO - [3-134] AI解析結果: スコア=0.000
+2025-06-10 22:35:02,623 - root - INFO - [3-135] AI解析開始: https://www.toyota-recruit.com/interview/071/
+2025-06-10 22:35:13,990 - root - INFO - [3-135] AI解析結果: スコア=0.000
+2025-06-10 22:35:13,990 - root - INFO - [3-136] AI解析開始: https://www.toyota-recruit.com/interview/103/
+2025-06-10 22:35:20,528 - root - INFO - [3-136] AI解析結果: スコア=0.000
+2025-06-10 22:35:20,529 - root - INFO - [3-137] AI解析開始: https://www.toyota-recruit.com/interview/024/
+2025-06-10 22:35:24,010 - root - INFO - [3-137] AI解析結果: スコア=0.000
+2025-06-10 22:35:24,011 - root - INFO - [3-138] AI解析開始: https://www.toyota-recruit.com/interview/036/
+2025-06-10 22:35:27,347 - root - INFO - [3-138] AI解析結果: スコア=0.000
+2025-06-10 22:35:27,348 - root - INFO - [3-139] AI解析開始: https://www.toyota-recruit.com/interview/080/
+2025-06-10 22:35:37,146 - root - INFO - [3-139] AI解析結果: スコア=0.000
+2025-06-10 22:35:37,147 - root - INFO - [3-140] AI解析開始: https://www.toyota-recruit.com/interview/102/
+2025-06-10 22:35:41,607 - root - INFO - [3-140] AI解析結果: スコア=0.000
+2025-06-10 22:35:41,607 - root - INFO - [3-141] AI解析開始: https://www.toyota-recruit.com/interview/033/
+2025-06-10 22:35:48,852 - root - INFO - [3-141] AI解析結果: スコア=0.000
+2025-06-10 22:35:48,853 - root - INFO - [3-142] AI解析開始: https://www.toyota-recruit.com/interview/035/
+2025-06-10 22:35:55,588 - root - INFO - [3-142] AI解析結果: スコア=0.000
+2025-06-10 22:35:55,588 - root - INFO - [3-143] AI解析開始: https://www.toyota-recruit.com/interview/109/
+2025-06-10 22:36:01,849 - root - INFO - [3-143] AI解析結果: スコア=0.000
+2025-06-10 22:36:01,850 - root - INFO - [3-144] AI解析開始: https://www.toyota-recruit.com/interview/046/
+2025-06-10 22:36:04,983 - root - INFO - [3-144] AI解析結果: スコア=0.000
+2025-06-10 22:36:04,983 - root - INFO - [3-145] AI解析開始: https://www.toyota-recruit.com/interview/084/
+2025-06-10 22:36:11,118 - root - INFO - [3-145] AI解析結果: スコア=0.000
+2025-06-10 22:36:11,118 - root - INFO - [3-146] AI解析開始: https://www.toyota-recruit.com/interview/087/
+2025-06-10 22:36:14,244 - root - INFO - [3-146] AI解析結果: スコア=0.000
+2025-06-10 22:36:14,246 - root - INFO - [3-147] AI解析開始: https://www.toyota-recruit.com/interview/032/
+2025-06-10 22:36:20,892 - root - INFO - [3-147] AI解析結果: スコア=0.000
+2025-06-10 22:36:20,893 - root - INFO - [3-148] AI解析開始: https://www.toyota-recruit.com/interview/096/
+2025-06-10 22:36:23,840 - root - INFO - [3-148] AI解析結果: スコア=0.000
+2025-06-10 22:36:23,840 - root - INFO - [3-149] AI解析開始: https://www.toyota-recruit.com/interview/055/
+2025-06-10 22:36:26,930 - root - INFO - [3-149] AI解析結果: スコア=0.000
+2025-06-10 22:36:26,930 - root - INFO - [3-150] AI解析開始: https://www.toyota-recruit.com/interview/082/
+2025-06-10 22:36:37,409 - root - INFO - [3-150] AI解析結果: スコア=0.000
+2025-06-10 22:36:37,409 - root - INFO - [3-151] AI解析開始: https://www.toyota-recruit.com/interview/086/
+2025-06-10 22:36:40,330 - root - INFO - [3-151] AI解析結果: スコア=0.000
+2025-06-10 22:36:40,331 - root - INFO - [3-152] AI解析開始: https://www.toyota-recruit.com/interview/025/
+2025-06-10 22:36:43,548 - root - INFO - [3-152] AI解析結果: スコア=0.000
+2025-06-10 22:36:43,549 - root - INFO - [3-153] AI解析開始: https://www.toyota-recruit.com/interview/004/
+2025-06-10 22:36:52,177 - root - INFO - [3-153] AI解析結果: スコア=0.000
+2025-06-10 22:36:52,177 - root - INFO - [3-154] AI解析開始: https://www.toyota-recruit.com/interview/021/
+2025-06-10 22:36:59,579 - root - INFO - [3-154] AI解析結果: スコア=0.000
+2025-06-10 22:36:59,579 - root - INFO - [3-155] AI解析開始: https://www.toyota-recruit.com/interview/094/
+2025-06-10 22:37:03,468 - root - INFO - [3-155] AI解析結果: スコア=0.850
+2025-06-10 22:37:03,468 - root - INFO - [3-156] AI解析開始: https://www.toyota-recruit.com/interview/005/
+2025-06-10 22:37:07,438 - root - INFO - [3-156] AI解析結果: スコア=0.000
+2025-06-10 22:37:07,439 - root - INFO - [3-157] AI解析開始: https://www.toyota-recruit.com/interview/007/
+2025-06-10 22:37:11,983 - root - INFO - [3-157] AI解析結果: スコア=0.000
+2025-06-10 22:37:11,983 - root - INFO - [3-158] AI解析開始: https://www.toyota-recruit.com/interview/052/
+2025-06-10 22:37:21,446 - root - INFO - [3-158] AI解析結果: スコア=0.000
+2025-06-10 22:37:21,447 - root - INFO - [3-159] AI解析開始: https://www.toyota-recruit.com/interview/042/
+2025-06-10 22:37:34,037 - root - INFO - [3-159] AI解析結果: スコア=0.000
+2025-06-10 22:37:34,038 - root - INFO - [3-160] AI解析開始: https://www.toyota-recruit.com/interview/066/
+2025-06-10 22:37:40,406 - root - INFO - [3-160] AI解析結果: スコア=0.000
+2025-06-10 22:37:40,407 - root - INFO - [3-161] AI解析開始: https://www.toyota-recruit.com/interview/002/
+2025-06-10 22:37:43,240 - root - INFO - [3-161] AI解析結果: スコア=0.000
+2025-06-10 22:37:43,240 - root - INFO - [3-162] AI解析開始: https://www.toyota-recruit.com/information/detail_20250609_02/
+2025-06-10 22:37:46,955 - root - INFO - [3-162] AI解析結果: スコア=0.700
+2025-06-10 22:37:46,955 - root - INFO - [3-163] AI解析開始: https://www.toyota-recruit.com/information/detail_20250609_01/
+2025-06-10 22:38:01,070 - root - INFO - [3-163] AI解析結果: スコア=0.000
+2025-06-10 22:38:01,070 - root - INFO - [3] ページ解析結果: 解析件数=164, 最高スコア=0.900
+2025-06-10 22:38:01,072 - root - INFO - [4] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:38:01,072 - root - INFO - [4] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:38:01,474 - root - INFO - [4-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:38:05,226 - root - INFO - [4-0] AI解析結果: スコア=0.900
+2025-06-10 22:38:05,227 - root - INFO - [4] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:38:08,548 - root - INFO - [4] 関連ページスクレイピング完了: 17ページ
+2025-06-10 22:38:08,548 - root - INFO - [4-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:38:11,975 - root - INFO - [4-1] AI解析結果: スコア=0.800
+2025-06-10 22:38:11,975 - root - INFO - [4-2] AI解析開始: https://global.toyota/jp/ir/stock/outline/
+2025-06-10 22:38:15,697 - root - INFO - [4-2] AI解析結果: スコア=0.800
+2025-06-10 22:38:15,699 - root - INFO - [4-3] AI解析開始: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular
+2025-06-10 22:38:19,432 - root - INFO - [4-3] AI解析結果: スコア=0.200
+2025-06-10 22:38:19,434 - root - INFO - [4-4] AI解析開始: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular#powertrain
+2025-06-10 22:38:22,955 - root - INFO - [4-4] AI解析結果: スコア=0.800
+2025-06-10 22:38:22,955 - root - INFO - [4-5] AI解析開始: https://global.toyota/jp/mobility/toyota-brand/gallery/rav4.html
+2025-06-10 22:38:26,399 - root - INFO - [4-5] AI解析結果: スコア=0.350
+2025-06-10 22:38:26,400 - root - INFO - [4-6] AI解析開始: https://global.toyota/jp/newsroom/toyota/42762028.html
+2025-06-10 22:38:29,881 - root - INFO - [4-6] AI解析結果: スコア=0.200
+2025-06-10 22:38:29,881 - root - INFO - [4-7] AI解析開始: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular
+2025-06-10 22:38:35,128 - root - INFO - [4-7] AI解析結果: スコア=0.000
+2025-06-10 22:38:35,129 - root - INFO - [4-8] AI解析開始: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular#intelligent
+2025-06-10 22:38:38,141 - root - INFO - [4-8] AI解析結果: スコア=0.000
+2025-06-10 22:38:38,141 - root - INFO - [4-9] AI解析開始: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular
+2025-06-10 22:38:42,156 - root - INFO - [4-9] AI解析結果: スコア=0.000
+2025-06-10 22:38:42,156 - root - INFO - [4-10] AI解析開始: https://global.toyota/jp/mobility/beyond-zero/
+2025-06-10 22:38:45,704 - root - INFO - [4-10] AI解析結果: スコア=0.000
+2025-06-10 22:38:45,705 - root - INFO - [4-11] AI解析開始: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular
+2025-06-10 22:38:49,386 - root - INFO - [4-11] AI解析結果: スコア=0.500
+2025-06-10 22:38:49,386 - root - INFO - [4-12] AI解析開始: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular#design
+2025-06-10 22:38:52,898 - root - INFO - [4-12] AI解析結果: スコア=0.000
+2025-06-10 22:38:52,898 - root - INFO - [4-13] AI解析開始: https://global.toyota/jp/album/images/42758102/
+2025-06-10 22:38:56,346 - root - INFO - [4-13] AI解析結果: スコア=0.950
+2025-06-10 22:38:56,347 - root - INFO - 関連ページで高スコア検出により処理早期終了: スコア=0.950
+2025-06-10 22:38:56,347 - root - INFO - [4] ページ解析結果: 解析件数=14, 最高スコア=0.950
+2025-06-10 22:38:56,379 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-10 22:38:56,382 - root - INFO - 判定結果出力完了: found=True, searched_urls=419, early_terminated=True
+2025-06-10 22:41:31,541 - root - INFO - ============================================================
+2025-06-10 22:41:31,541 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 22:41:31,541 - root - INFO - ============================================================
+2025-06-10 22:41:31,542 - root - INFO - 本日のGoogle Search API使用状況: 26/100
+2025-06-10 22:41:31,542 - root - INFO - テストモードで実行中
+2025-06-10 22:41:31,543 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 22:41:34,715 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 22:41:34,715 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 22:41:34,717 - root - INFO - API使用件数を更新: 26 → 27
+2025-06-10 22:41:34,717 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 22:41:35,170 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 22:41:35,171 - root - INFO - Google検索結果件数: 5件
+2025-06-10 22:41:35,171 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:41:35,171 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 22:41:35,171 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 22:41:35,172 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 22:41:35,172 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 22:41:35,172 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:41:35,172 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:41:35,475 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 22:41:35,623 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 22:41:35,624 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:41:39,501 - root - INFO - [1-0] AI解析結果: スコア=0.800
+2025-06-10 22:41:39,502 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:41:39,734 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 22:41:40,870 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-10 22:41:42,004 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 22:41:43,139 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 22:41:44,312 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 22:41:45,552 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-10 22:41:46,685 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-10 22:41:47,794 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 22:41:47,794 - root - INFO - [1] 関連ページスクレイピング完了: 8ページ
+2025-06-10 22:41:47,795 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:41:51,204 - root - INFO - [1-1] AI解析結果: スコア=0.800
+2025-06-10 22:41:51,205 - root - INFO - [1-2] AI解析開始: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular
+2025-06-10 22:41:54,756 - root - INFO - [1-2] AI解析結果: スコア=0.500
+2025-06-10 22:41:54,757 - root - INFO - [1-3] AI解析開始: https://global.toyota/jp/sustainability/sdgs/
+2025-06-10 22:41:58,024 - root - INFO - [1-3] AI解析結果: スコア=0.700
+2025-06-10 22:41:58,025 - root - INFO - [1-4] AI解析開始: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular
+2025-06-10 22:42:01,340 - root - INFO - [1-4] AI解析結果: スコア=0.500
+2025-06-10 22:42:01,340 - root - INFO - [1-5] AI解析開始: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular
+2025-06-10 22:42:04,956 - root - INFO - [1-5] AI解析結果: スコア=0.000
+2025-06-10 22:42:04,956 - root - INFO - [1-6] AI解析開始: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular
+2025-06-10 22:42:09,133 - root - INFO - [1-6] AI解析結果: スコア=0.800
+2025-06-10 22:42:09,133 - root - INFO - [1-7] AI解析開始: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular
+2025-06-10 22:42:13,040 - root - INFO - [1-7] AI解析結果: スコア=0.000
+2025-06-10 22:42:13,040 - root - INFO - [1-8] AI解析開始: https://global.toyota/jp/ir/stock/outline/
+2025-06-10 22:42:16,554 - root - INFO - [1-8] AI解析結果: スコア=0.850
+2025-06-10 22:42:16,554 - root - INFO - [1] ページ解析結果: 解析件数=9, 最高スコア=0.850
+2025-06-10 22:42:16,555 - root - INFO - [2] ページ解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 22:42:16,555 - root - INFO - [2] メインページスクレイピング開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 22:42:16,714 - root - INFO - robots.txt取得成功: https://www.toyota.co.jp/robots.txt
+2025-06-10 22:42:16,819 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:16,820 - root - INFO - [2-0] AI解析開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 22:42:20,686 - root - INFO - [2-0] AI解析結果: スコア=0.850
+2025-06-10 22:42:20,687 - root - INFO - [2] 関連ページスクレイピング開始: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 22:42:20,783 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:20,855 - root - INFO - robots.txt取得成功: http://www.toyota.co.jp/robots.txt
+2025-06-10 22:42:21,981 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/vehicle_lineage/index.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:23,142 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/overall_chronological_table/1867.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:24,348 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/overall_chronological_table/1991.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:25,532 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/overall_chronological_table/1961.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:26,644 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/index.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:27,777 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/overall_chronological_table/1931.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:28,872 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/automotive_business/index.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:30,006 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/overall_chronological_table/1951.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:31,146 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/overall_chronological_table/1971.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:32,672 - root - INFO - スクレイピング成功: http://www.toyota.co.jp/ (タイトル: トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 22:42:33,825 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/overall_chronological_table/1911.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:34,973 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/company_information/index.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:36,250 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/overall_chronological_table/2001.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:37,372 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/terms_of_use/index.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:38,498 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/business/index.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:39,614 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/index.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:40,795 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/overall_chronological_table/1941.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:41,974 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/overall_chronological_table/1981.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:43,119 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/sitemap/index.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:44,236 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/index.html (タイトル: è³æã§è¦ã75å¹´ã®æ­©ã¿ï½TOYOTA ãã¨ã¿è...)
+2025-06-10 22:42:45,350 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/overall_chronological_table/1867.html#header (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:46,487 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/text/index.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:47,639 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/overall_chronological_table/1921.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:48,788 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/automobile_data/index.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:49,887 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/automobile_data/vehicle_ownership.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:50,987 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/automobile_data/export_volumes.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:52,078 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/facilities/index.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:53,187 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/philosophy/index.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:54,316 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/product_lineup/spare_parts.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:42:55,446 - root - INFO - スクレイピング成功: https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/facilities/office/overseas.html (タイトル: ãã¨ã¿ä¼æ¥­ãµã¤ãï½ãã¨ã¿èªåè»75å¹´...)
+2025-06-10 22:47:39,359 - root - INFO - ============================================================
+2025-06-10 22:47:39,359 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 22:47:39,359 - root - INFO - ============================================================
+2025-06-10 22:47:39,360 - root - INFO - 本日のGoogle Search API使用状況: 27/100
+2025-06-10 22:47:39,360 - root - INFO - テストモードで実行中
+2025-06-10 22:47:39,361 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 22:48:01,750 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 22:48:01,751 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 22:48:01,753 - root - INFO - API使用件数を更新: 27 → 28
+2025-06-10 22:48:01,754 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 22:48:02,385 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 22:48:02,386 - root - INFO - Google検索結果件数: 5件
+2025-06-10 22:48:02,386 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:48:02,387 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 22:48:02,387 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 22:48:02,387 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 22:48:02,387 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 22:48:02,388 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:48:02,388 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:48:02,716 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 22:48:02,876 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 22:48:02,876 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:48:08,019 - root - INFO - [1-0] AI解析結果: スコア=0.000
+2025-06-10 22:48:08,020 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:48:08,207 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 22:48:09,437 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 22:48:10,589 - root - INFO - スクレイピング成功: https://global.toyota/jp/mobility/beyond-zero/ (タイトル: BEYOND ZERO | モビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 22:48:11,773 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-10 22:48:12,939 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular#powertrain (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 22:48:14,121 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular#intelligent (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 22:48:15,305 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular#style (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 22:48:16,494 - root - INFO - スクレイピング成功: https://global.toyota/jp/mobility/toyota-brand/toyota-design/rav4/ (タイトル: RAV4 デザインスケッチ | トヨタデザイン | トヨタブランド | モビリティ | トヨタ自動車...)
+2025-06-10 22:48:17,660 - root - INFO - スクレイピング成功: https://global.toyota/jp/mobility/toyota-brand/gallery/rav4.html (タイトル: RAV4 | 車種ギャラリー | トヨタブランド | モビリティ | トヨタ自動車株式会社 公式企業...)
+2025-06-10 22:48:18,812 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 22:48:20,003 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42762028.html (タイトル: 新型RAV4 ワールドプレミア | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 ...)
+2025-06-10 22:48:21,144 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-10 22:48:22,347 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular#design (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 22:48:23,542 - root - INFO - スクレイピング成功: https://global.toyota/jp/album/images/42758102/ (タイトル: RAV4 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 22:48:24,703 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-10 22:48:25,839 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 22:48:26,983 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 22:48:26,984 - root - INFO - [1] 関連ページスクレイピング完了: 17ページ
+2025-06-10 22:48:26,984 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 22:48:30,369 - root - INFO - [1-1] AI解析結果: スコア=0.650
+2025-06-10 22:48:30,370 - root - INFO - [1-2] AI解析開始: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular
+2025-06-10 22:48:34,029 - root - INFO - [1-2] AI解析結果: スコア=0.500
+2025-06-10 22:48:34,030 - root - INFO - [1-3] AI解析開始: https://global.toyota/jp/mobility/beyond-zero/
+2025-06-10 22:48:37,506 - root - INFO - [1-3] AI解析結果: スコア=1.000
+2025-06-10 22:48:37,506 - root - INFO - 関連ページで高スコア検出により処理早期終了: スコア=1.000
+2025-06-10 22:48:37,507 - root - INFO - [1] ページ解析結果: 解析件数=4, 最高スコア=1.000
+2025-06-10 22:48:37,507 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-10 22:48:37,509 - root - INFO - 判定結果出力完了: found=True, searched_urls=4, early_terminated=True
+2025-06-10 23:07:20,479 - root - INFO - ============================================================
+2025-06-10 23:07:20,479 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:07:20,479 - root - INFO - ============================================================
+2025-06-10 23:07:20,479 - root - INFO - 本日のGoogle Search API使用状況: 28/100
+2025-06-10 23:07:20,480 - root - INFO - テストモードで実行中
+2025-06-10 23:07:20,480 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:07:28,256 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:07:28,257 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:07:28,259 - root - INFO - API使用件数を更新: 28 → 29
+2025-06-10 23:07:28,259 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:07:28,623 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:07:28,624 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:07:28,625 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:07:28,625 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:07:28,626 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:07:28,626 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:07:28,626 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:07:28,627 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:07:28,627 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:07:29,040 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:07:29,193 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:07:29,194 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:07:33,183 - root - INFO - [1-0] AI解析結果: スコア=0.900
+2025-06-10 23:07:33,184 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:07:33,370 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:07:34,548 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-10 23:07:35,791 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:07:36,954 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-10 23:07:38,069 - root - INFO - スクレイピング成功: https://global.toyota/jp/mobility/beyond-zero/ (タイトル: BEYOND ZERO | モビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:07:39,240 - root - INFO - スクレイピング成功: https://global.toyota/jp/album/images/42817470/ (タイトル: カローラ クロス GR SPORT | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:07:40,410 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 23:12:19,579 - root - INFO - ============================================================
+2025-06-10 23:12:19,580 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:12:19,580 - root - INFO - ============================================================
+2025-06-10 23:12:19,581 - root - INFO - 本日のGoogle Search API使用状況: 29/100
+2025-06-10 23:12:19,582 - root - INFO - テストモードで実行中
+2025-06-10 23:12:19,582 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:12:25,423 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:12:25,423 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:12:25,426 - root - INFO - API使用件数を更新: 29 → 30
+2025-06-10 23:12:25,427 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:12:26,014 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:12:26,015 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:12:26,015 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:12:26,015 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:12:26,015 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:12:26,015 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:12:26,015 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:12:26,016 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:12:26,016 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:12:26,594 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:12:26,779 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:12:26,780 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:12:30,443 - root - INFO - [1-0] AI解析結果: スコア=0.750
+2025-06-10 23:12:30,443 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:12:30,653 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:12:31,795 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-10 23:12:32,966 - root - INFO - スクレイピング成功: https://global.toyota/jp/album/images/42831939/ (タイトル: 品川・新東京本社の2029年度開業に向け着工 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:12:34,141 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 23:12:35,252 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:12:36,407 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/40538400.html (タイトル: トヨタは、2029年度東京・品川に、新東京本社を開業します | コーポレート | グローバルニュース...)
+2025-06-10 23:12:37,586 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:12:38,728 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-10 23:12:39,876 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-10 23:12:41,007 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:12:41,009 - root - INFO - [1] 関連ページスクレイピング完了: 10ページ
+2025-06-10 23:12:41,009 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:12:45,082 - root - INFO - [1-1] AI解析結果: スコア=0.950
+2025-06-10 23:12:45,082 - root - INFO - 関連ページで高スコア検出により処理早期終了: スコア=0.950
+2025-06-10 23:12:45,082 - root - INFO - [1] ページ解析結果: 解析件数=2, 最高スコア=0.950
+2025-06-10 23:12:45,083 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-10 23:12:45,084 - root - INFO - 判定結果出力完了: found=True, searched_urls=2, early_terminated=True
+2025-06-10 23:16:24,912 - root - INFO - ============================================================
+2025-06-10 23:16:24,913 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:16:24,913 - root - INFO - ============================================================
+2025-06-10 23:16:24,914 - root - INFO - 本日のGoogle Search API使用状況: 30/100
+2025-06-10 23:16:24,914 - root - INFO - テストモードで実行中
+2025-06-10 23:16:24,914 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:16:27,972 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:16:27,973 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:16:27,975 - root - INFO - API使用件数を更新: 30 → 31
+2025-06-10 23:16:27,975 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:16:28,606 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:16:28,607 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:16:28,607 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:16:28,607 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:16:28,608 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:16:28,608 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:16:28,608 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:16:28,609 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:16:28,609 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:16:29,198 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:16:29,361 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:16:29,362 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:16:33,640 - root - INFO - [1-0] AI解析結果: スコア=0.900
+2025-06-10 23:16:33,640 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:16:33,816 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:16:35,001 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-10 23:16:36,124 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:16:37,265 - root - INFO - スクレイピング成功: https://global.toyota/jp/mobility/beyond-zero/ (タイトル: BEYOND ZERO | モビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:16:38,438 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:16:39,589 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 23:16:40,867 - root - INFO - スクレイピング成功: https://global.toyota/jp/album/images/42817470/ (タイトル: カローラ クロス GR SPORT | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:16:42,001 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-10 23:16:43,183 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-10 23:16:44,329 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:16:44,331 - root - INFO - [1] 関連ページスクレイピング完了: 10ページ
+2025-06-10 23:16:44,332 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:16:50,866 - root - INFO - [1-1] AI解析結果: スコア=0.000
+2025-06-10 23:16:50,866 - root - INFO - [1-2] AI解析開始: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular
+2025-06-10 23:16:57,632 - root - INFO - [1-2] AI解析結果: スコア=0.000
+2025-06-10 23:16:57,633 - root - INFO - [1-3] AI解析開始: https://global.toyota/jp/sustainability/sdgs/
+2025-06-10 23:17:04,317 - root - INFO - [1-3] AI解析結果: スコア=0.000
+2025-06-10 23:17:04,317 - root - INFO - [1-4] AI解析開始: https://global.toyota/jp/mobility/beyond-zero/
+2025-06-10 23:22:55,643 - root - INFO - ============================================================
+2025-06-10 23:22:55,643 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:22:55,644 - root - INFO - ============================================================
+2025-06-10 23:22:55,644 - root - INFO - 本日のGoogle Search API使用状況: 31/100
+2025-06-10 23:22:55,645 - root - INFO - テストモードで実行中
+2025-06-10 23:22:55,645 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:23:01,675 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:23:01,675 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:23:01,677 - root - INFO - API使用件数を更新: 31 → 32
+2025-06-10 23:23:01,677 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:23:02,354 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:23:02,355 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:23:02,355 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:23:02,355 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:23:02,356 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:23:02,356 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:23:02,356 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:23:02,356 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:23:02,357 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:23:02,745 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:23:02,935 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:23:02,936 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:23:06,834 - root - INFO - [1-0] AI解析結果: スコア=0.900
+2025-06-10 23:23:06,835 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:23:06,993 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:23:08,160 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-10 23:23:09,276 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:23:10,458 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-10 23:23:11,657 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:23:12,889 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-10 23:23:14,050 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 23:23:15,172 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:23:15,173 - root - INFO - [1] 関連ページスクレイピング完了: 8ページ
+2025-06-10 23:23:15,173 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:23:20,000 - root - INFO - [1-1] AI解析結果: スコア=0.850
+2025-06-10 23:23:20,000 - root - INFO - [1-2] AI解析開始: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular
+2025-06-10 23:23:29,119 - root - INFO - ============================================================
+2025-06-10 23:23:29,119 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:23:29,119 - root - INFO - ============================================================
+2025-06-10 23:23:29,120 - root - INFO - 本日のGoogle Search API使用状況: 32/100
+2025-06-10 23:23:29,120 - root - INFO - テストモードで実行中
+2025-06-10 23:23:29,121 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:23:32,142 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:23:32,142 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:23:32,144 - root - INFO - API使用件数を更新: 32 → 33
+2025-06-10 23:23:32,145 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:23:32,473 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:23:32,474 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:23:32,474 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:23:32,474 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:23:32,475 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:23:32,475 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:23:32,476 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:23:32,476 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:23:32,476 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:23:32,797 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:23:32,998 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:23:32,999 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:23:37,183 - root - INFO - [1-0] AI解析結果: スコア=0.650
+2025-06-10 23:23:37,184 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:23:37,359 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:23:38,556 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-10 23:23:39,751 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-10 23:23:40,894 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:23:42,029 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 23:23:43,165 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-10 23:23:44,416 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:23:45,559 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:23:45,560 - root - INFO - [1] 関連ページスクレイピング完了: 8ページ
+2025-06-10 23:23:45,560 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:23:49,585 - root - INFO - [1-1] AI解析結果: スコア=0.800
+2025-06-10 23:23:49,585 - root - INFO - [1-2] AI解析開始: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular
+2025-06-10 23:23:53,818 - root - INFO - [1-2] AI解析結果: スコア=0.600
+2025-06-10 23:23:53,818 - root - INFO - [1-3] AI解析開始: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular
+2025-06-10 23:23:58,598 - root - INFO - [1-3] AI解析結果: スコア=0.000
+2025-06-10 23:23:58,598 - root - INFO - [1-4] AI解析開始: https://global.toyota/jp/sustainability/sdgs/
+2025-06-10 23:24:02,615 - root - INFO - [1-4] AI解析結果: スコア=0.000
+2025-06-10 23:24:02,615 - root - INFO - [1-5] AI解析開始: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular
+2025-06-10 23:27:42,491 - root - INFO - ============================================================
+2025-06-10 23:27:42,492 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:27:42,492 - root - INFO - ============================================================
+2025-06-10 23:27:42,492 - root - INFO - 本日のGoogle Search API使用状況: 33/100
+2025-06-10 23:27:42,493 - root - INFO - テストモードで実行中
+2025-06-10 23:27:42,493 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:27:45,530 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:27:45,531 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:27:45,533 - root - INFO - API使用件数を更新: 33 → 34
+2025-06-10 23:27:45,533 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:27:45,880 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:27:45,880 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:27:45,882 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:27:45,882 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:27:45,882 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:27:45,882 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:27:45,883 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:27:45,883 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:27:45,883 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:27:46,346 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:27:46,537 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:27:46,538 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:27:52,446 - root - INFO - [1-0] AI解析結果: スコア=0.000
+2025-06-10 23:27:52,447 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:27:52,645 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:27:53,804 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-10 23:27:54,989 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-10 23:27:56,143 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 23:27:57,321 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-10 23:27:58,494 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:27:59,615 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:28:00,751 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:28:00,753 - root - INFO - [1] 関連ページスクレイピング完了: 8ページ
+2025-06-10 23:28:00,753 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:30:02,008 - root - INFO - ============================================================
+2025-06-10 23:30:02,009 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:30:02,009 - root - INFO - ============================================================
+2025-06-10 23:30:02,010 - root - INFO - 本日のGoogle Search API使用状況: 34/100
+2025-06-10 23:30:02,011 - root - INFO - テストモードで実行中
+2025-06-10 23:30:02,011 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:30:05,003 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:30:05,003 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:30:05,005 - root - INFO - API使用件数を更新: 34 → 35
+2025-06-10 23:30:05,005 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:30:05,352 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:30:05,352 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:30:05,353 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:30:05,353 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:30:05,353 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:30:05,353 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:30:05,354 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:30:05,354 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:30:05,354 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:30:05,718 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:30:06,012 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:30:06,012 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:30:10,140 - root - INFO - [1-0] AI解析結果: スコア=0.900
+2025-06-10 23:30:10,140 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:30:10,289 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:30:11,653 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-10 23:30:12,860 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-10 23:30:14,009 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 23:30:15,167 - root - INFO - スクレイピング成功: https://global.toyota/jp/album/images/42817470/ (タイトル: カローラ クロス GR SPORT | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:30:16,344 - root - INFO - スクレイピング成功: https://global.toyota/jp/mobility/beyond-zero/ (タイトル: BEYOND ZERO | モビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:30:17,527 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:30:18,701 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-10 23:30:19,829 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:30:20,981 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:30:20,982 - root - INFO - [1] 関連ページスクレイピング完了: 10ページ
+2025-06-10 23:30:20,982 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:30:25,563 - root - INFO - [1-1] AI解析結果: スコア=0.950
+2025-06-10 23:30:25,563 - root - INFO - 関連ページで高スコア検出により処理早期終了: スコア=0.950
+2025-06-10 23:30:25,563 - root - INFO - [1] ページ解析結果: 解析件数=2, 最高スコア=0.950
+2025-06-10 23:30:25,564 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-10 23:30:25,565 - root - INFO - 判定結果出力完了: found=True, searched_urls=2, early_terminated=True
+2025-06-10 23:32:30,570 - root - INFO - ============================================================
+2025-06-10 23:32:30,570 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:32:30,570 - root - INFO - ============================================================
+2025-06-10 23:32:30,572 - root - INFO - 本日のGoogle Search API使用状況: 35/100
+2025-06-10 23:32:30,572 - root - INFO - テストモードで実行中
+2025-06-10 23:32:30,572 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:32:34,018 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:32:34,018 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:32:34,020 - root - INFO - API使用件数を更新: 35 → 36
+2025-06-10 23:32:34,020 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:32:34,370 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:32:34,371 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:32:34,372 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:32:34,372 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:32:34,372 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:32:34,372 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:32:34,373 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:32:34,373 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:32:34,373 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:32:34,847 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:32:35,108 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:32:35,109 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:32:39,387 - root - INFO - [1-0] AI解析結果: スコア=0.980
+2025-06-10 23:32:39,387 - root - INFO - メインページで高スコア検出により処理早期終了: スコア=0.980
+2025-06-10 23:32:39,388 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-10 23:32:39,390 - root - INFO - 判定結果出力完了: found=True, searched_urls=1, early_terminated=True
+2025-06-10 23:34:34,090 - root - INFO - ============================================================
+2025-06-10 23:34:34,090 - root - INFO - 取引先申請情報確認システム 開始
+2025-06-10 23:34:34,090 - root - INFO - ============================================================
+2025-06-10 23:34:34,091 - root - INFO - 本日のGoogle Search API使用状況: 36/100
+2025-06-10 23:34:34,091 - root - INFO - テストモードで実行中
+2025-06-10 23:34:34,092 - root - INFO - 受け取った申請情報: 会社名=トヨタ自動車株式会社, 住所=愛知県豊田市トヨタ町1番地, 電話番号=0565-28-2121, その他=[]
+2025-06-10 23:34:37,318 - root - INFO - AI生成検索クエリリスト: ['トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 'トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地', 'トヨタ自動車株式会社 0565-28-2121']
+2025-06-10 23:34:37,319 - root - INFO - [1] 検索クエリ: トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121
+2025-06-10 23:34:37,320 - root - INFO - API使用件数を更新: 36 → 37
+2025-06-10 23:34:37,321 - root - INFO - Google検索実行: クエリ='トヨタ自動車株式会社 愛知県豊田市トヨタ町1番地 0565-28-2121', 最大件数=5
+2025-06-10 23:34:37,657 - root - INFO - Google検索完了: 5件の結果を取得
+2025-06-10 23:34:37,657 - root - INFO - Google検索結果件数: 5件
+2025-06-10 23:34:37,657 - root - INFO - [1] 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:34:37,658 - root - INFO - [2] トヨタ企業サイト｜トヨタ自動車75年史｜会社概要｜トヨタ自動車 https://www.toyota.co.jp/jpn/company/history/75years/data/conditions/company/toyota/index.html
+2025-06-10 23:34:37,658 - root - INFO - [3] 本社 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/detail/4055845
+2025-06-10 23:34:37,658 - root - INFO - [4] トヨタ自動車株式会社 https://www.epoc.gr.jp/kaiin/038.html
+2025-06-10 23:34:37,659 - root - INFO - [5] 国内生産工場 | 事業所 | トヨタ自動車株式会社 公式企業サイト https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/manufacturing-jp.html
+2025-06-10 23:34:37,659 - root - INFO - [1] ページ解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:34:37,659 - root - INFO - [1] メインページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:34:37,962 - root - INFO - robots.txt取得成功: https://global.toyota/robots.txt
+2025-06-10 23:34:38,163 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:34:38,164 - root - INFO - [1-0] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:34:42,368 - root - INFO - [1-0] AI解析結果: スコア=0.850
+2025-06-10 23:34:42,368 - root - INFO - [1] 関連ページスクレイピング開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:34:42,534 - root - INFO - スクレイピング成功: https://global.toyota/jp/company/profile/overview/ (タイトル: 会社案内 | 会社概要 | 企業情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:34:43,735 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:34:44,991 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular#design (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:34:46,214 - root - INFO - スクレイピング成功: https://global.toyota/jp/mobility/toyota-brand/toyota-design/rav4/ (タイトル: RAV4 デザインスケッチ | トヨタデザイン | トヨタブランド | モビリティ | トヨタ自動車...)
+2025-06-10 23:34:47,370 - root - INFO - スクレイピング成功: https://global.toyota/jp/album/images/42758102/ (タイトル: RAV4 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:34:48,567 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42762028.html (タイトル: 新型RAV4 ワールドプレミア | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 ...)
+2025-06-10 23:34:49,759 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular#style (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:34:50,913 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42831939.html?padid=ag478_from_popular (タイトル: 品川・新東京本社の2029年度開業に向け着工 | コーポレート | グローバルニュースルーム | ト...)
+2025-06-10 23:34:52,162 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42839020.html?padid=ag478_from_popular (タイトル: 幹部職人事について | コーポレート | グローバルニュースルーム | トヨタ自動車株式会社 公式企...)
+2025-06-10 23:34:53,312 - root - INFO - スクレイピング成功: https://global.toyota/jp/mobility/beyond-zero/ (タイトル: BEYOND ZERO | モビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:34:54,470 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/corporate/42882869.html?padid=ag478_from_popular (タイトル: トヨタグループ、モビリティカンパニーへの変革に向け、豊田自動織機の非公開化で連携加速 | コーポレー...)
+2025-06-10 23:34:55,732 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular#powertrain (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:34:57,142 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42758102.html?padid=ag478_from_popular#intelligent (タイトル: 新型「RAV4」を世界初公開 | トヨタ | グローバルニュースルーム | トヨタ自動車株式会社 公...)
+2025-06-10 23:34:58,424 - root - INFO - スクレイピング成功: https://global.toyota/jp/newsroom/toyota/42817470.html?padid=ag478_from_popular (タイトル: カローラ クロスにGR SPORTを新設定 | トヨタ | グローバルニュースルーム | トヨタ自動...)
+2025-06-10 23:34:59,651 - root - INFO - スクレイピング成功: https://global.toyota/jp/mobility/toyota-brand/gallery/rav4.html (タイトル: RAV4 | 車種ギャラリー | トヨタブランド | モビリティ | トヨタ自動車株式会社 公式企業...)
+2025-06-10 23:35:00,771 - root - INFO - スクレイピング成功: https://global.toyota/jp/sustainability/sdgs/ (タイトル: SDGsへの取り組み | サステナビリティ | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:35:02,020 - root - INFO - スクレイピング成功: https://global.toyota/jp/ir/stock/outline/ (タイトル: 株式の状況 | 株式・格付け情報 | 投資家情報 | トヨタ自動車株式会社 公式企業サイト...)
+2025-06-10 23:35:02,021 - root - INFO - [1] 関連ページスクレイピング完了: 17ページ
+2025-06-10 23:35:02,021 - root - INFO - [1-1] AI解析開始: https://global.toyota/jp/company/profile/overview/
+2025-06-10 23:35:06,151 - root - INFO - [1-1] AI解析結果: スコア=1.000
+2025-06-10 23:35:06,151 - root - INFO - 関連ページで高スコア検出により処理早期終了: スコア=1.000
+2025-06-10 23:35:06,152 - root - INFO - [1] ページ解析結果: 解析件数=2, 最高スコア=1.000
+2025-06-10 23:35:06,152 - root - INFO - 高スコア検出により全クエリ処理を早期終了
+2025-06-10 23:35:06,153 - root - INFO - 判定結果出力完了: found=True, searched_urls=2, early_terminated=True

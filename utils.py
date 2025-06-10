@@ -152,7 +152,7 @@ def write_result_markdown_table(result: dict, file_path: str = "result.md"):
         
         # 早期終了の情報
         if result.get('early_terminated', False):
-            f.write("- **注記**: スコア95%以上の結果が見つかったため早期終了しました\n\n")
+            f.write("- **注記**: スコア95%以上の結果が見つかりました\n\n")
         
         # URLが見つからなかった場合のメッセージ
         if not result.get('found', False):
