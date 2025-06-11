@@ -3,7 +3,7 @@
 - 会社名: トヨタ自動車株式会社
 - 住所: 愛知県豊田市トヨタ町1番地
 - 電話番号: 0565-28-2121
-- 検索URL数: 2
+- 検索URL数: 1
 - 見つかった: ✅
 
 - **注記**: スコア95%以上の結果が見つかりました
@@ -12,8 +12,7 @@
 
 | スコア | URL | 判定理由 |
 |-------|-----|----------|
-| 1.00 | https://global.toyota/jp/company/profile/overview/ | STEP1:会社名判定=0.5点, STEP2:住所判定=0.25点, STEP3:電話番号判定=0.25点, 合計=0.5+0.25+0.25=1.0点 |
-| 0.80 | https://global.toyota/jp/company/profile/overview/ | STEP1:会社名判定=完全一致(X=0.5), STEP2:住所判定=完全一致(Y=0.25), STEP3:電話番号判定=完全一致(Z=0.25), 合計=X+Y+Z点 |
+| 1.00 | https://global.toyota/jp/company/profile/overview/ | STEP1:会社名判定=0.5点, STEP2:住所判定=0.25点, STEP3:電話番号判定=0.25点 |
 
 ---
 *この結果は自動生成されました*
